@@ -1,5 +1,6 @@
 import React from 'react';
-import { Activity, Shield, Zap, CheckCircle2, AlertCircle } from 'lucide-react';
+import { Activity, Shield, CheckCircle2, AlertCircle } from 'lucide-react';
+import GridLogo from './GridLogo';
 
 export default function Navbar({ isBackendHealthy, onSelectPreset }) {
   return (
@@ -16,18 +17,7 @@ export default function Navbar({ isBackendHealthy, onSelectPreset }) {
       zIndex: 100,
     }}>
       <div style={{ display: 'flex', alignItems: 'center', gap: '14px' }}>
-        <div style={{
-          width: '42px',
-          height: '42px',
-          borderRadius: '12px',
-          background: 'linear-gradient(135deg, #06b6d4 0%, #3b82f6 50%, #8b5cf6 100%)',
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'center',
-          boxShadow: '0 0 20px rgba(6, 182, 212, 0.35)',
-        }}>
-          <Zap size={24} color="#ffffff" />
-        </div>
+        <GridLogo size={44} />
         <div>
           <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
             <h1 style={{ fontSize: '20px', fontWeight: '800', letterSpacing: '-0.02em', margin: 0, color: '#f8fafc' }}>
