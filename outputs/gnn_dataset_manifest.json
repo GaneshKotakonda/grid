@@ -1,0 +1,99 @@
+{
+  "bus_indices": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13
+  ],
+  "config": {
+    "capacity_scale_range": [
+      5e-06,
+      0.02
+    ],
+    "generation_scale_range": [
+      0.9,
+      1.1
+    ],
+    "generator_dispatch_variation_range": [
+      0.8,
+      1.2
+    ],
+    "load_scale_range": [
+      0.8,
+      1.5
+    ],
+    "load_variation_range": [
+      0.8,
+      1.2
+    ],
+    "max_initial_outages": 2,
+    "max_steps": 20,
+    "multiple_outage_probability": 0.2,
+    "overload_threshold": 100.0,
+    "reactive_load_variation_range": [
+      0.9,
+      1.1
+    ],
+    "scenario_count": 5000,
+    "seed": 42
+  },
+  "directed_edges_per_physical_line": 2,
+  "edge_feature_names": [
+    "from_bus",
+    "to_bus",
+    "active_power_mw",
+    "reactive_power_mvar",
+    "loading_percent",
+    "resistance_ohm_per_km",
+    "reactance_ohm_per_km",
+    "in_service",
+    "max_current_ka",
+    "length_km",
+    "max_loading_percent"
+  ],
+  "format_version": 1,
+  "line_indices": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14
+  ],
+  "node_feature_names": [
+    "voltage_magnitude_pu",
+    "voltage_angle_degree",
+    "active_load_mw",
+    "reactive_load_mvar",
+    "active_generation_mw",
+    "reactive_generation_mvar",
+    "bus_in_service",
+    "supplied"
+  ],
+  "split_policy": {
+    "test": 0.15,
+    "train": 0.7,
+    "unit": "scenario",
+    "validation": 0.15
+  },
+  "target_semantics": "physical lines failing in the next cascade wave"
+}

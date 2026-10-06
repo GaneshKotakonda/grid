@@ -1,0 +1,71 @@
+{
+  "configuration": {
+    "batch_size": 64,
+    "dropout": 0.2,
+    "early_stopping_metric": "validation BCEWithLogitsLoss",
+    "epochs": 80,
+    "hidden_dim": 64,
+    "learning_rate": 0.001,
+    "patience": 12,
+    "positive_weight_max": 20.0,
+    "seed": 42,
+    "threshold_metric": "validation pooled micro F1"
+  },
+  "early_stopping": "minimum validation BCE loss",
+  "normalization": {
+    "edge_mean": [
+      6.066666603088379,
+      6.066666603088379,
+      0.6478398442268372,
+      1.8716243505477905,
+      106.31934356689453,
+      3.8372392654418945,
+      12.678815841674805,
+      0.7950929403305054,
+      137.28811645507812,
+      1.0,
+      100.0
+    ],
+    "edge_std": [
+      4.319979190826416,
+      4.319979190826416,
+      57.61664962768555,
+      17.60462760925293,
+      1853.1617431640625,
+      4.738954544067383,
+      15.761651039123535,
+      0.4036336839199066,
+      167.80006408691406,
+      9.999999974752427e-07,
+      9.999999974752427e-07
+    ],
+    "node_mean": [
+      0.6758843660354614,
+      -13.506815910339355,
+      12.93968677520752,
+      3.6825368404388428,
+      14.32791519165039,
+      7.3381829261779785,
+      1.0,
+      0.6493892669677734
+    ],
+    "node_std": [
+      0.4971444606781006,
+      15.874953269958496,
+      24.57069206237793,
+      6.56852912902832,
+      59.93083953857422,
+      22.356151580810547,
+      9.999999974752427e-07,
+      0.4771612286567688
+    ]
+  },
+  "positive_weight_policy": "train-only negative/positive ratio clipped to [1, 20]",
+  "threshold_selection": "validation pooled micro F1; frozen before test evaluation",
+  "total_training_seconds": 66.98929833399598,
+  "training_seconds_by_model": {
+    "gat": 48.39842754199344,
+    "gcn": 16.487834500003373,
+    "mlp": 2.1030362919991603
+  }
+}
