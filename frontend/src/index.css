@@ -431,6 +431,14 @@ td,
   white-space: nowrap;
 }
 
+.metric-card--status .metric-card__value {
+  overflow: visible;
+  font-size: clamp(15px, 1.15vw, 21px);
+  line-height: 1.12;
+  text-overflow: clip;
+  white-space: normal;
+}
+
 .metric-card__unit, .metric-card__hint { color: var(--text-muted); font-size: 9px; }
 .metric-card__hint { margin: 8px 0 0; line-height: 1.35; }
 .metric-card__footer { margin-top: 9px; }
@@ -731,7 +739,7 @@ td,
   margin-bottom: 16px;
 }
 
-.metric-card__chips { display: flex; gap: 4px; overflow: hidden; }
+.metric-card__chips { display: flex; flex-wrap: wrap; gap: 4px; overflow: visible; }
 
 .metric-progress {
   width: 100%;

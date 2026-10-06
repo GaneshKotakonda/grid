@@ -82,6 +82,7 @@ export default function MetricsOverview({ simResult }) {
         icon={ShieldCheck}
         tone={statusMeta.tone}
         hint={statusMeta.hint}
+        className="metric-card--status"
       />
 
       <MetricCard

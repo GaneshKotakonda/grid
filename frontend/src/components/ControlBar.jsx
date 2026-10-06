@@ -42,6 +42,7 @@ export default function ControlBar({
         subtitle="Configure an initiating outage and operating stress, then execute the full predictive incident workflow."
         badge={<StatusBadge tone="neutral">Seed-Locked Run</StatusBadge>}
         as="h2"
+        headingId="command-deck-heading"
       />
 
       <div className="command-deck__controls">

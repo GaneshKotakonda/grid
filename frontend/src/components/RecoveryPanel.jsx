@@ -10,9 +10,10 @@ export default function RecoveryPanel({
   finalLoadServedPct = 0,
   postCascadeServedMw = 0,
   recoveryActions = [],
-  finalStatus = 'STABLE',
+  finalStatus = null,
 }) {
   const committedActions = recoveryActions.filter((action) => action.committed);
+  const hasResult = Boolean(finalStatus);
   const statusTone = finalStatus === 'STABLE' ? 'safe' : finalStatus === 'PARTIAL_BLACKOUT' ? 'warning' : 'danger';
 
   return (
@@ -21,7 +22,11 @@ export default function RecoveryPanel({
         icon={RefreshCw}
         title="Safety-Constrained Grid Recovery"
         subtitle="Sequential reclosure and load restoration under AC-feasibility constraints."
-        badge={<StatusBadge tone={statusTone}>Phase 6 · {finalStatus}</StatusBadge>}
+        badge={(
+          <StatusBadge tone={hasResult ? statusTone : 'neutral'}>
+            {hasResult ? `Phase 6 · ${finalStatus}` : 'Awaiting Incident'}
+          </StatusBadge>
+        )}
       />
 
       <div className="panel-stat-grid">

@@ -9,9 +9,10 @@ export default function MetricCard({
   hint,
   footer,
   children,
+  className = '',
 }) {
   return (
-    <article className={`metric-card metric-card--${tone}`}>
+    <article className={`metric-card metric-card--${tone} ${className}`.trim()}>
       <div className="metric-card__header">
         <span>{label}</span>
         {Icon && <Icon size={16} />}

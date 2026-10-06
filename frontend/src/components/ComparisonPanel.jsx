@@ -22,6 +22,7 @@ export default function ComparisonPanel({ benchmarkData }) {
   const noGcn = rlData.find((row) => row.controller?.includes('No GCN'));
   const noRecovery = recData.find((row) => row.method === 'No Recovery');
   const greedyRecovery = recData.find((row) => row.method === 'Greedy Recovery');
+  const hasRecoveryEvidence = Boolean(noRecovery && greedyRecovery);
 
   return (
     <div className="card benchmark-panel">
@@ -105,18 +106,22 @@ export default function ComparisonPanel({ benchmarkData }) {
             <span className="eyebrow"><ShieldCheck size={12} /> Safety invariant</span>
             <h3 id="recovery-audit-heading">Phase 6 Post-Cascade Recovery Invariant Audit</h3>
           </div>
-          <StatusBadge tone={loading ? 'neutral' : 'safe'}>{loading ? 'Loading Audit' : '100% Invariant Conserved'}</StatusBadge>
+          <StatusBadge tone={hasRecoveryEvidence ? 'safe' : 'neutral'}>
+            {loading ? 'Loading Audit' : hasRecoveryEvidence ? '100% Invariant Conserved' : 'Audit Evidence Unavailable'}
+          </StatusBadge>
         </div>
 
         <p>
-          Recovery preserves surviving grids: unsafe actions are reverted and restoration never reduces served load below the post-cascade state.
+          {hasRecoveryEvidence
+            ? 'Recovery preserves surviving grids: unsafe actions are reverted and restoration never reduces served load below the post-cascade state.'
+            : 'Recovery audit evidence is unavailable because no Phase 6 recovery rows were returned.'}
         </p>
 
         <div className="audit-metrics">
           <div><span>No-Recovery Blackout</span><strong className="mono">{noRecovery ? `${noRecovery.total_blackout_rate}%` : '—'}</strong></div>
           <div><span>Greedy-Recovery Blackout</span><strong className="mono">{greedyRecovery ? `${greedyRecovery.total_blackout_rate}%` : '—'}</strong></div>
           <div><span>Average Load Restored</span><strong className="mono info-text">{greedyRecovery ? `+${greedyRecovery.average_mw_restored} MW` : '—'}</strong></div>
-          <div><span>Survivor Integrity</span><strong className="mono safe-text">{loading ? '—' : '100%'}</strong></div>
+          <div><span>Survivor Integrity</span><strong className="mono safe-text">{hasRecoveryEvidence ? '100%' : '—'}</strong></div>
         </div>
       </section>
     </div>
