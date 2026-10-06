@@ -35,5 +35,6 @@ yarn-error.log*
 
 # Temporary / Scratch artifacts
 scratch/
+.superpowers/
 outputs/scratch_ablation/
 outputs/test_speed/
