@@ -1,0 +1,3 @@
+method,scenario_count,average_served_load_mw,average_load_served_percent,average_mw_restored,average_reconnected_lines,average_recovery_steps,stable_grid_rate,total_blackout_rate,non_converged_rate,recovery_success_rate
+No Recovery,100,29.49,12.26,0.0,0.0,0.0,13.0,74.0,13.0,0.0
+Greedy Recovery,100,29.77,12.36,0.28,0.15,1.33,13.0,74.0,13.0,4.0

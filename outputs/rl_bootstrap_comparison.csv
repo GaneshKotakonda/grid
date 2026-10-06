@@ -1,0 +1,8 @@
+metric,mean_predictive,mean_no_gcn,paired_diff_mean,ci_95_lower,ci_95_upper,p_value,statistically_significant
+Failed Lines,4.463,4.5,-0.037,-0.1,0.023,0.265,False
+Cascade Length,1.157,1.2,-0.043,-0.073,-0.017,0.001,True
+Load Served %,30.65,26.481,4.169,1.569,6.82,0.0001,True
+Load Shed MW,2.906,9.536,-6.629,-7.54,-5.759,0.0001,True
+Stable Grid Rate %,17.667,18.333,-0.667,-2.0,0.667,0.441,False
+Total Blackout Rate %,68.333,71.333,-3.0,-5.333,-1.0,0.007,True
+Episode Reward,-51.575,-52.417,0.842,-0.179,1.936,0.113,False

@@ -1,0 +1,19 @@
+controller,action_name,selection_count,selection_percent,overload_reduction_rate,load_preservation_rate,cascade_prevention_rate,convergence_rate
+Do-Nothing,do_nothing,357,100.0,0.0,37.54,12.32,100.0
+PPO (No GCN),shed_uniform_5pct,174,48.33,74.71,72.41,31.61,100.0
+PPO (No GCN),gen_0_down_10mw,96,26.67,0.0,13.54,0.0,96.88
+PPO (No GCN),gen_3_down_10mw,29,8.06,20.69,0.0,0.0,100.0
+PPO (No GCN),gen_3_up_10mw,25,6.94,100.0,0.0,0.0,100.0
+PPO (No GCN),shed_bus_2_15pct,24,6.67,100.0,4.17,0.0,100.0
+PPO (No GCN),gen_2_up_10mw,11,3.06,100.0,0.0,0.0,100.0
+PPO (No GCN),gen_1_up_10mw,1,0.28,100.0,0.0,0.0,100.0
+PPO (Predictive GCN),gen_0_down_10mw,114,32.85,0.0,31.58,0.0,98.25
+PPO (Predictive GCN),gen_0_up_10mw,94,27.09,64.89,73.4,42.55,100.0
+PPO (Predictive GCN),shed_uniform_5pct,58,16.71,81.03,55.17,22.41,100.0
+PPO (Predictive GCN),gen_3_up_10mw,57,16.43,100.0,0.0,0.0,100.0
+PPO (Predictive GCN),gen_1_up_10mw,13,3.75,100.0,0.0,0.0,100.0
+PPO (Predictive GCN),gen_2_up_10mw,9,2.59,100.0,0.0,0.0,100.0
+PPO (Predictive GCN),gen_3_down_10mw,2,0.58,0.0,0.0,0.0,100.0
+Rule-Controller,shed_bus_1_15pct,244,67.78,93.44,41.39,7.38,100.0
+Rule-Controller,shed_bus_2_15pct,99,27.5,78.79,20.2,19.19,100.0
+Rule-Controller,shed_bus_3_15pct,17,4.72,35.29,94.12,64.71,100.0

@@ -1,0 +1,101 @@
+scenario_id,initial_load_mw,initial_outages,no_rec_served_mw,no_rec_served_percent,no_rec_status,no_rec_blackout,post_cascade_served_mw,post_cascade_served_percent,final_recovered_served_mw,final_recovered_percent,mw_restored,reconnected_lines_count,recovery_steps,final_status,final_blackout,final_stable,non_converged,recovery_success
+scenario-000205,330.02,[8],0.0,0.0,TOTAL_BLACKOUT,True,0.0,0.0,0.0,0.0,0.0,0,1,TOTAL_BLACKOUT,True,False,False,False
+scenario-000294,255.77,[14],0.0,0.0,TOTAL_BLACKOUT,True,0.0,0.0,0.0,0.0,0.0,0,1,TOTAL_BLACKOUT,True,False,False,False
+scenario-000314,316.02,[3],0.0,0.0,TOTAL_BLACKOUT,True,0.0,0.0,0.0,0.0,0.0,0,1,TOTAL_BLACKOUT,True,False,False,False
+scenario-000360,331.76,[10],0.0,0.0,NON_CONVERGED,False,0.0,0.0,0.0,0.0,0.0,0,1,NON_CONVERGED,False,False,True,False
+scenario-000374,314.74,[8],0.0,0.0,TOTAL_BLACKOUT,True,0.0,0.0,0.0,0.0,0.0,0,1,TOTAL_BLACKOUT,True,False,False,False
+scenario-000386,408.68,[9],0.0,0.0,TOTAL_BLACKOUT,True,0.0,0.0,0.0,0.0,0.0,0,1,TOTAL_BLACKOUT,True,False,False,False
+scenario-000414,232.8,[2],0.0,0.0,TOTAL_BLACKOUT,True,0.0,0.0,0.0,0.0,0.0,0,1,TOTAL_BLACKOUT,True,False,False,False
+scenario-000417,262.03,[11],0.0,0.0,TOTAL_BLACKOUT,True,0.0,0.0,0.0,0.0,0.0,0,1,TOTAL_BLACKOUT,True,False,False,False
+scenario-000447,416.71,"[6, 7]",0.0,0.0,TOTAL_BLACKOUT,True,0.0,0.0,0.0,0.0,0.0,0,1,TOTAL_BLACKOUT,True,False,False,False
+scenario-000562,323.35,[3],307.19,95.0,STABLE,False,307.19,95.0,316.41,97.85,9.22,1,10,STABLE,False,True,False,True
+scenario-000620,393.25,[3],0.0,0.0,TOTAL_BLACKOUT,True,0.0,0.0,0.0,0.0,0.0,0,1,TOTAL_BLACKOUT,True,False,False,False
+scenario-000675,340.53,[8],0.0,0.0,TOTAL_BLACKOUT,True,0.0,0.0,0.0,0.0,0.0,0,1,TOTAL_BLACKOUT,True,False,False,False
+scenario-000700,224.6,[0],224.6,100.0,STABLE,False,224.6,100.0,224.6,100.0,0.0,1,1,STABLE,False,True,False,False
+scenario-000721,387.21,[5],0.0,0.0,TOTAL_BLACKOUT,True,0.0,0.0,0.0,0.0,0.0,0,1,TOTAL_BLACKOUT,True,False,False,False
+scenario-000746,380.12,[5],0.0,0.0,TOTAL_BLACKOUT,True,0.0,0.0,0.0,0.0,0.0,0,1,TOTAL_BLACKOUT,True,False,False,False
+scenario-000764,320.68,[3],0.0,0.0,NON_CONVERGED,False,0.0,0.0,0.0,0.0,0.0,0,1,NON_CONVERGED,False,False,True,False
+scenario-000836,259.72,[14],0.0,0.0,TOTAL_BLACKOUT,True,0.0,0.0,0.0,0.0,0.0,0,1,TOTAL_BLACKOUT,True,False,False,False
+scenario-000856,257.83,[6],0.0,0.0,TOTAL_BLACKOUT,True,0.0,0.0,0.0,0.0,0.0,0,1,TOTAL_BLACKOUT,True,False,False,False
+scenario-000989,232.01,"[11, 12]",232.01,100.0,STABLE,False,232.01,100.0,232.01,100.0,0.0,2,2,STABLE,False,True,False,False
+scenario-001041,316.78,[2],0.0,0.0,TOTAL_BLACKOUT,True,0.0,0.0,0.0,0.0,0.0,0,1,TOTAL_BLACKOUT,True,False,False,False
+scenario-001173,240.07,"[0, 10]",0.0,0.0,TOTAL_BLACKOUT,True,0.0,0.0,0.0,0.0,0.0,0,1,TOTAL_BLACKOUT,True,False,False,False
+scenario-001233,360.51,[7],0.0,0.0,NON_CONVERGED,False,0.0,0.0,0.0,0.0,0.0,0,1,NON_CONVERGED,False,False,True,False
+scenario-001394,361.99,[11],0.0,0.0,TOTAL_BLACKOUT,True,0.0,0.0,0.0,0.0,0.0,0,1,TOTAL_BLACKOUT,True,False,False,False
+scenario-001540,260.81,[0],0.0,0.0,TOTAL_BLACKOUT,True,0.0,0.0,0.0,0.0,0.0,0,1,TOTAL_BLACKOUT,True,False,False,False
+scenario-001549,234.76,"[2, 12]",223.03,95.0,STABLE,False,223.03,95.0,229.3,97.67,6.27,2,9,STABLE,False,True,False,True
+scenario-001573,226.45,[5],0.0,0.0,TOTAL_BLACKOUT,True,0.0,0.0,0.0,0.0,0.0,0,1,TOTAL_BLACKOUT,True,False,False,False
+scenario-001591,260.68,[10],0.0,0.0,TOTAL_BLACKOUT,True,0.0,0.0,0.0,0.0,0.0,0,1,TOTAL_BLACKOUT,True,False,False,False
+scenario-001602,382.76,[5],0.0,0.0,TOTAL_BLACKOUT,True,0.0,0.0,0.0,0.0,0.0,0,1,TOTAL_BLACKOUT,True,False,False,False
+scenario-001649,377.53,[3],0.0,0.0,TOTAL_BLACKOUT,True,0.0,0.0,0.0,0.0,0.0,0,1,TOTAL_BLACKOUT,True,False,False,False
+scenario-001672,212.96,[7],0.0,0.0,TOTAL_BLACKOUT,True,0.0,0.0,0.0,0.0,0.0,0,1,TOTAL_BLACKOUT,True,False,False,False
+scenario-001734,191.91,[5],0.0,0.0,TOTAL_BLACKOUT,True,0.0,0.0,0.0,0.0,0.0,0,1,TOTAL_BLACKOUT,True,False,False,False
+scenario-001753,347.39,[12],0.0,0.0,NON_CONVERGED,False,0.0,0.0,0.0,0.0,0.0,0,1,NON_CONVERGED,False,False,True,False
+scenario-001824,302.6,[6],0.0,0.0,NON_CONVERGED,False,0.0,0.0,0.0,0.0,0.0,0,1,NON_CONVERGED,False,False,True,False
+scenario-001841,355.23,[12],0.0,0.0,TOTAL_BLACKOUT,True,0.0,0.0,0.0,0.0,0.0,0,1,TOTAL_BLACKOUT,True,False,False,False
+scenario-001861,244.75,[14],0.0,0.0,TOTAL_BLACKOUT,True,0.0,0.0,0.0,0.0,0.0,0,1,TOTAL_BLACKOUT,True,False,False,False
+scenario-001900,293.68,[5],279.0,95.0,STABLE,False,279.0,95.0,286.73,97.63,7.73,1,8,STABLE,False,True,False,True
+scenario-001941,292.25,[3],0.0,0.0,TOTAL_BLACKOUT,True,0.0,0.0,0.0,0.0,0.0,0,1,TOTAL_BLACKOUT,True,False,False,False
+scenario-001970,318.6,[11],0.0,0.0,NON_CONVERGED,False,0.0,0.0,0.0,0.0,0.0,0,1,NON_CONVERGED,False,False,True,False
+scenario-002035,322.24,"[10, 12]",0.0,0.0,TOTAL_BLACKOUT,True,0.0,0.0,0.0,0.0,0.0,0,1,TOTAL_BLACKOUT,True,False,False,False
+scenario-002132,252.19,[7],252.19,100.0,STABLE,False,252.19,100.0,252.19,100.0,0.0,1,1,STABLE,False,True,False,False
+scenario-002141,315.06,[9],0.0,0.0,TOTAL_BLACKOUT,True,0.0,0.0,0.0,0.0,0.0,0,1,TOTAL_BLACKOUT,True,False,False,False
+scenario-002169,200.91,[0],200.91,100.0,STABLE,False,200.91,100.0,200.91,100.0,0.0,1,1,STABLE,False,True,False,False
+scenario-002213,273.96,[6],0.0,0.0,TOTAL_BLACKOUT,True,0.0,0.0,0.0,0.0,0.0,0,1,TOTAL_BLACKOUT,True,False,False,False
+scenario-002225,356.62,"[6, 8]",0.0,0.0,TOTAL_BLACKOUT,True,0.0,0.0,0.0,0.0,0.0,0,1,TOTAL_BLACKOUT,True,False,False,False
+scenario-002237,242.97,[0],0.0,0.0,TOTAL_BLACKOUT,True,0.0,0.0,0.0,0.0,0.0,0,1,TOTAL_BLACKOUT,True,False,False,False
+scenario-002250,363.62,[11],0.0,0.0,NON_CONVERGED,False,0.0,0.0,0.0,0.0,0.0,0,1,NON_CONVERGED,False,False,True,False
+scenario-002258,307.71,"[9, 12]",0.0,0.0,TOTAL_BLACKOUT,True,0.0,0.0,0.0,0.0,0.0,0,1,TOTAL_BLACKOUT,True,False,False,False
+scenario-002275,264.05,[3],0.0,0.0,TOTAL_BLACKOUT,True,0.0,0.0,0.0,0.0,0.0,0,1,TOTAL_BLACKOUT,True,False,False,False
+scenario-002407,210.7,[2],200.17,95.0,STABLE,False,200.17,95.0,204.97,97.28,4.8,1,7,STABLE,False,True,False,True
+scenario-002452,291.99,"[5, 10]",0.0,0.0,TOTAL_BLACKOUT,True,0.0,0.0,0.0,0.0,0.0,0,1,TOTAL_BLACKOUT,True,False,False,False
+scenario-002489,332.92,"[1, 3]",0.0,0.0,TOTAL_BLACKOUT,True,0.0,0.0,0.0,0.0,0.0,0,1,TOTAL_BLACKOUT,True,False,False,False
+scenario-002645,317.45,[7],0.0,0.0,NON_CONVERGED,False,0.0,0.0,0.0,0.0,0.0,0,1,NON_CONVERGED,False,False,True,False
+scenario-002715,245.72,[2],136.56,55.58,STABLE,False,136.56,55.58,136.56,55.57,0.0,0,1,STABLE,False,True,False,False
+scenario-002788,288.34,[9],0.0,0.0,TOTAL_BLACKOUT,True,0.0,0.0,0.0,0.0,0.0,0,1,TOTAL_BLACKOUT,True,False,False,False
+scenario-002798,305.99,[3],0.0,0.0,TOTAL_BLACKOUT,True,0.0,0.0,0.0,0.0,0.0,0,1,TOTAL_BLACKOUT,True,False,False,False
+scenario-002991,270.39,"[1, 4]",0.0,0.0,TOTAL_BLACKOUT,True,0.0,0.0,0.0,0.0,0.0,0,1,TOTAL_BLACKOUT,True,False,False,False
+scenario-003036,330.92,[11],0.0,0.0,NON_CONVERGED,False,0.0,0.0,0.0,0.0,0.0,0,1,NON_CONVERGED,False,False,True,False
+scenario-003085,283.49,[8],0.0,0.0,TOTAL_BLACKOUT,True,0.0,0.0,0.0,0.0,0.0,0,1,TOTAL_BLACKOUT,True,False,False,False
+scenario-003112,373.65,"[9, 10]",0.0,0.0,NON_CONVERGED,False,0.0,0.0,0.0,0.0,0.0,0,1,NON_CONVERGED,False,False,True,False
+scenario-003122,276.27,[1],0.0,0.0,TOTAL_BLACKOUT,True,0.0,0.0,0.0,0.0,0.0,0,1,TOTAL_BLACKOUT,True,False,False,False
+scenario-003148,343.81,[14],0.0,0.0,TOTAL_BLACKOUT,True,0.0,0.0,0.0,0.0,0.0,0,1,TOTAL_BLACKOUT,True,False,False,False
+scenario-003166,279.44,[6],0.0,0.0,TOTAL_BLACKOUT,True,0.0,0.0,0.0,0.0,0.0,0,1,TOTAL_BLACKOUT,True,False,False,False
+scenario-003185,367.48,[10],0.0,0.0,TOTAL_BLACKOUT,True,0.0,0.0,0.0,0.0,0.0,0,1,TOTAL_BLACKOUT,True,False,False,False
+scenario-003254,315.51,[4],0.0,0.0,TOTAL_BLACKOUT,True,0.0,0.0,0.0,0.0,0.0,0,1,TOTAL_BLACKOUT,True,False,False,False
+scenario-003284,241.97,[4],0.0,0.0,TOTAL_BLACKOUT,True,0.0,0.0,0.0,0.0,0.0,0,1,TOTAL_BLACKOUT,True,False,False,False
+scenario-003289,227.19,[6],0.0,0.0,TOTAL_BLACKOUT,True,0.0,0.0,0.0,0.0,0.0,0,1,TOTAL_BLACKOUT,True,False,False,False
+scenario-003345,366.78,"[5, 13]",0.0,0.0,TOTAL_BLACKOUT,True,0.0,0.0,0.0,0.0,0.0,0,1,TOTAL_BLACKOUT,True,False,False,False
+scenario-003358,310.49,[4],0.0,0.0,TOTAL_BLACKOUT,True,0.0,0.0,0.0,0.0,0.0,0,1,TOTAL_BLACKOUT,True,False,False,False
+scenario-003414,274.27,[8],0.0,0.0,TOTAL_BLACKOUT,True,0.0,0.0,0.0,0.0,0.0,0,1,TOTAL_BLACKOUT,True,False,False,False
+scenario-003425,375.18,[14],0.0,0.0,NON_CONVERGED,False,0.0,0.0,0.0,0.0,0.0,0,1,NON_CONVERGED,False,False,True,False
+scenario-003465,270.08,"[1, 6]",0.0,0.0,TOTAL_BLACKOUT,True,0.0,0.0,0.0,0.0,0.0,0,1,TOTAL_BLACKOUT,True,False,False,False
+scenario-003477,329.12,[13],0.0,0.0,TOTAL_BLACKOUT,True,0.0,0.0,0.0,0.0,0.0,0,1,TOTAL_BLACKOUT,True,False,False,False
+scenario-003494,326.27,[4],0.0,0.0,TOTAL_BLACKOUT,True,0.0,0.0,0.0,0.0,0.0,0,1,TOTAL_BLACKOUT,True,False,False,False
+scenario-003558,271.62,[3],0.0,0.0,TOTAL_BLACKOUT,True,0.0,0.0,0.0,0.0,0.0,0,1,TOTAL_BLACKOUT,True,False,False,False
+scenario-003610,289.0,"[5, 7]",0.0,0.0,TOTAL_BLACKOUT,True,0.0,0.0,0.0,0.0,0.0,0,1,TOTAL_BLACKOUT,True,False,False,False
+scenario-003649,229.32,[14],0.0,0.0,TOTAL_BLACKOUT,True,0.0,0.0,0.0,0.0,0.0,0,1,TOTAL_BLACKOUT,True,False,False,False
+scenario-003651,260.78,[7],0.0,0.0,TOTAL_BLACKOUT,True,0.0,0.0,0.0,0.0,0.0,0,1,TOTAL_BLACKOUT,True,False,False,False
+scenario-003732,280.19,[12],0.0,0.0,TOTAL_BLACKOUT,True,0.0,0.0,0.0,0.0,0.0,0,1,TOTAL_BLACKOUT,True,False,False,False
+scenario-003750,306.81,"[8, 10]",0.0,0.0,TOTAL_BLACKOUT,True,0.0,0.0,0.0,0.0,0.0,0,1,TOTAL_BLACKOUT,True,False,False,False
+scenario-003775,238.38,[11],0.0,0.0,TOTAL_BLACKOUT,True,0.0,0.0,0.0,0.0,0.0,0,1,TOTAL_BLACKOUT,True,False,False,False
+scenario-003876,306.8,"[0, 2]",0.0,0.0,TOTAL_BLACKOUT,True,0.0,0.0,0.0,0.0,0.0,0,1,TOTAL_BLACKOUT,True,False,False,False
+scenario-003929,272.17,[13],0.0,0.0,TOTAL_BLACKOUT,True,0.0,0.0,0.0,0.0,0.0,0,1,TOTAL_BLACKOUT,True,False,False,False
+scenario-004023,319.5,[13],0.0,0.0,NON_CONVERGED,False,0.0,0.0,0.0,0.0,0.0,0,1,NON_CONVERGED,False,False,True,False
+scenario-004045,201.92,[1],0.0,0.0,TOTAL_BLACKOUT,True,0.0,0.0,0.0,0.0,0.0,0,1,TOTAL_BLACKOUT,True,False,False,False
+scenario-004064,201.71,"[0, 12]",201.71,100.0,STABLE,False,201.71,100.0,201.71,100.0,0.0,2,2,STABLE,False,True,False,False
+scenario-004133,380.68,[8],0.0,0.0,TOTAL_BLACKOUT,True,0.0,0.0,0.0,0.0,0.0,0,1,TOTAL_BLACKOUT,True,False,False,False
+scenario-004150,304.05,[11],0.0,0.0,TOTAL_BLACKOUT,True,0.0,0.0,0.0,0.0,0.0,0,1,TOTAL_BLACKOUT,True,False,False,False
+scenario-004295,374.99,[14],0.0,0.0,TOTAL_BLACKOUT,True,0.0,0.0,0.0,0.0,0.0,0,1,TOTAL_BLACKOUT,True,False,False,False
+scenario-004317,377.09,[14],0.0,0.0,TOTAL_BLACKOUT,True,0.0,0.0,0.0,0.0,0.0,0,1,TOTAL_BLACKOUT,True,False,False,False
+scenario-004371,205.62,[6],205.62,100.0,STABLE,False,205.62,100.0,205.62,100.0,0.0,1,1,STABLE,False,True,False,False
+scenario-004451,319.28,[12],0.0,0.0,TOTAL_BLACKOUT,True,0.0,0.0,0.0,0.0,0.0,0,1,TOTAL_BLACKOUT,True,False,False,False
+scenario-004487,316.13,"[7, 10]",286.03,90.48,STABLE,False,286.03,90.48,286.03,90.48,0.0,0,1,STABLE,False,True,False,False
+scenario-004494,220.08,[0],0.0,0.0,TOTAL_BLACKOUT,True,0.0,0.0,0.0,0.0,0.0,0,1,TOTAL_BLACKOUT,True,False,False,False
+scenario-004557,199.64,"[9, 13]",199.64,100.0,STABLE,False,199.64,100.0,199.64,100.0,0.0,2,2,STABLE,False,True,False,False
+scenario-004585,264.82,[4],0.0,0.0,TOTAL_BLACKOUT,True,0.0,0.0,0.0,0.0,0.0,0,1,TOTAL_BLACKOUT,True,False,False,False
+scenario-004622,231.89,"[6, 14]",0.0,0.0,TOTAL_BLACKOUT,True,0.0,0.0,0.0,0.0,0.0,0,1,TOTAL_BLACKOUT,True,False,False,False
+scenario-004700,386.06,[7],0.0,0.0,NON_CONVERGED,False,0.0,0.0,0.0,0.0,0.0,0,1,NON_CONVERGED,False,False,True,False
+scenario-004719,362.81,[5],0.0,0.0,TOTAL_BLACKOUT,True,0.0,0.0,0.0,0.0,0.0,0,1,TOTAL_BLACKOUT,True,False,False,False
+scenario-004783,214.55,[4],0.0,0.0,TOTAL_BLACKOUT,True,0.0,0.0,0.0,0.0,0.0,0,1,TOTAL_BLACKOUT,True,False,False,False
+scenario-004785,268.01,[4],0.0,0.0,TOTAL_BLACKOUT,True,0.0,0.0,0.0,0.0,0.0,0,1,TOTAL_BLACKOUT,True,False,False,False

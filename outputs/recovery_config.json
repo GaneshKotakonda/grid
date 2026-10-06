@@ -1,0 +1,40 @@
+{
+  "phase": "6",
+  "scenario_count": 100,
+  "seed": 42,
+  "recovery_config": {
+    "voltage_min_pu": 0.9,
+    "voltage_max_pu": 1.1,
+    "overload_threshold": 100.0,
+    "max_recovery_steps": 15,
+    "load_restore_fraction": 0.5
+  },
+  "summary": [
+    {
+      "method": "No Recovery",
+      "scenario_count": 100,
+      "average_served_load_mw": 29.49,
+      "average_load_served_percent": 12.26,
+      "average_mw_restored": 0.0,
+      "average_reconnected_lines": 0.0,
+      "average_recovery_steps": 0.0,
+      "stable_grid_rate": 13.0,
+      "total_blackout_rate": 74.0,
+      "non_converged_rate": 13.0,
+      "recovery_success_rate": 0.0
+    },
+    {
+      "method": "Greedy Recovery",
+      "scenario_count": 100,
+      "average_served_load_mw": 29.77,
+      "average_load_served_percent": 12.36,
+      "average_mw_restored": 0.28,
+      "average_reconnected_lines": 0.15,
+      "average_recovery_steps": 1.33,
+      "stable_grid_rate": 13.0,
+      "total_blackout_rate": 74.0,
+      "non_converged_rate": 13.0,
+      "recovery_success_rate": 4.0
+    }
+  ]
+}
