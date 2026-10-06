@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
-import { Layers, Info, ShieldAlert, CheckCircle, Zap } from 'lucide-react';
+import { Layers } from 'lucide-react';
+import PanelHeader from './ui/PanelHeader';
+import StatusBadge from './ui/StatusBadge';
 
 export default function TopologyGraph({
   gridData,
@@ -12,8 +14,9 @@ export default function TopologyGraph({
 
   if (!gridData || !gridData.buses) {
     return (
-      <div className="card" style={{ height: '520px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-        <p style={{ color: 'var(--text-muted)' }}>Loading IEEE-14 Topology...</p>
+      <div className="card topology-loading">
+        <span className="spinner" />
+        <p>Loading IEEE-14 topology...</p>
       </div>
     );
   }
@@ -33,72 +36,59 @@ export default function TopologyGraph({
     const isFailed = failedLines.includes(lineId) || initialOutages.includes(lineId);
 
     if (isReconnected) {
-      return { color: '#06b6d4', status: 'RECONNECTED', class: 'line-reconnected', width: 4 };
+      return { color: '#48d7ff', status: 'RECONNECTED', class: 'line-reconnected', width: 4 };
     }
     if (isFailed) {
-      return { color: '#64748b', status: 'FAILED', class: 'line-tripped', width: 2.5 };
+      return { color: '#63758d', status: 'FAILED', class: 'line-tripped', width: 2.5 };
     }
 
     const prob = gcnProbs[lineId] !== undefined ? gcnProbs[lineId] : 0.0;
     if (showGcnOverlay && prob >= 0.50) {
-      return { color: '#ef4444', status: 'PREDICTED_FAILURE', class: 'line-danger', width: 4.5, prob };
+      return { color: '#ff6269', status: 'PREDICTED_FAILURE', class: 'line-danger', width: 4.5, prob };
     }
     if (showGcnOverlay && prob >= 0.20) {
-      return { color: '#f59e0b', status: 'HIGH_RISK', class: 'line-warning', width: 3.5, prob };
+      return { color: '#f1b64a', status: 'HIGH_RISK', class: 'line-warning', width: 3.5, prob };
     }
-    return { color: '#10b981', status: 'SAFE', class: 'line-safe', width: 2.5, prob };
+    return { color: '#30d69a', status: 'SAFE', class: 'line-safe', width: 2.5, prob };
   };
 
   const busMap = {};
   buses.forEach((b) => { busMap[b.id] = b; });
 
   return (
-    <div className="card" style={{ display: 'flex', flexDirection: 'column', gap: '14px', position: 'relative' }}>
-      {/* Header with layer toggles */}
-      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '10px' }}>
-        <div>
-          <h2 style={{ fontSize: '17px', fontWeight: 700, margin: 0, color: '#f8fafc', display: 'flex', alignItems: 'center', gap: '8px' }}>
-            <Layers size={18} color="#06b6d4" />
-            Interactive IEEE 14-Bus Transmission Topology
-          </h2>
-          <p style={{ fontSize: '12px', color: 'var(--text-muted)', margin: '2px 0 0' }}>
-            Real-time physical grid status, GCN failure risk propagation, and reclosure tracking
-          </p>
-        </div>
-
-        <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-          <label style={{ display: 'flex', alignItems: 'center', gap: '6px', fontSize: '12px', color: '#cbd5e1', cursor: 'pointer' }}>
+    <div className="card topology-panel">
+      <PanelHeader
+        icon={Layers}
+        title="Interactive IEEE 14-Bus Transmission Topology"
+        subtitle="Real-time physical grid status, GCN failure risk propagation, and recovery reclosure."
+        badge={<StatusBadge tone="info">Live Topology</StatusBadge>}
+        as="h2"
+        actions={(
+          <>
+          <label className="layer-toggle">
             <input
               type="checkbox"
               checked={showGcnOverlay}
               onChange={(e) => setShowGcnOverlay(e.target.checked)}
-              style={{ accentColor: '#06b6d4' }}
             />
-            GCN Failure Risk Overlay
+            GCN Overlay
           </label>
-          <label style={{ display: 'flex', alignItems: 'center', gap: '6px', fontSize: '12px', color: '#cbd5e1', cursor: 'pointer' }}>
+          <label className="layer-toggle">
             <input
               type="checkbox"
               checked={showLabels}
               onChange={(e) => setShowLabels(e.target.checked)}
-              style={{ accentColor: '#06b6d4' }}
             />
             Line Labels
           </label>
-        </div>
-      </div>
+          </>
+        )}
+      />
 
-      {/* SVG Canvas */}
-      <div style={{
-        background: '#090d16',
-        borderRadius: 'var(--radius-md)',
-        border: '1px solid #1e293b',
-        position: 'relative',
-        overflow: 'hidden',
-      }}>
+      <div className="topology-canvas">
         <svg
           viewBox="0 0 760 520"
-          style={{ width: '100%', height: 'auto', maxHeight: '520px', display: 'block' }}
+          className="topology-canvas__svg"
         >
           <defs>
             <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
@@ -106,18 +96,18 @@ export default function TopologyGraph({
               <feComposite in="SourceGraphic" in2="blur" operator="over" />
             </filter>
             <linearGradient id="gridBg" x1="0%" y1="0%" x2="100%" y2="100%">
-              <stop offset="0%" stopColor="#0b101c" />
-              <stop offset="100%" stopColor="#080c15" />
+              <stop offset="0%" stopColor="#071421" />
+              <stop offset="100%" stopColor="#050b14" />
             </linearGradient>
           </defs>
 
           {/* Grid pattern background lines */}
           <rect width="760" height="520" fill="url(#gridBg)" />
           {Array.from({ length: 15 }).map((_, i) => (
-            <line key={`gx-${i}`} x1={i * 50} y1="0" x2={i * 50} y2="520" stroke="#111827" strokeWidth="0.5" />
+            <line key={`gx-${i}`} x1={i * 50} y1="0" x2={i * 50} y2="520" stroke="#173047" strokeWidth="0.45" opacity="0.55" />
           ))}
           {Array.from({ length: 11 }).map((_, i) => (
-            <line key={`gy-${i}`} x1="0" y1={i * 50} x2="760" y2={i * 50} stroke="#111827" strokeWidth="0.5" />
+            <line key={`gy-${i}`} x1="0" y1={i * 50} x2="760" y2={i * 50} stroke="#173047" strokeWidth="0.45" opacity="0.55" />
           ))}
 
           {/* Render Transformers */}
@@ -132,7 +122,7 @@ export default function TopologyGraph({
                   y1={b1.y}
                   x2={b2.x}
                   y2={b2.y}
-                  stroke="#475569"
+                  stroke="#63758d"
                   strokeWidth="2"
                   strokeDasharray="4,4"
                   opacity="0.8"
@@ -187,7 +177,7 @@ export default function TopologyGraph({
                       width="36"
                       height="20"
                       rx="4"
-                      fill="#0e1424"
+                      fill="#081321"
                       stroke={st.color}
                       strokeWidth="1"
                       opacity="0.95"
@@ -214,7 +204,7 @@ export default function TopologyGraph({
             const isSelected = selectedElement?.type === 'bus' && selectedElement?.id === b.id;
             const isSlack = b.type === 'slack';
             const isGen = b.type === 'generator';
-            const nodeFill = isSlack ? '#06b6d4' : isGen ? '#a855f7' : '#3b82f6';
+            const nodeFill = isSlack ? '#48d7ff' : isGen ? '#9a78ff' : '#5d91ff';
 
             return (
               <g
@@ -235,7 +225,7 @@ export default function TopologyGraph({
                 {/* Node body */}
                 <circle
                   r="10"
-                  fill="#0b0f19"
+                  fill="#07111f"
                   stroke={nodeFill}
                   strokeWidth="2.5"
                 />
@@ -267,21 +257,9 @@ export default function TopologyGraph({
 
         {/* Selected element mini drawer overlay */}
         {selectedElement && (
-          <div style={{
-            position: 'absolute',
-            bottom: '16px',
-            right: '16px',
-            background: 'rgba(14, 20, 36, 0.95)',
-            border: '1px solid #334155',
-            borderRadius: 'var(--radius-md)',
-            padding: '12px 16px',
-            boxShadow: '0 10px 25px rgba(0,0,0,0.6)',
-            maxWidth: '300px',
-            backdropFilter: 'blur(8px)',
-            zIndex: 10,
-          }}>
+          <div className="topology-drawer">
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '8px' }}>
-              <span style={{ fontSize: '12px', fontWeight: 700, color: '#38bdf8' }}>
+              <span style={{ fontSize: '12px', fontWeight: 700, color: '#48d7ff' }}>
                 {selectedElement.type === 'line' ? `Line ${selectedElement.id}` : `Bus ${selectedElement.id + 1}`}
               </span>
               <button
@@ -313,8 +291,7 @@ export default function TopologyGraph({
         )}
       </div>
 
-      {/* Legend row */}
-      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '20px', flexWrap: 'wrap', fontSize: '11px', color: '#94a3b8' }}>
+      <div className="topology-legend">
         <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
           <div style={{ width: '14px', height: '3px', background: '#10b981', borderRadius: '2px' }} />
           <span>Safe (&lt;20% Risk)</span>

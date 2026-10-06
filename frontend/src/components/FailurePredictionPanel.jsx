@@ -1,105 +1,72 @@
 import React from 'react';
-import { ShieldAlert, AlertTriangle, CheckCircle2, ChevronRight } from 'lucide-react';
+import { BrainCircuit } from 'lucide-react';
+import PanelHeader from './ui/PanelHeader';
+import StatusBadge from './ui/StatusBadge';
 
 export default function FailurePredictionPanel({ predictions, initialOutages = [] }) {
-  if (!predictions || predictions.length === 0) {
-    return (
-      <div className="card" style={{ height: '360px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-        <p style={{ color: 'var(--text-muted)', fontSize: '13px' }}>Run a simulation to generate GCN line failure probabilities.</p>
-      </div>
-    );
-  }
-
-  // Sort by probability descending
-  const sorted = [...predictions].sort((a, b) => b.probability - a.probability);
-
   const getRiskBadge = (prob, isInit) => {
-    if (isInit) {
-      return <span className="badge badge-neutral" style={{ fontSize: '10px' }}>OUTAGE TRIGGER</span>;
-    }
-    if (prob >= 0.50) {
-      return <span className="badge badge-danger" style={{ fontSize: '10px' }}>CRITICAL (&ge;50%)</span>;
-    }
-    if (prob >= 0.20) {
-      return <span className="badge badge-warning" style={{ fontSize: '10px' }}>HIGH (20-50%)</span>;
-    }
-    if (prob >= 0.05) {
-      return <span className="badge badge-info" style={{ fontSize: '10px' }}>MODERATE</span>;
-    }
-    return <span className="badge badge-safe" style={{ fontSize: '10px' }}>LOW RISK</span>;
+    if (isInit) return <StatusBadge tone="neutral">Outage Trigger · Tripped</StatusBadge>;
+    if (prob >= 0.50) return <StatusBadge tone="danger">Critical</StatusBadge>;
+    if (prob >= 0.20) return <StatusBadge tone="warning">High</StatusBadge>;
+    if (prob >= 0.05) return <StatusBadge tone="info">Moderate</StatusBadge>;
+    return <StatusBadge tone="safe">Low</StatusBadge>;
   };
 
   const getBarColor = (prob, isInit) => {
-    if (isInit) return '#64748b';
-    if (prob >= 0.50) return '#ef4444';
-    if (prob >= 0.20) return '#f59e0b';
-    if (prob >= 0.05) return '#06b6d4';
-    return '#10b981';
+    if (isInit) return '#63758d';
+    if (prob >= 0.50) return '#ff6269';
+    if (prob >= 0.20) return '#f1b64a';
+    if (prob >= 0.05) return '#48d7ff';
+    return '#30d69a';
   };
 
+  const sorted = predictions ? [...predictions].sort((a, b) => b.probability - a.probability) : [];
+
   return (
-    <div className="card" style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
-      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-        <h3 style={{ fontSize: '15px', fontWeight: 700, margin: 0, color: '#f8fafc', display: 'flex', alignItems: 'center', gap: '8px' }}>
-          <ShieldAlert size={16} color="#ef4444" />
-          Predictive GCN Failure Probabilities
-        </h3>
-        <span style={{ fontSize: '11px', color: '#94a3b8' }}>15 Transmission Lines</span>
-      </div>
-      <p style={{ fontSize: '12px', color: 'var(--text-muted)', margin: 0 }}>
-        Downstream line failure probabilities predicted by predictive_v2 GCN under AC contingency conditions.
-      </p>
+    <div className="card intelligence-panel forecast-panel">
+      <PanelHeader
+        icon={BrainCircuit}
+        title="Predictive GCN Failure Probabilities"
+        subtitle="Predictive v2 GCN · downstream secondary propagation horizon"
+        badge={<StatusBadge tone="purple">{sorted.length || 15} Lines</StatusBadge>}
+      />
 
-      {/* Line list */}
-      <div style={{ display: 'flex', flexDirection: 'column', gap: '8px', maxHeight: '380px', overflowY: 'auto', paddingRight: '4px' }}>
-        {sorted.map((item, idx) => {
-          const isInitial = item.is_initial_outage || initialOutages.includes(item.line_index);
-          const pct = (item.probability * 100).toFixed(1);
-          const barColor = getBarColor(item.probability, isInitial);
+      {sorted.length === 0 ? (
+        <div className="panel-empty">
+          <BrainCircuit size={22} />
+          <strong>Awaiting GCN forecast</strong>
+          <span>Run a scenario to generate all 15 line failure probabilities.</span>
+        </div>
+      ) : (
+        <div className="forecast-list">
+          {sorted.map((item, idx) => {
+            const isInitial = item.is_initial_outage || initialOutages.includes(item.line_index);
+            const pct = (item.probability * 100).toFixed(1);
+            const barColor = getBarColor(item.probability, isInitial);
 
-          return (
-            <div
-              key={item.line_index}
-              style={{
-                display: 'flex',
-                flexDirection: 'column',
-                gap: '4px',
-                padding: '8px 10px',
-                background: '#0e1424',
-                border: '1px solid #1e293b',
-                borderRadius: 'var(--radius-sm)',
-              }}
-            >
-              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-                  <span className="mono" style={{ fontSize: '11px', fontWeight: 700, color: '#38bdf8' }}>
-                    #{idx + 1}
-                  </span>
-                  <span style={{ fontSize: '12px', fontWeight: 600, color: '#f1f5f9' }}>
-                    Line {item.line_index} (Bus {item.from_bus + 1} ↔ Bus {item.to_bus + 1})
-                  </span>
+            return (
+              <article className={`forecast-row ${isInitial ? 'is-outage' : ''}`} key={item.line_index}>
+                <div className="forecast-row__main">
+                  <span className="forecast-row__rank mono">#{idx + 1}</span>
+                  <div className="forecast-row__line">
+                    <strong>Line {item.line_index}</strong>
+                    <span>Bus {item.from_bus + 1} ↔ Bus {item.to_bus + 1}</span>
+                  </div>
+                  <div className="forecast-row__risk">
+                    {getRiskBadge(item.probability, isInitial)}
+                    <strong className="mono" style={{ color: barColor }}>
+                      {isInitial ? 'TRIPPED' : `${pct}%`}
+                    </strong>
+                  </div>
                 </div>
-                <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-                  {getRiskBadge(item.probability, isInitial)}
-                  <span className="mono" style={{ fontSize: '12px', fontWeight: 800, color: barColor, minWidth: '46px', textAlign: 'right' }}>
-                    {isInitial ? 'TRIPPED' : `${pct}%`}
-                  </span>
+                <div className="forecast-row__bar">
+                  <div style={{ width: isInitial ? '100%' : `${pct}%`, background: barColor }} />
                 </div>
-              </div>
-
-              {/* Progress visual bar */}
-              <div style={{ width: '100%', height: '4px', background: '#1e293b', borderRadius: '2px', overflow: 'hidden' }}>
-                <div style={{
-                  width: isInitial ? '100%' : `${pct}%`,
-                  height: '100%',
-                  background: barColor,
-                  transition: 'width 0.3s ease',
-                }} />
-              </div>
-            </div>
-          );
-        })}
-      </div>
+              </article>
+            );
+          })}
+        </div>
+      )}
     </div>
   );
 }

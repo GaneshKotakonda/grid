@@ -1,92 +1,54 @@
 import React from 'react';
-import { Shield, Zap, ArrowDown, Activity, CheckCircle2 } from 'lucide-react';
+import { ShieldCheck } from 'lucide-react';
+import PanelHeader from './ui/PanelHeader';
+import StatusBadge from './ui/StatusBadge';
 
 export default function MitigationPanel({ mitigationActions, auditLog, totalLoadShedMw }) {
-  const mitigationSteps = auditLog?.filter((l) => l.stage && l.stage.includes('MITIGATION_STEP')) || [];
+  const mitigationSteps = auditLog?.filter((item) => item.stage && item.stage.includes('MITIGATION_STEP')) || [];
 
   return (
-    <div className="card" style={{ display: 'flex', flexDirection: 'column', gap: '14px' }}>
-      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-        <h3 style={{ fontSize: '15px', fontWeight: 700, margin: 0, color: '#f8fafc', display: 'flex', alignItems: 'center', gap: '8px' }}>
-          <Shield size={16} color="#3b82f6" />
-          PPO Preventive Mitigation
-        </h3>
-        <span className="badge badge-info" style={{ fontSize: '10px' }}>
-          Predictive Policy
-        </span>
-      </div>
-      <p style={{ fontSize: '12px', color: 'var(--text-muted)', margin: 0 }}>
-        Reinforcement-learning agent takes actions guided by downstream failure probabilities to halt cascade propagation.
-      </p>
+    <div className="card intelligence-panel mitigation-panel">
+      <PanelHeader
+        icon={ShieldCheck}
+        title="PPO Preventive Mitigation"
+        subtitle="Predictive policy actions selected before downstream propagation."
+        badge={<StatusBadge tone="safe">Predictive Policy</StatusBadge>}
+      />
 
-      {/* Summary stats */}
-      <div style={{
-        display: 'grid',
-        gridTemplateColumns: '1fr 1fr',
-        gap: '12px',
-        padding: '12px',
-        background: '#0e1424',
-        borderRadius: 'var(--radius-sm)',
-        border: '1px solid #1e293b',
-      }}>
+      <div className="panel-stat-grid panel-stat-grid--two">
         <div>
-          <span style={{ fontSize: '11px', color: '#94a3b8' }}>Total Load Shed</span>
-          <div className="mono" style={{ fontSize: '18px', fontWeight: 700, color: '#f59e0b' }}>
-            {Number(totalLoadShedMw || 0).toFixed(2)} MW
-          </div>
+          <span>Total Load Shed</span>
+          <strong className="mono warning-text">{Number(totalLoadShedMw || 0).toFixed(2)} MW</strong>
         </div>
         <div>
-          <span style={{ fontSize: '11px', color: '#94a3b8' }}>Mitigation Steps</span>
-          <div className="mono" style={{ fontSize: '18px', fontWeight: 700, color: '#38bdf8' }}>
-            {mitigationSteps.length}
-          </div>
+          <span>Mitigation Steps</span>
+          <strong className="mono info-text">{mitigationSteps.length}</strong>
         </div>
       </div>
 
-      {/* Steps List */}
-      <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
-        <span style={{ fontSize: '11px', fontWeight: 700, color: '#94a3b8', textTransform: 'uppercase' }}>
-          Action Execution Sequence:
-        </span>
-        {mitigationSteps.length === 0 ? (
-          <div style={{ padding: '12px', background: '#0e1424', borderRadius: 'var(--radius-sm)', fontSize: '12px', color: '#94a3b8', textAlign: 'center' }}>
-            No mitigation actions triggered yet.
-          </div>
-        ) : (
-          mitigationSteps.map((step, idx) => (
-            <div
-              key={idx}
-              style={{
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'space-between',
-                padding: '8px 12px',
-                background: '#0e1424',
-                border: '1px solid #1e293b',
-                borderRadius: 'var(--radius-sm)',
-              }}
-            >
-              <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
-                <span className="mono" style={{ fontSize: '11px', color: '#64748b' }}>
-                  #{idx + 1}
-                </span>
-                <span className="mono" style={{ fontSize: '12px', fontWeight: 600, color: '#f8fafc' }}>
-                  {step.action}
-                </span>
+      <div className="action-block">
+        <div className="action-block__label">
+          <span>Action Execution Sequence</span>
+          {mitigationActions?.length > 0 && <span>{mitigationActions.length} policy outputs</span>}
+        </div>
+        <div className="action-list">
+          {mitigationSteps.length === 0 ? (
+            <div className="panel-empty panel-empty--compact">No mitigation actions triggered yet.</div>
+          ) : (
+            mitigationSteps.map((step, idx) => (
+              <div className="action-row" key={`${step.stage}-${idx}`}>
+                <div className="action-row__name">
+                  <span className="mono">{String(idx + 1).padStart(2, '0')}</span>
+                  <strong className="mono">{step.action}</strong>
+                </div>
+                <div className="action-row__meta">
+                  {step.load_shed_mw > 0 && <StatusBadge tone="warning">−{step.load_shed_mw.toFixed(1)} MW</StatusBadge>}
+                  <StatusBadge tone="safe">Reward {step.reward}</StatusBadge>
+                </div>
               </div>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-                {step.load_shed_mw > 0 && (
-                  <span className="badge badge-warning" style={{ fontSize: '10px' }}>
-                    -{step.load_shed_mw.toFixed(1)} MW
-                  </span>
-                )}
-                <span className="badge badge-safe" style={{ fontSize: '10px' }}>
-                  Reward: {step.reward}
-                </span>
-              </div>
-            </div>
-          ))
-        )}
+            ))
+          )}
+        </div>
       </div>
     </div>
   );

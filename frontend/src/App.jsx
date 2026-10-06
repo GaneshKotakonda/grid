@@ -8,6 +8,8 @@ import MitigationPanel from './components/MitigationPanel';
 import CascadeTimeline from './components/CascadeTimeline';
 import RecoveryPanel from './components/RecoveryPanel';
 import ComparisonPanel from './components/ComparisonPanel';
+import AppShell from './components/ui/AppShell';
+import OperationalHero from './components/ui/OperationalHero';
 
 export default function App() {
   const [isBackendHealthy, setIsBackendHealthy] = useState(false);
@@ -107,14 +109,17 @@ export default function App() {
   };
 
   return (
-    <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
-      <Navbar
-        isBackendHealthy={isBackendHealthy}
-        onSelectPreset={handleSelectPreset}
-      />
+    <AppShell
+      header={(
+        <Navbar
+          isBackendHealthy={isBackendHealthy}
+          onSelectPreset={handleSelectPreset}
+        />
+      )}
+    >
+      <div id="operations" className="dashboard-container">
+        <OperationalHero benchmarkData={benchmarkData} />
 
-      <main className="dashboard-container">
-        {/* Simulation Controls */}
         <ControlBar
           initialOutage={initialOutage}
           setInitialOutage={setInitialOutage}
@@ -129,18 +134,10 @@ export default function App() {
           simStage={simStage}
         />
 
-        {/* Real-time Metrics Overview Cards */}
-        {simResult && <MetricsOverview simResult={simResult} />}
+        <MetricsOverview simResult={simResult} />
 
-        {/* Central Dashboard Layout */}
-        <div style={{
-          display: 'grid',
-          gridTemplateColumns: 'minmax(0, 1.35fr) minmax(0, 1fr)',
-          gap: '24px',
-          marginBottom: '24px',
-        }}>
-          {/* Left Column: Topology and Timeline */}
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '24px' }}>
+        <div className="operations-workspace">
+          <div className="operations-workspace__topology">
             <TopologyGraph
               gridData={gridData}
               simResult={simResult}
@@ -148,51 +145,49 @@ export default function App() {
               setSelectedElement={setSelectedElement}
             />
 
-            <CascadeTimeline
-              auditLog={simResult?.audit_log}
-              finalStatus={simResult?.final_system_status}
-            />
           </div>
 
-          {/* Right Column: AI Panels */}
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '24px' }}>
-            <FailurePredictionPanel
-              predictions={simResult?.line_predictions}
-              initialOutages={simResult?.initial_grid_state?.initial_outages}
-            />
+          <div className="operations-workspace__intelligence">
+            <section id="prediction" className="anchor-section">
+              <FailurePredictionPanel
+                predictions={simResult?.line_predictions}
+                initialOutages={simResult?.initial_grid_state?.initial_outages}
+              />
+            </section>
 
-            <MitigationPanel
-              mitigationActions={simResult?.mitigation_actions}
-              auditLog={simResult?.audit_log}
-              totalLoadShedMw={simResult?.total_load_shed_mw}
-            />
+            <section id="mitigation" className="anchor-section">
+              <MitigationPanel
+                mitigationActions={simResult?.mitigation_actions}
+                auditLog={simResult?.audit_log}
+                totalLoadShedMw={simResult?.total_load_shed_mw}
+              />
+            </section>
 
-            <RecoveryPanel
-              reconnectedLines={simResult?.reconnected_lines}
-              customerLoadRestoredMw={simResult?.customer_load_restored_mw}
-              finalLoadServed={simResult?.final_load_served}
-              finalLoadServedPct={simResult?.final_load_served_percent}
-              postCascadeServedMw={simResult?.load_served_after_mitigation}
-              recoveryActions={simResult?.recovery_actions}
-              finalStatus={simResult?.final_system_status}
-            />
+            <section id="recovery" className="anchor-section">
+              <RecoveryPanel
+                reconnectedLines={simResult?.reconnected_lines}
+                customerLoadRestoredMw={simResult?.customer_load_restored_mw}
+                finalLoadServed={simResult?.final_load_served}
+                finalLoadServedPct={simResult?.final_load_served_percent}
+                postCascadeServedMw={simResult?.load_served_after_mitigation}
+                recoveryActions={simResult?.recovery_actions}
+                finalStatus={simResult?.final_system_status}
+              />
+            </section>
           </div>
         </div>
 
-        {/* Empirical Benchmarks & Phase 5.5 Comparison */}
-        <ComparisonPanel benchmarkData={benchmarkData} />
-      </main>
+        <section className="timeline-section">
+          <CascadeTimeline
+            auditLog={simResult?.audit_log}
+            finalStatus={simResult?.final_system_status}
+          />
+        </section>
 
-      <footer style={{
-        marginTop: 'auto',
-        padding: '24px',
-        textAlign: 'center',
-        borderTop: '1px solid var(--border-subtle)',
-        fontSize: '12px',
-        color: 'var(--text-muted)',
-      }}>
-        GridResilience AI: Physics-Informed GNN Failure Forecasting & Autonomous Reinforcement Learning Mitigation for IEEE-14 Power Networks.
-      </footer>
-    </div>
+        <section id="benchmarks" className="anchor-section">
+          <ComparisonPanel benchmarkData={benchmarkData} />
+        </section>
+      </div>
+    </AppShell>
   );
 }
