@@ -3,3 +3,7 @@ pandas>=2.3,<3
 numpy>=1.26,<2.5
 pytest>=9,<10
 torch>=2.2,<3
+gymnasium>=1.0,<2
+stable-baselines3>=2.0,<3
+fastapi>=0.110
+uvicorn>=0.28
