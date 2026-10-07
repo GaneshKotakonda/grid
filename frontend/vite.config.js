@@ -8,7 +8,7 @@ export default defineConfig({
     port: 5173,
     proxy: {
       '/health': 'http://127.0.0.1:8000',
-      '/grid': 'http://127.0.0.1:8000',
+      '^/grid(?:\\?|$)': 'http://127.0.0.1:8000',
       '/simulate': 'http://127.0.0.1:8000',
       '/results': 'http://127.0.0.1:8000',
       '/benchmarks': {
