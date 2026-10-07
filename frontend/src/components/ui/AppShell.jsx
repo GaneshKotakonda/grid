@@ -1,19 +1,6 @@
 import React from 'react';
-import Sidebar from './Sidebar';
-
-export default function AppShell({ header, children }) {
-  return (
-    <div className="app-shell">
-      <Sidebar />
-      <div className="app-shell__body">
-        {header}
-        <main className="app-shell__content">{children}</main>
-        <footer className="app-footer">
-          <span>GridResilience</span>
-          <span>Predictive GCN · PPO Mitigation · Safety-Constrained Recovery</span>
-          <span>IEEE-14 Research Operations</span>
-        </footer>
-      </div>
-    </div>
-  );
+import SiteHeader from '../site/SiteHeader';
+import SiteFooter from '../site/SiteFooter';
+export default function AppShell({ isBackendHealthy, children }) {
+  return <div className="app-shell"><SiteHeader isBackendHealthy={isBackendHealthy} /><main id="main-content" className="site-content" tabIndex={-1}>{children}</main><SiteFooter /></div>;
 }

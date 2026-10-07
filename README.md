@@ -88,6 +88,25 @@ Open **[http://localhost:8000](http://localhost:8000)** in your browser.
 
 ---
 
+## Website Pages
+
+The homepage introduces the research platform. Each operational feature has its own focused page:
+
+| Page | URL |
+| --- | --- |
+| Project homepage | `/` |
+| Scenario configuration and KPI summary | `/operations` |
+| Interactive IEEE-14 network | `/topology` |
+| All 15 GCN line forecasts | `/prediction` |
+| PPO preventive action trace | `/mitigation` |
+| Safety-constrained restoration | `/recovery` |
+| Incident progression | `/timeline` |
+| Benchmark evidence and Phase 6 audit | `/benchmarks` |
+
+The shared navigation supports browser back and forward. Scenario inputs and results remain available while navigating; a full browser reload resets in-memory simulation state. The theme button switches between light and dark modes and remembers your preference locally.
+
+Direct page loads work in Vite and unified FastAPI mode. `/benchmarks` serves the website to HTML navigation requests and retains the original JSON response for API clients. `frontend/vercel.json` supplies frontend route rewrites for a static Vercel deployment; API hosting must still be configured separately.
+
 ## API Endpoints
 
 | Endpoint | Method | Description |
@@ -101,6 +120,14 @@ Open **[http://localhost:8000](http://localhost:8000)** in your browser.
 ---
 
 ## Testing
+
+Frontend navigation and theme checks:
+```bash
+cd frontend
+npm test
+npm run lint
+npm run build
+```
 
 Run the full automated test suite (97 tests covering all 7 phases):
 ```bash

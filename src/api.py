@@ -17,7 +17,8 @@ import sys
 from typing import Any
 import uuid
 
-from fastapi import FastAPI, HTTPException, Query
+from fastapi import FastAPI, HTTPException, Query, Request
+from fastapi.responses import FileResponse
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel, Field
@@ -303,5 +304,26 @@ def get_benchmarks() -> dict[str, Any]:
 
 # Mount frontend static distribution if built
 frontend_dist = PROJECT_ROOT / "frontend" / "dist"
+
+# Serve website documents without changing the existing JSON endpoint contracts.
+FRONTEND_PAGE_PATHS = {"/operations", "/topology", "/prediction", "/mitigation", "/recovery", "/timeline", "/benchmarks"}
+
+
+@app.middleware("http")
+async def serve_frontend_document(request: Request, call_next):
+    index_file = frontend_dist / "index.html"
+    if (
+        request.method in {"GET", "HEAD"}
+        and request.url.path.rstrip("/") in FRONTEND_PAGE_PATHS
+        and "text/html" in request.headers.get("accept", "")
+        and index_file.is_file()
+    ):
+        return FileResponse(index_file, headers={"Vary": "Accept"})
+    response = await call_next(request)
+    if request.url.path.rstrip("/") in FRONTEND_PAGE_PATHS:
+        response.headers.add_vary_header("Accept")
+    return response
+
+
 if frontend_dist.exists():
     app.mount("/", StaticFiles(directory=str(frontend_dist), html=True), name="frontend")

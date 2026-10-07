@@ -1,15 +1,14 @@
 import React, { useState, useEffect } from 'react';
-import Navbar from './components/Navbar';
-import ControlBar from './components/ControlBar';
-import TopologyGraph from './components/TopologyGraph';
-import MetricsOverview from './components/MetricsOverview';
-import FailurePredictionPanel from './components/FailurePredictionPanel';
-import MitigationPanel from './components/MitigationPanel';
-import CascadeTimeline from './components/CascadeTimeline';
-import RecoveryPanel from './components/RecoveryPanel';
-import ComparisonPanel from './components/ComparisonPanel';
+import { Routes, Route, Navigate } from 'react-router-dom';
 import AppShell from './components/ui/AppShell';
-import OperationalHero from './components/ui/OperationalHero';
+import HomePage from './pages/HomePage';
+import OperationsPage from './pages/OperationsPage';
+import TopologyPage from './pages/TopologyPage';
+import PredictionPage from './pages/PredictionPage';
+import MitigationPage from './pages/MitigationPage';
+import RecoveryPage from './pages/RecoveryPage';
+import TimelinePage from './pages/TimelinePage';
+import BenchmarksPage from './pages/BenchmarksPage';
 
 export default function App() {
   const [isBackendHealthy, setIsBackendHealthy] = useState(false);
@@ -109,85 +108,25 @@ export default function App() {
   };
 
   return (
-    <AppShell
-      header={(
-        <Navbar
-          isBackendHealthy={isBackendHealthy}
-          onSelectPreset={handleSelectPreset}
-        />
-      )}
-    >
-      <div id="operations" className="dashboard-container">
-        <OperationalHero benchmarkData={benchmarkData} />
-
-        <ControlBar
-          initialOutage={initialOutage}
-          setInitialOutage={setInitialOutage}
-          loadScale={loadScale}
-          setLoadScale={setLoadScale}
-          capacityScale={capacityScale}
-          setCapacityScale={setCapacityScale}
-          seed={seed}
-          setSeed={setSeed}
-          onRunSimulation={handleRunSimulation}
-          isLoading={isLoading}
-          simStage={simStage}
-        />
-
-        <MetricsOverview simResult={simResult} />
-
-        <div className="operations-workspace">
-          <div className="operations-workspace__topology">
-            <TopologyGraph
-              gridData={gridData}
-              simResult={simResult}
-              selectedElement={selectedElement}
-              setSelectedElement={setSelectedElement}
-            />
-
-          </div>
-
-          <div className="operations-workspace__intelligence">
-            <section id="prediction" className="anchor-section">
-              <FailurePredictionPanel
-                predictions={simResult?.line_predictions}
-                initialOutages={simResult?.initial_grid_state?.initial_outages}
-              />
-            </section>
-
-            <section id="mitigation" className="anchor-section">
-              <MitigationPanel
-                mitigationActions={simResult?.mitigation_actions}
-                auditLog={simResult?.audit_log}
-                totalLoadShedMw={simResult?.total_load_shed_mw}
-              />
-            </section>
-
-            <section id="recovery" className="anchor-section">
-              <RecoveryPanel
-                reconnectedLines={simResult?.reconnected_lines}
-                customerLoadRestoredMw={simResult?.customer_load_restored_mw}
-                finalLoadServed={simResult?.final_load_served}
-                finalLoadServedPct={simResult?.final_load_served_percent}
-                postCascadeServedMw={simResult?.load_served_after_mitigation}
-                recoveryActions={simResult?.recovery_actions}
-                finalStatus={simResult?.final_system_status}
-              />
-            </section>
-          </div>
-        </div>
-
-        <section className="timeline-section">
-          <CascadeTimeline
-            auditLog={simResult?.audit_log}
-            finalStatus={simResult?.final_system_status}
-          />
-        </section>
-
-        <section id="benchmarks" className="anchor-section">
-          <ComparisonPanel benchmarkData={benchmarkData} />
-        </section>
-      </div>
+    <AppShell isBackendHealthy={isBackendHealthy}>
+      <Routes>
+        <Route path="/" element={<HomePage benchmarkData={benchmarkData} />} />
+        <Route path="/operations" element={<OperationsPage
+          onSelectPreset={handleSelectPreset} simResult={simResult}
+          initialOutage={initialOutage} setInitialOutage={setInitialOutage}
+          loadScale={loadScale} setLoadScale={setLoadScale}
+          capacityScale={capacityScale} setCapacityScale={setCapacityScale}
+          seed={seed} setSeed={setSeed} onRunSimulation={handleRunSimulation}
+          isLoading={isLoading} simStage={simStage}
+        />} />
+        <Route path="/topology" element={<TopologyPage gridData={gridData} simResult={simResult} selectedElement={selectedElement} setSelectedElement={setSelectedElement} />} />
+        <Route path="/prediction" element={<PredictionPage predictions={simResult?.line_predictions} initialOutages={simResult?.initial_grid_state?.initial_outages} />} />
+        <Route path="/mitigation" element={<MitigationPage mitigationActions={simResult?.mitigation_actions} auditLog={simResult?.audit_log} totalLoadShedMw={simResult?.total_load_shed_mw} />} />
+        <Route path="/recovery" element={<RecoveryPage reconnectedLines={simResult?.reconnected_lines} customerLoadRestoredMw={simResult?.customer_load_restored_mw} finalLoadServed={simResult?.final_load_served} finalLoadServedPct={simResult?.final_load_served_percent} postCascadeServedMw={simResult?.load_served_after_mitigation} recoveryActions={simResult?.recovery_actions} finalStatus={simResult?.final_system_status} />} />
+        <Route path="/timeline" element={<TimelinePage auditLog={simResult?.audit_log} finalStatus={simResult?.final_system_status} />} />
+        <Route path="/benchmarks" element={<BenchmarksPage benchmarkData={benchmarkData} />} />
+        <Route path="*" element={<Navigate to="/" replace />} />
+      </Routes>
     </AppShell>
   );
 }

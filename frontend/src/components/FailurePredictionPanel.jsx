@@ -13,11 +13,11 @@ export default function FailurePredictionPanel({ predictions, initialOutages = [
   };
 
   const getBarColor = (prob, isInit) => {
-    if (isInit) return '#63758d';
-    if (prob >= 0.50) return '#ff6269';
-    if (prob >= 0.20) return '#f1b64a';
-    if (prob >= 0.05) return '#48d7ff';
-    return '#30d69a';
+    if (isInit) return 'var(--text-muted)';
+    if (prob >= 0.50) return 'var(--color-danger)';
+    if (prob >= 0.20) return 'var(--color-warning)';
+    if (prob >= 0.05) return 'var(--color-info)';
+    return 'var(--color-safe)';
   };
 
   const sorted = predictions ? [...predictions].sort((a, b) => b.probability - a.probability) : [];

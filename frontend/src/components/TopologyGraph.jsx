@@ -36,20 +36,20 @@ export default function TopologyGraph({
     const isFailed = failedLines.includes(lineId) || initialOutages.includes(lineId);
 
     if (isReconnected) {
-      return { color: '#48d7ff', status: 'RECONNECTED', class: 'line-reconnected', width: 4 };
+      return { color: 'var(--color-info)', status: 'RECONNECTED', class: 'line-reconnected', width: 4 };
     }
     if (isFailed) {
-      return { color: '#63758d', status: 'FAILED', class: 'line-tripped', width: 2.5 };
+      return { color: 'var(--text-muted)', status: 'FAILED', class: 'line-tripped', width: 2.5 };
     }
 
     const prob = gcnProbs[lineId] !== undefined ? gcnProbs[lineId] : 0.0;
     if (showGcnOverlay && prob >= 0.50) {
-      return { color: '#ff6269', status: 'PREDICTED_FAILURE', class: 'line-danger', width: 4.5, prob };
+      return { color: 'var(--color-danger)', status: 'PREDICTED_FAILURE', class: 'line-danger', width: 4.5, prob };
     }
     if (showGcnOverlay && prob >= 0.20) {
-      return { color: '#f1b64a', status: 'HIGH_RISK', class: 'line-warning', width: 3.5, prob };
+      return { color: 'var(--color-warning)', status: 'HIGH_RISK', class: 'line-warning', width: 3.5, prob };
     }
-    return { color: '#30d69a', status: 'SAFE', class: 'line-safe', width: 2.5, prob };
+    return { color: 'var(--color-safe)', status: 'SAFE', class: 'line-safe', width: 2.5, prob };
   };
 
   const busMap = {};
@@ -96,18 +96,18 @@ export default function TopologyGraph({
               <feComposite in="SourceGraphic" in2="blur" operator="over" />
             </filter>
             <linearGradient id="gridBg" x1="0%" y1="0%" x2="100%" y2="100%">
-              <stop offset="0%" stopColor="#071421" />
-              <stop offset="100%" stopColor="#050b14" />
+              <stop offset="0%" stopColor="var(--topology-start)" />
+              <stop offset="100%" stopColor="var(--topology-end)" />
             </linearGradient>
           </defs>
 
           {/* Grid pattern background lines */}
           <rect width="760" height="520" fill="url(#gridBg)" />
           {Array.from({ length: 15 }).map((_, i) => (
-            <line key={`gx-${i}`} x1={i * 50} y1="0" x2={i * 50} y2="520" stroke="#173047" strokeWidth="0.45" opacity="0.55" />
+            <line key={`gx-${i}`} x1={i * 50} y1="0" x2={i * 50} y2="520" stroke="var(--topology-grid)" strokeWidth="0.45" opacity="0.55" />
           ))}
           {Array.from({ length: 11 }).map((_, i) => (
-            <line key={`gy-${i}`} x1="0" y1={i * 50} x2="760" y2={i * 50} stroke="#173047" strokeWidth="0.45" opacity="0.55" />
+            <line key={`gy-${i}`} x1="0" y1={i * 50} x2="760" y2={i * 50} stroke="var(--topology-grid)" strokeWidth="0.45" opacity="0.55" />
           ))}
 
           {/* Render Transformers */}
@@ -122,7 +122,7 @@ export default function TopologyGraph({
                   y1={b1.y}
                   x2={b2.x}
                   y2={b2.y}
-                  stroke="#63758d"
+                  stroke="var(--text-muted)"
                   strokeWidth="2"
                   strokeDasharray="4,4"
                   opacity="0.8"
@@ -177,7 +177,7 @@ export default function TopologyGraph({
                       width="36"
                       height="20"
                       rx="4"
-                      fill="#081321"
+                      fill="var(--bg-panel)"
                       stroke={st.color}
                       strokeWidth="1"
                       opacity="0.95"
@@ -186,7 +186,7 @@ export default function TopologyGraph({
                       x="0"
                       y="4"
                       textAnchor="middle"
-                      fill="#f8fafc"
+                      fill="var(--text-primary)"
                       fontSize="9"
                       fontWeight="700"
                       fontFamily="JetBrains Mono"
@@ -204,7 +204,7 @@ export default function TopologyGraph({
             const isSelected = selectedElement?.type === 'bus' && selectedElement?.id === b.id;
             const isSlack = b.type === 'slack';
             const isGen = b.type === 'generator';
-            const nodeFill = isSlack ? '#48d7ff' : isGen ? '#9a78ff' : '#5d91ff';
+            const nodeFill = isSlack ? 'var(--color-info)' : isGen ? 'var(--color-purple)' : 'var(--color-info)';
 
             return (
               <g
@@ -225,7 +225,7 @@ export default function TopologyGraph({
                 {/* Node body */}
                 <circle
                   r="10"
-                  fill="#07111f"
+                  fill="var(--bg-panel)"
                   stroke={nodeFill}
                   strokeWidth="2.5"
                 />
@@ -233,7 +233,7 @@ export default function TopologyGraph({
                 <text
                   textAnchor="middle"
                   dy="3.5"
-                  fill="#ffffff"
+                  fill="var(--text-primary)"
                   fontSize="9.5"
                   fontWeight="800"
                   fontFamily="JetBrains Mono"
@@ -244,7 +244,7 @@ export default function TopologyGraph({
                 <text
                   textAnchor="middle"
                   y="24"
-                  fill="#94a3b8"
+                  fill="var(--text-muted)"
                   fontSize="9"
                   fontWeight="600"
                 >
@@ -259,18 +259,18 @@ export default function TopologyGraph({
         {selectedElement && (
           <div className="topology-drawer">
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '8px' }}>
-              <span style={{ fontSize: '12px', fontWeight: 700, color: '#48d7ff' }}>
+              <span style={{ fontSize: '12px', fontWeight: 700, color: 'var(--color-info)' }}>
                 {selectedElement.type === 'line' ? `Line ${selectedElement.id}` : `Bus ${selectedElement.id + 1}`}
               </span>
               <button
                 onClick={() => setSelectedElement(null)}
-                style={{ background: 'transparent', border: 'none', color: '#94a3b8', cursor: 'pointer', fontSize: '14px' }}
+                style={{ background: 'transparent', border: 'none', color: 'var(--text-muted)', cursor: 'pointer', fontSize: '14px' }}
               >
                 ✕
               </button>
             </div>
             {selectedElement.type === 'line' && (
-              <div style={{ fontSize: '11px', color: '#cbd5e1', display: 'flex', flexDirection: 'column', gap: '4px' }}>
+              <div style={{ fontSize: '11px', color: 'var(--text-secondary)', display: 'flex', flexDirection: 'column', gap: '4px' }}>
                 <div>Connection: Bus {selectedElement.data.from_bus + 1} ↔ Bus {selectedElement.data.to_bus + 1}</div>
                 <div>Status: <span style={{ color: selectedElement.status?.color, fontWeight: 700 }}>{selectedElement.status?.status}</span></div>
                 {selectedElement.status?.prob !== undefined && (
@@ -280,7 +280,7 @@ export default function TopologyGraph({
               </div>
             )}
             {selectedElement.type === 'bus' && (
-              <div style={{ fontSize: '11px', color: '#cbd5e1', display: 'flex', flexDirection: 'column', gap: '4px' }}>
+              <div style={{ fontSize: '11px', color: 'var(--text-secondary)', display: 'flex', flexDirection: 'column', gap: '4px' }}>
                 <div>Name: {selectedElement.data.name} ({selectedElement.data.type})</div>
                 <div>Base Voltage: {selectedElement.data.vn_kv} kV</div>
                 <div>Load Active: {selectedElement.data.load_mw} MW</div>
@@ -293,27 +293,27 @@ export default function TopologyGraph({
 
       <div className="topology-legend">
         <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
-          <div style={{ width: '14px', height: '3px', background: '#10b981', borderRadius: '2px' }} />
+          <div style={{ width: '14px', height: '3px', background: 'var(--color-safe)', borderRadius: '2px' }} />
           <span>Safe (&lt;20% Risk)</span>
         </div>
         <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
-          <div style={{ width: '14px', height: '4px', background: '#f59e0b', borderRadius: '2px' }} />
+          <div style={{ width: '14px', height: '4px', background: 'var(--color-warning)', borderRadius: '2px' }} />
           <span>High Risk (20-50%)</span>
         </div>
         <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
-          <div style={{ width: '14px', height: '4px', background: '#ef4444', borderRadius: '2px' }} />
+          <div style={{ width: '14px', height: '4px', background: 'var(--color-danger)', borderRadius: '2px' }} />
           <span>Predicted Failure (&ge;50%)</span>
         </div>
         <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
-          <div style={{ width: '14px', height: '3px', background: '#64748b', borderStyle: 'dashed' }} />
+          <div style={{ width: '14px', height: '3px', background: 'var(--text-muted)', borderStyle: 'dashed' }} />
           <span>Tripped / Outage</span>
         </div>
         <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
-          <div style={{ width: '14px', height: '4px', background: '#06b6d4', borderRadius: '2px' }} />
+          <div style={{ width: '14px', height: '4px', background: 'var(--color-info)', borderRadius: '2px' }} />
           <span>Reconnected (Recovery)</span>
         </div>
         <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
-          <div style={{ width: '14px', height: '2px', background: '#475569', borderStyle: 'dotted' }} />
+          <div style={{ width: '14px', height: '2px', background: 'var(--text-muted)', borderStyle: 'dotted' }} />
           <span>Transformer</span>
         </div>
       </div>

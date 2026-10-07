@@ -1,0 +1,12 @@
+{
+  "headers": [{ "source": "/benchmarks", "headers": [{ "key": "Vary", "value": "Accept" }] }],
+  "rewrites": [
+    { "source": "/operations", "destination": "/index.html" },
+    { "source": "/topology", "destination": "/index.html" },
+    { "source": "/prediction", "destination": "/index.html" },
+    { "source": "/mitigation", "destination": "/index.html" },
+    { "source": "/recovery", "destination": "/index.html" },
+    { "source": "/timeline", "destination": "/index.html" },
+    { "source": "/benchmarks", "has": [{ "type": "header", "key": "accept", "value": ".*text/html.*" }], "destination": "/index.html" }
+  ]
+}
