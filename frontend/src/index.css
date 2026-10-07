@@ -449,7 +449,7 @@ td,
 }
 
 @keyframes dashFlow { to { stroke-dashoffset: -20; } }
-.line-tripped { stroke: #63758d !important; stroke-dasharray: 6, 6; opacity: 0.62; }
+.line-tripped { stroke: var(--text-muted); stroke-dasharray: 6, 6; opacity: 0.62; }
 .line-danger { stroke: var(--color-danger) !important; }
 .line-warning { stroke: var(--color-warning) !important; }
 .line-safe { stroke: var(--color-safe) !important; }
@@ -1318,4 +1318,30 @@ button:disabled { cursor: not-allowed; opacity: .6; }
   .panel-stat-grid { grid-template-columns:1fr; }
   .panel-header { flex-direction:column; }
   .panel-header__actions { flex-wrap:wrap; }
+}
+
+.topology-playback { margin-top:20px; padding:18px; border:1px solid var(--border-subtle); border-radius:12px; background:var(--bg-panel); }
+.topology-playback__status { display:flex; align-items:center; flex-wrap:wrap; gap:12px; margin-bottom:16px; }
+.topology-playback__status p { flex:1 1 260px; margin:0; color:var(--text-secondary); font-size:13px; line-height:1.6; overflow-wrap:anywhere; }
+.topology-playback__status > span:last-child { color:var(--text-muted); font-size:12px; }
+.topology-playback__buttons { display:flex; align-items:center; flex-wrap:wrap; gap:8px; }
+.topology-playback .site-button { min-height:38px; padding:9px 13px; font-size:12px; }
+.topology-playback button:disabled, .topology-playback select:disabled { opacity:0.45; cursor:not-allowed; }
+.topology-playback__speed { margin-left:auto; display:flex; align-items:center; gap:8px; color:var(--text-secondary); font-size:12px; }
+.topology-playback__speed select { padding:7px; border-radius:6px; border:1px solid var(--border-subtle); background:var(--bg-panel); color:var(--text-primary); }
+.topology-playback input[type="range"] { display:block; width:100%; margin:18px 0 8px; accent-color:var(--color-info); cursor:pointer; }
+.topology-playback small { font-size:11px; color:var(--text-muted); }
+.topology-line { transition:stroke 250ms, opacity 250ms; }
+.topology-line--trip { animation:topologyTrip 900ms ease-out; }
+.topology-fault-marker { animation:topologyFault 900ms ease-out; transform-box:fill-box; transform-origin:center; }
+.topology-reclosure-marker { animation:topologyReclosure 1100ms ease-out forwards; }
+.topology-canvas g[role="button"]:focus-visible { outline:none; }
+.topology-canvas g[role="button"]:focus-visible .topology-line { stroke-width:7; }
+@keyframes topologyTrip { 0%, 30% { stroke:var(--color-danger); opacity:1; stroke-width:6; } 100% { stroke:var(--text-muted); opacity:0.62; } }
+@keyframes topologyFault { 0% { opacity:0; } 30%, 100% { opacity:1; } }
+@keyframes topologyReclosure { from { r:8; opacity:1; } to { r:28; opacity:0; } }
+@media (max-width:600px) {
+  .topology-playback { padding:12px; }
+  .topology-playback__speed { margin-left:0; }
+  .topology-playback__status { align-items:flex-start; }
 }

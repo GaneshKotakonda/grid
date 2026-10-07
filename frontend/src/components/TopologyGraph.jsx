@@ -1,7 +1,9 @@
-import React, { useState } from 'react';
+import React, { useEffect, useMemo, useState } from 'react';
 import { Layers } from 'lucide-react';
 import PanelHeader from './ui/PanelHeader';
 import StatusBadge from './ui/StatusBadge';
+import TopologyPlaybackControls from './TopologyPlaybackControls';
+import { buildTopologyPlayback } from './topologyPlayback';
 
 export default function TopologyGraph({
   gridData,
@@ -11,6 +13,32 @@ export default function TopologyGraph({
 }) {
   const [showLabels, setShowLabels] = useState(true);
   const [showGcnOverlay, setShowGcnOverlay] = useState(true);
+  const frames = useMemo(() => buildTopologyPlayback(simResult), [simResult]);
+  const [frameIndex, setFrameIndex] = useState(() => Math.max(frames.length - 1, 0));
+  const [playing, setPlaying] = useState(false);
+  const [speed, setSpeed] = useState(1);
+  const frame = frames[frameIndex];
+  const isOutput = !frame || frame.isOutput;
+
+  useEffect(() => {
+    if (!playing) return;
+    const timer = setTimeout(() => {
+      const next = Math.min(frameIndex + 1, frames.length - 1);
+      setFrameIndex(next);
+      if (next === frames.length - 1) setPlaying(false);
+    }, 1500 / speed);
+    return () => clearTimeout(timer);
+  }, [playing, frameIndex, frames.length, speed]);
+
+  const seek = (index) => { setPlaying(false); setFrameIndex(index); };
+  const replay = () => { setFrameIndex(0); setPlaying(true); };
+  const togglePlayback = () => {
+    if (playing) setPlaying(false);
+    else {
+      if (frameIndex === frames.length - 1) setFrameIndex(0);
+      setPlaying(true);
+    }
+  };
 
   if (!gridData || !gridData.buses) {
     return (
@@ -26,14 +54,13 @@ export default function TopologyGraph({
   const trafos = gridData.transformers || [];
 
   // Determine line state from simulation result
-  const failedLines = simResult?.failed_lines || [];
-  const reconnectedLines = simResult?.reconnected_lines || [];
-  const initialOutages = simResult?.initial_grid_state?.initial_outages || [];
+  const failedLines = frame?.failedLines || [];
+  const reconnectedLines = frame?.reconnectedLines || [];
   const gcnProbs = simResult?.gcn_failure_probabilities || [];
 
   const getLineStatus = (lineId) => {
     const isReconnected = reconnectedLines.includes(lineId);
-    const isFailed = failedLines.includes(lineId) || initialOutages.includes(lineId);
+    const isFailed = failedLines.includes(lineId);
 
     if (isReconnected) {
       return { color: 'var(--color-info)', status: 'RECONNECTED', class: 'line-reconnected', width: 4 };
@@ -43,13 +70,13 @@ export default function TopologyGraph({
     }
 
     const prob = gcnProbs[lineId] !== undefined ? gcnProbs[lineId] : 0.0;
-    if (showGcnOverlay && prob >= 0.50) {
+    if (isOutput && showGcnOverlay && prob >= 0.50) {
       return { color: 'var(--color-danger)', status: 'PREDICTED_FAILURE', class: 'line-danger', width: 4.5, prob };
     }
-    if (showGcnOverlay && prob >= 0.20) {
+    if (isOutput && showGcnOverlay && prob >= 0.20) {
       return { color: 'var(--color-warning)', status: 'HIGH_RISK', class: 'line-warning', width: 3.5, prob };
     }
-    return { color: 'var(--color-safe)', status: 'SAFE', class: 'line-safe', width: 2.5, prob };
+    return { color: 'var(--color-safe)', status: isOutput ? 'SAFE' : 'IN_SERVICE', class: 'line-safe', width: 2.5, ...(isOutput ? { prob } : {}) };
   };
 
   const busMap = {};
@@ -60,8 +87,8 @@ export default function TopologyGraph({
       <PanelHeader
         icon={Layers}
         title="Interactive IEEE 14-Bus Transmission Topology"
-        subtitle="Real-time physical grid status, GCN failure risk propagation, and recovery reclosure."
-        badge={<StatusBadge tone="info">Live Topology</StatusBadge>}
+        subtitle="Simulation output and playback of recorded outages, trip waves, and recovery."
+        badge={<StatusBadge tone="info">{playing ? 'Playing trace' : isOutput && simResult ? 'Simulation output' : frame ? 'Incident replay' : 'Base topology'}</StatusBadge>}
         as="h2"
         actions={(
           <>
@@ -69,6 +96,7 @@ export default function TopologyGraph({
             <input
               type="checkbox"
               checked={showGcnOverlay}
+              disabled={!isOutput}
               onChange={(e) => setShowGcnOverlay(e.target.checked)}
             />
             GCN Overlay
@@ -141,10 +169,21 @@ export default function TopologyGraph({
             const midX = (b1.x + b2.x) / 2;
             const midY = (b1.y + b2.y) / 2;
             const isSelected = selectedElement?.type === 'line' && selectedElement?.id === l.id;
+            const justTripped = frame?.activeTrips.includes(l.id);
+            const justReconnected = frame?.activeReconnections.includes(l.id);
 
             return (
               <g
                 key={`line-${l.id}`}
+                role="button"
+                tabIndex="0"
+                aria-label={`Line ${l.id}: ${st.status}`}
+                onKeyDown={(event) => {
+                  if (event.key === 'Enter' || event.key === ' ') {
+                    event.preventDefault();
+                    setSelectedElement({ type: 'line', id: l.id, data: l, status: st });
+                  }
+                }}
                 onClick={() => setSelectedElement({ type: 'line', id: l.id, data: l, status: st })}
                 style={{ cursor: 'pointer' }}
               >
@@ -158,16 +197,24 @@ export default function TopologyGraph({
                   strokeWidth="16"
                 />
                 {/* Visual line */}
-                <line
-                  x1={b1.x}
-                  y1={b1.y}
-                  x2={b2.x}
-                  y2={b2.y}
-                  className={st.class}
+                <path
+                  d={st.status === 'FAILED'
+                    ? `M${b1.x},${b1.y} L${b1.x + (b2.x - b1.x) * 0.46},${b1.y + (b2.y - b1.y) * 0.46} M${b1.x + (b2.x - b1.x) * 0.54},${b1.y + (b2.y - b1.y) * 0.54} L${b2.x},${b2.y}`
+                    : `M${b1.x},${b1.y} L${b2.x},${b2.y}`}
+                  fill="none"
+                  className={`${st.class} topology-line${justTripped ? ' topology-line--trip' : ''}`}
                   stroke={st.color}
                   strokeWidth={isSelected ? st.width + 3 : st.width}
                   filter={st.status === 'PREDICTED_FAILURE' ? 'url(#glow)' : undefined}
                 />
+                {/* A break marker denotes a recorded disconnection, not physical damage. */}
+                {st.status === 'FAILED' && (
+                  <g className={justTripped ? 'topology-fault-marker' : ''} transform={`translate(${midX}, ${midY - (showLabels ? 20 : 0)})`} aria-hidden="true">
+                    <circle r="8" fill="var(--bg-panel)" stroke="var(--color-danger)" />
+                    <path d="M-3,-3 L3,3 M3,-3 L-3,3" stroke="var(--color-danger)" strokeWidth="2" />
+                  </g>
+                )}
+                {justReconnected && <circle className="topology-reclosure-marker" cx={midX} cy={midY} r="16" fill="none" stroke="var(--color-info)" strokeWidth="2" aria-hidden="true" />}
                 {/* Line badge / label */}
                 {showLabels && (
                   <g transform={`translate(${midX}, ${midY})`}>
@@ -272,9 +319,9 @@ export default function TopologyGraph({
             {selectedElement.type === 'line' && (
               <div style={{ fontSize: '11px', color: 'var(--text-secondary)', display: 'flex', flexDirection: 'column', gap: '4px' }}>
                 <div>Connection: Bus {selectedElement.data.from_bus + 1} ↔ Bus {selectedElement.data.to_bus + 1}</div>
-                <div>Status: <span style={{ color: selectedElement.status?.color, fontWeight: 700 }}>{selectedElement.status?.status}</span></div>
-                {selectedElement.status?.prob !== undefined && (
-                  <div>GCN Failure Prob: <span className="mono" style={{ fontWeight: 700 }}>{(selectedElement.status.prob * 100).toFixed(1)}%</span></div>
+                <div>Status: <span style={{ color: getLineStatus(selectedElement.id).color, fontWeight: 700 }}>{getLineStatus(selectedElement.id).status}</span></div>
+                {getLineStatus(selectedElement.id).prob !== undefined && (
+                  <div>GCN Failure Prob: <span className="mono" style={{ fontWeight: 700 }}>{(getLineStatus(selectedElement.id).prob * 100).toFixed(1)}%</span></div>
                 )}
                 <div>Thermal Rating: {selectedElement.data.max_i_ka?.toFixed(1)} kA</div>
               </div>
@@ -291,10 +338,12 @@ export default function TopologyGraph({
         )}
       </div>
 
+      <TopologyPlaybackControls frames={frames} index={frameIndex} playing={playing} speed={speed} onPlay={togglePlayback} onReplay={replay} onSeek={seek} onSpeed={setSpeed} />
+
       <div className="topology-legend">
         <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
           <div style={{ width: '14px', height: '3px', background: 'var(--color-safe)', borderRadius: '2px' }} />
-          <span>Safe (&lt;20% Risk)</span>
+          <span>In service / Low predicted risk</span>
         </div>
         <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
           <div style={{ width: '14px', height: '4px', background: 'var(--color-warning)', borderRadius: '2px' }} />
