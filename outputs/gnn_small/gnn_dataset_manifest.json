@@ -17,22 +17,34 @@
   ],
   "config": {
     "capacity_scale_range": [
-      0.01,
-      0.05
+      5e-06,
+      0.02
     ],
     "generation_scale_range": [
       0.9,
       1.1
     ],
+    "generator_dispatch_variation_range": [
+      0.8,
+      1.2
+    ],
     "load_scale_range": [
       0.8,
       1.5
+    ],
+    "load_variation_range": [
+      0.8,
+      1.2
     ],
     "max_initial_outages": 2,
     "max_steps": 20,
     "multiple_outage_probability": 0.2,
     "overload_threshold": 100.0,
-    "scenario_count": 100,
+    "reactive_load_variation_range": [
+      0.9,
+      1.1
+    ],
+    "scenario_count": 10,
     "seed": 42
   },
   "directed_edges_per_physical_line": 2,
