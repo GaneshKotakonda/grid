@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" fill="none">
+  <defs>
+    <!-- Dark Cyber-Physical Shield Background Gradient -->
+    <linearGradient id="gridShieldBg" x1="8" y1="4" x2="56" y2="60" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0e1726" />
+      <stop offset="45%" stop-color="#0a0f1d" />
+      <stop offset="100%" stop-color="#030712" />
+    </linearGradient>
+
+    <!-- Glowing Cyber Blue-Cyan Outer Border Gradient -->
+    <linearGradient id="gridShieldBorder" x1="0" y1="0" x2="64" y2="64" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="30%" stop-color="#06b6d4" />
+      <stop offset="70%" stop-color="#3b82f6" />
+      <stop offset="100%" stop-color="#8b5cf6" />
+    </linearGradient>
+
+    <!-- Radiant High-Voltage Lightning Gradient -->
+    <linearGradient id="gridBoltGrad" x1="34" y1="10" x2="26" y2="52" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#67e8f9" />
+      <stop offset="35%" stop-color="#22d3ee" />
+      <stop offset="70%" stop-color="#0284c7" />
+      <stop offset="100%" stop-color="#2563eb" />
+    </linearGradient>
+
+    <!-- Core Lightning Highlight -->
+    <linearGradient id="gridCoreGrad" x1="33" y1="12" x2="28" y2="48" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="50%" stop-color="#e0f2fe" />
+      <stop offset="100%" stop-color="#7dd3fc" />
+    </linearGradient>
+
+    <!-- Transmission Grid Lines Gradient -->
+    <linearGradient id="gridLineGrad" x1="16" y1="14" x2="48" y2="50" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0284c7" stop-opacity="0.75" />
+      <stop offset="100%" stop-color="#06b6d4" stop-opacity="0.9" />
+    </linearGradient>
+  </defs>
+
+  <!-- Outer Resilience Shield / Crest -->
+  <path d="M32 4 C48 4 58 10 58 24 C58 44 43 56 32 60 C21 56 6 44 6 24 C6 10 16 4 32 4 Z"
+        fill="url(#gridShieldBg)"
+        stroke="url(#gridShieldBorder)"
+        stroke-width="2.75"
+        stroke-linejoin="round" />
+
+  <!-- Inner Subtle Shield Ring -->
+  <path d="M32 8 C44 8 52 13 52 24 C52 40 40 50 32 54 C24 50 12 40 12 24 C12 13 20 8 32 8 Z"
+        fill="none"
+        stroke="#1e293b"
+        stroke-width="1"
+        stroke-dasharray="2 2"
+        opacity="0.6" />
+
+  <!-- Power Grid Interconnections (Transmission Lines Topology) -->
+  <g stroke="url(#gridLineGrad)" stroke-width="1.8" stroke-linecap="round">
+    <!-- Perimeter Ring Transmission Lines -->
+    <line x1="18" y1="23" x2="32" y2="15" />
+    <line x1="32" y1="15" x2="46" y2="23" />
+    <line x1="46" y1="23" x2="43" y2="41" />
+    <line x1="43" y1="41" x2="32" y2="49" />
+    <line x1="32" y1="49" x2="21" y2="41" />
+    <line x1="21" y1="41" x2="18" y2="23" />
+
+    <!-- Cross-Tie Feeder Lines -->
+    <line x1="18" y1="23" x2="43" y2="41" stroke-dasharray="2.5 2" opacity="0.5" />
+    <line x1="46" y1="23" x2="21" y2="41" stroke-dasharray="2.5 2" opacity="0.5" />
+    <line x1="32" y1="15" x2="32" y2="49" stroke-dasharray="2 2" opacity="0.35" />
+  </g>
+
+  <!-- Substation Bus Nodes (IEEE Nodes with Status Rings) -->
+  <!-- Top Node (Bus 1) -->
+  <circle cx="32" cy="15" r="5" fill="#0284c7" fill-opacity="0.25" />
+  <circle cx="32" cy="15" r="2.8" fill="#38bdf8" />
+  <circle cx="32" cy="15" r="1.2" fill="#ffffff" />
+
+  <!-- Top-Right Node (Bus 2 - Emerald Safe Generator) -->
+  <circle cx="46" cy="23" r="4.5" fill="#10b981" fill-opacity="0.25" />
+  <circle cx="46" cy="23" r="2.6" fill="#10b981" />
+  <circle cx="46" cy="23" r="1" fill="#ecfdf5" />
+
+  <!-- Bottom-Right Node (Bus 3 - Cyan Feeder) -->
+  <circle cx="43" cy="41" r="4.5" fill="#06b6d4" fill-opacity="0.25" />
+  <circle cx="43" cy="41" r="2.6" fill="#38bdf8" />
+
+  <!-- Bottom Node (Bus 4 - Emerald Stabilized Load) -->
+  <circle cx="32" cy="49" r="5" fill="#10b981" fill-opacity="0.25" />
+  <circle cx="32" cy="49" r="2.8" fill="#10b981" />
+  <circle cx="32" cy="49" r="1.2" fill="#ffffff" />
+
+  <!-- Bottom-Left Node (Bus 5 - Cyan Feeder) -->
+  <circle cx="21" cy="41" r="4.5" fill="#06b6d4" fill-opacity="0.25" />
+  <circle cx="21" cy="41" r="2.6" fill="#38bdf8" />
+
+  <!-- Top-Left Node (Bus 6 - Emerald Generator) -->
+  <circle cx="18" cy="23" r="4.5" fill="#10b981" fill-opacity="0.25" />
+  <circle cx="18" cy="23" r="2.6" fill="#10b981" />
+  <circle cx="18" cy="23" r="1" fill="#ecfdf5" />
+
+  <!-- Central High-Voltage Resilience Energy Bolt -->
+  <path d="M34 10 L19 31 L31 31 L26 52 L45 27 L33 27 Z"
+        fill="url(#gridBoltGrad)"
+        stroke="#bae6fd"
+        stroke-width="1.2"
+        stroke-linejoin="round" />
+
+  <!-- Core Electric Energy Glimmer (Inner 3D Ridge) -->
+  <path d="M33 13 L22 30 L31 30 L28 47 L41 28 L32 28 Z"
+        fill="url(#gridCoreGrad)"
+        opacity="0.85" />
+</svg>

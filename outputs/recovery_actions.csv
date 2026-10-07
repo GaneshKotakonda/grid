@@ -1,0 +1,134 @@
+scenario_id,action,committed,served_load_mw,reason
+scenario-000205,do_nothing,False,0.0,Recovery terminated by do_nothing
+scenario-000294,do_nothing,False,0.0,Recovery terminated by do_nothing
+scenario-000314,do_nothing,False,0.0,Recovery terminated by do_nothing
+scenario-000360,do_nothing,False,0.0,Recovery terminated by do_nothing
+scenario-000374,do_nothing,False,0.0,Recovery terminated by do_nothing
+scenario-000386,do_nothing,False,0.0,Recovery terminated by do_nothing
+scenario-000414,do_nothing,False,0.0,Recovery terminated by do_nothing
+scenario-000417,do_nothing,False,0.0,Recovery terminated by do_nothing
+scenario-000447,do_nothing,False,0.0,Recovery terminated by do_nothing
+scenario-000562,reconnect_line_3,True,307.19,Committed safely
+scenario-000562,restore_load_bus_2,True,309.97,Committed safely
+scenario-000562,restore_load_bus_2,True,311.36,Committed safely
+scenario-000562,restore_load_bus_3,True,312.71,Committed safely
+scenario-000562,restore_load_bus_8,True,313.73,Committed safely
+scenario-000562,restore_load_bus_1,True,314.53,Committed safely
+scenario-000562,restore_load_bus_2,True,315.22,Committed safely
+scenario-000562,restore_load_bus_3,True,315.9,Committed safely
+scenario-000562,restore_load_bus_8,True,316.41,Committed safely
+scenario-000562,do_nothing,False,316.41,Recovery terminated by do_nothing
+scenario-000620,do_nothing,False,0.0,Recovery terminated by do_nothing
+scenario-000675,do_nothing,False,0.0,Recovery terminated by do_nothing
+scenario-000700,reconnect_line_0,True,224.6,Committed safely
+scenario-000721,do_nothing,False,0.0,Recovery terminated by do_nothing
+scenario-000746,do_nothing,False,0.0,Recovery terminated by do_nothing
+scenario-000764,do_nothing,False,0.0,Recovery terminated by do_nothing
+scenario-000836,do_nothing,False,0.0,Recovery terminated by do_nothing
+scenario-000856,do_nothing,False,0.0,Recovery terminated by do_nothing
+scenario-000989,reconnect_line_12,True,232.01,Committed safely
+scenario-000989,reconnect_line_11,True,232.01,Committed safely
+scenario-001041,do_nothing,False,0.0,Recovery terminated by do_nothing
+scenario-001173,do_nothing,False,0.0,Recovery terminated by do_nothing
+scenario-001233,do_nothing,False,0.0,Recovery terminated by do_nothing
+scenario-001394,do_nothing,False,0.0,Recovery terminated by do_nothing
+scenario-001540,do_nothing,False,0.0,Recovery terminated by do_nothing
+scenario-001549,reconnect_line_12,True,223.03,Committed safely
+scenario-001549,reconnect_line_2,True,223.03,Committed safely
+scenario-001549,restore_load_bus_2,True,225.43,Committed safely
+scenario-001549,restore_load_bus_2,True,226.64,Committed safely
+scenario-001549,restore_load_bus_3,True,227.63,Committed safely
+scenario-001549,restore_load_bus_2,True,228.23,Committed safely
+scenario-001549,restore_load_bus_8,True,228.77,Committed safely
+scenario-001549,restore_load_bus_1,True,229.3,Committed safely
+scenario-001549,do_nothing,False,229.3,Recovery terminated by do_nothing
+scenario-001573,do_nothing,False,0.0,Recovery terminated by do_nothing
+scenario-001591,do_nothing,False,0.0,Recovery terminated by do_nothing
+scenario-001602,do_nothing,False,0.0,Recovery terminated by do_nothing
+scenario-001649,do_nothing,False,0.0,Recovery terminated by do_nothing
+scenario-001672,do_nothing,False,0.0,Recovery terminated by do_nothing
+scenario-001734,do_nothing,False,0.0,Recovery terminated by do_nothing
+scenario-001753,do_nothing,False,0.0,Recovery terminated by do_nothing
+scenario-001824,do_nothing,False,0.0,Recovery terminated by do_nothing
+scenario-001841,do_nothing,False,0.0,Recovery terminated by do_nothing
+scenario-001861,do_nothing,False,0.0,Recovery terminated by do_nothing
+scenario-001900,reconnect_line_5,True,279.0,Committed safely
+scenario-001900,restore_load_bus_2,True,281.72,Committed safely
+scenario-001900,restore_load_bus_3,True,283.26,Committed safely
+scenario-001900,restore_load_bus_2,True,284.62,Committed safely
+scenario-001900,restore_load_bus_3,True,285.38,Committed safely
+scenario-001900,restore_load_bus_2,True,286.07,Committed safely
+scenario-001900,restore_load_bus_8,True,286.73,Committed safely
+scenario-001900,do_nothing,False,286.73,Recovery terminated by do_nothing
+scenario-001941,do_nothing,False,0.0,Recovery terminated by do_nothing
+scenario-001970,do_nothing,False,0.0,Recovery terminated by do_nothing
+scenario-002035,do_nothing,False,0.0,Recovery terminated by do_nothing
+scenario-002132,reconnect_line_7,True,252.19,Committed safely
+scenario-002141,do_nothing,False,0.0,Recovery terminated by do_nothing
+scenario-002169,reconnect_line_0,True,200.91,Committed safely
+scenario-002213,do_nothing,False,0.0,Recovery terminated by do_nothing
+scenario-002225,do_nothing,False,0.0,Recovery terminated by do_nothing
+scenario-002237,do_nothing,False,0.0,Recovery terminated by do_nothing
+scenario-002250,do_nothing,False,0.0,Recovery terminated by do_nothing
+scenario-002258,do_nothing,False,0.0,Recovery terminated by do_nothing
+scenario-002275,do_nothing,False,0.0,Recovery terminated by do_nothing
+scenario-002407,reconnect_line_2,True,200.17,Committed safely
+scenario-002407,restore_load_bus_2,True,201.93,Committed safely
+scenario-002407,restore_load_bus_3,True,202.84,Committed safely
+scenario-002407,restore_load_bus_2,True,203.72,Committed safely
+scenario-002407,restore_load_bus_8,True,204.44,Committed safely
+scenario-002407,restore_load_bus_1,True,204.97,Committed safely
+scenario-002407,do_nothing,False,204.97,Recovery terminated by do_nothing
+scenario-002452,do_nothing,False,0.0,Recovery terminated by do_nothing
+scenario-002489,do_nothing,False,0.0,Recovery terminated by do_nothing
+scenario-002645,do_nothing,False,0.0,Recovery terminated by do_nothing
+scenario-002715,do_nothing,False,136.56,Recovery terminated by do_nothing
+scenario-002788,do_nothing,False,0.0,Recovery terminated by do_nothing
+scenario-002798,do_nothing,False,0.0,Recovery terminated by do_nothing
+scenario-002991,do_nothing,False,0.0,Recovery terminated by do_nothing
+scenario-003036,do_nothing,False,0.0,Recovery terminated by do_nothing
+scenario-003085,do_nothing,False,0.0,Recovery terminated by do_nothing
+scenario-003112,do_nothing,False,0.0,Recovery terminated by do_nothing
+scenario-003122,do_nothing,False,0.0,Recovery terminated by do_nothing
+scenario-003148,do_nothing,False,0.0,Recovery terminated by do_nothing
+scenario-003166,do_nothing,False,0.0,Recovery terminated by do_nothing
+scenario-003185,do_nothing,False,0.0,Recovery terminated by do_nothing
+scenario-003254,do_nothing,False,0.0,Recovery terminated by do_nothing
+scenario-003284,do_nothing,False,0.0,Recovery terminated by do_nothing
+scenario-003289,do_nothing,False,0.0,Recovery terminated by do_nothing
+scenario-003345,do_nothing,False,0.0,Recovery terminated by do_nothing
+scenario-003358,do_nothing,False,0.0,Recovery terminated by do_nothing
+scenario-003414,do_nothing,False,0.0,Recovery terminated by do_nothing
+scenario-003425,do_nothing,False,0.0,Recovery terminated by do_nothing
+scenario-003465,do_nothing,False,0.0,Recovery terminated by do_nothing
+scenario-003477,do_nothing,False,0.0,Recovery terminated by do_nothing
+scenario-003494,do_nothing,False,0.0,Recovery terminated by do_nothing
+scenario-003558,do_nothing,False,0.0,Recovery terminated by do_nothing
+scenario-003610,do_nothing,False,0.0,Recovery terminated by do_nothing
+scenario-003649,do_nothing,False,0.0,Recovery terminated by do_nothing
+scenario-003651,do_nothing,False,0.0,Recovery terminated by do_nothing
+scenario-003732,do_nothing,False,0.0,Recovery terminated by do_nothing
+scenario-003750,do_nothing,False,0.0,Recovery terminated by do_nothing
+scenario-003775,do_nothing,False,0.0,Recovery terminated by do_nothing
+scenario-003876,do_nothing,False,0.0,Recovery terminated by do_nothing
+scenario-003929,do_nothing,False,0.0,Recovery terminated by do_nothing
+scenario-004023,do_nothing,False,0.0,Recovery terminated by do_nothing
+scenario-004045,do_nothing,False,0.0,Recovery terminated by do_nothing
+scenario-004064,reconnect_line_0,True,201.71,Committed safely
+scenario-004064,reconnect_line_12,True,201.71,Committed safely
+scenario-004133,do_nothing,False,0.0,Recovery terminated by do_nothing
+scenario-004150,do_nothing,False,0.0,Recovery terminated by do_nothing
+scenario-004295,do_nothing,False,0.0,Recovery terminated by do_nothing
+scenario-004317,do_nothing,False,0.0,Recovery terminated by do_nothing
+scenario-004371,reconnect_line_6,True,205.62,Committed safely
+scenario-004451,do_nothing,False,0.0,Recovery terminated by do_nothing
+scenario-004487,do_nothing,False,286.03,Recovery terminated by do_nothing
+scenario-004494,do_nothing,False,0.0,Recovery terminated by do_nothing
+scenario-004557,reconnect_line_9,True,199.64,Committed safely
+scenario-004557,reconnect_line_13,True,199.64,Committed safely
+scenario-004585,do_nothing,False,0.0,Recovery terminated by do_nothing
+scenario-004622,do_nothing,False,0.0,Recovery terminated by do_nothing
+scenario-004700,do_nothing,False,0.0,Recovery terminated by do_nothing
+scenario-004719,do_nothing,False,0.0,Recovery terminated by do_nothing
+scenario-004783,do_nothing,False,0.0,Recovery terminated by do_nothing
+scenario-004785,do_nothing,False,0.0,Recovery terminated by do_nothing

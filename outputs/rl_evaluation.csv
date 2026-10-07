@@ -1,0 +1,1201 @@
+controller,scenario_id,reward,final_status,failed_lines_count,cascade_length,load_served_percent,load_shed_mw,stable,total_blackout,partial_blackout,non_converged,actions_count
+Do-Nothing,scenario-000027,-31.152887555576722,NON_CONVERGED,3,1,100.0,0.0,False,False,False,True,1
+Do-Nothing,scenario-000085,-60.37890224682262,TOTAL_BLACKOUT,4,2,0.0,0.0,False,True,False,False,2
+Do-Nothing,scenario-000093,-73.97837173013905,TOTAL_BLACKOUT,7,1,0.0,0.0,False,True,False,False,1
+Do-Nothing,scenario-000104,-72.39468725554127,TOTAL_BLACKOUT,7,1,0.0,0.0,False,True,False,False,1
+Do-Nothing,scenario-000105,-62.73451756935737,TOTAL_BLACKOUT,5,1,0.0,0.0,False,True,False,False,1
+Do-Nothing,scenario-000118,-62.54265409346986,TOTAL_BLACKOUT,4,1,0.0,0.0,False,True,False,False,1
+Do-Nothing,scenario-000145,-31.249820951525663,NON_CONVERGED,2,1,100.0,0.0,False,False,False,True,1
+Do-Nothing,scenario-000149,-38.71029006670659,NON_CONVERGED,4,1,100.0,0.0,False,False,False,True,1
+Do-Nothing,scenario-000201,-69.33147319673446,TOTAL_BLACKOUT,5,2,0.0,0.0,False,True,False,False,2
+Do-Nothing,scenario-000204,-59.42986251613756,TOTAL_BLACKOUT,4,1,0.0,0.0,False,True,False,False,1
+Do-Nothing,scenario-000224,12.0,STABLE,1,1,100.0,0.0,True,False,False,False,1
+Do-Nothing,scenario-000227,-86.5027476621651,TOTAL_BLACKOUT,9,1,0.0,0.0,False,True,False,False,1
+Do-Nothing,scenario-000262,12.0,STABLE,1,1,100.0,0.0,True,False,False,False,1
+Do-Nothing,scenario-000270,-66.07879192997963,TOTAL_BLACKOUT,5,1,0.0,0.0,False,True,False,False,1
+Do-Nothing,scenario-000287,-79.14252742926561,TOTAL_BLACKOUT,7,1,0.0,0.0,False,True,False,False,1
+Do-Nothing,scenario-000294,-60.68331166153489,TOTAL_BLACKOUT,4,2,0.0,0.0,False,True,False,False,2
+Do-Nothing,scenario-000301,12.0,STABLE,1,1,100.0,0.0,True,False,False,False,1
+Do-Nothing,scenario-000316,-82.949254519355,TOTAL_BLACKOUT,9,1,0.0,0.0,False,True,False,False,1
+Do-Nothing,scenario-000328,-77.7556626643489,TOTAL_BLACKOUT,7,1,0.0,0.0,False,True,False,False,1
+Do-Nothing,scenario-000345,-61.778097140230415,TOTAL_BLACKOUT,4,2,0.0,0.0,False,True,False,False,2
+Do-Nothing,scenario-000374,-192.528962449721,TOTAL_BLACKOUT,15,1,0.0,0.0,False,True,False,False,1
+Do-Nothing,scenario-000375,-60.54212710574891,TOTAL_BLACKOUT,4,2,0.0,0.0,False,True,False,False,2
+Do-Nothing,scenario-000399,-70.37014374815371,TOTAL_BLACKOUT,6,1,0.0,0.0,False,True,False,False,1
+Do-Nothing,scenario-000401,12.0,STABLE,1,1,100.0,0.0,True,False,False,False,1
+Do-Nothing,scenario-000423,12.0,STABLE,1,1,100.0,0.0,True,False,False,False,1
+Do-Nothing,scenario-000432,-84.48426716691581,TOTAL_BLACKOUT,7,1,0.0,0.0,False,True,False,False,1
+Do-Nothing,scenario-000437,-61.17153416798642,TOTAL_BLACKOUT,5,2,0.0,0.0,False,True,False,False,2
+Do-Nothing,scenario-000438,-60.72524514737312,TOTAL_BLACKOUT,5,2,0.0,0.0,False,True,False,False,2
+Do-Nothing,scenario-000459,-34.591163087532415,NON_CONVERGED,3,1,100.0,0.0,False,False,False,True,1
+Do-Nothing,scenario-000482,-74.77197903642326,TOTAL_BLACKOUT,8,1,0.0,0.0,False,True,False,False,1
+Do-Nothing,scenario-000485,12.0,STABLE,1,1,100.0,0.0,True,False,False,False,1
+Do-Nothing,scenario-000491,-73.01012814828937,TOTAL_BLACKOUT,6,1,0.0,0.0,False,True,False,False,1
+Do-Nothing,scenario-000503,-74.01150176970098,TOTAL_BLACKOUT,8,1,0.0,0.0,False,True,False,False,1
+Do-Nothing,scenario-000558,-71.96724649392198,TOTAL_BLACKOUT,6,1,0.0,0.0,False,True,False,False,1
+Do-Nothing,scenario-000562,12.0,STABLE,1,1,100.0,0.0,True,False,False,False,1
+Do-Nothing,scenario-000584,-68.32579569555905,TOTAL_BLACKOUT,5,1,0.0,0.0,False,True,False,False,1
+Do-Nothing,scenario-000634,-31.265746575621066,NON_CONVERGED,2,1,100.0,0.0,False,False,False,True,1
+Do-Nothing,scenario-000642,-67.16745781217077,TOTAL_BLACKOUT,4,2,0.0,0.0,False,True,False,False,2
+Do-Nothing,scenario-000644,-65.56344479326717,TOTAL_BLACKOUT,6,1,0.0,0.0,False,True,False,False,1
+Do-Nothing,scenario-000650,-70.59990503065168,TOTAL_BLACKOUT,6,1,0.0,0.0,False,True,False,False,1
+Do-Nothing,scenario-000667,-31.12330693747596,NON_CONVERGED,2,1,100.0,0.0,False,False,False,True,1
+Do-Nothing,scenario-000669,-31.227216566978203,NON_CONVERGED,2,1,100.0,0.0,False,False,False,True,1
+Do-Nothing,scenario-000675,-86.05204770648166,TOTAL_BLACKOUT,9,1,0.0,0.0,False,True,False,False,1
+Do-Nothing,scenario-000690,-83.264461524779,TOTAL_BLACKOUT,9,1,0.0,0.0,False,True,False,False,1
+Do-Nothing,scenario-000700,-56.02500223238627,TOTAL_BLACKOUT,2,1,0.0,0.0,False,True,False,False,1
+Do-Nothing,scenario-000749,-120.72562302253951,TOTAL_BLACKOUT,12,1,0.0,0.0,False,True,False,False,1
+Do-Nothing,scenario-000758,-85.37334718495453,TOTAL_BLACKOUT,9,1,0.0,0.0,False,True,False,False,1
+Do-Nothing,scenario-000760,-67.32096259800417,TOTAL_BLACKOUT,5,1,0.0,0.0,False,True,False,False,1
+Do-Nothing,scenario-000794,-61.60587512424708,TOTAL_BLACKOUT,4,1,0.0,0.0,False,True,False,False,1
+Do-Nothing,scenario-000801,-74.24048093246482,TOTAL_BLACKOUT,7,1,0.0,0.0,False,True,False,False,1
+Do-Nothing,scenario-000805,-31.587011433652595,NON_CONVERGED,2,1,100.0,0.0,False,False,False,True,1
+Do-Nothing,scenario-000822,-62.604022799843115,TOTAL_BLACKOUT,5,1,0.0,0.0,False,True,False,False,1
+Do-Nothing,scenario-000830,-60.53375170515168,TOTAL_BLACKOUT,4,2,0.0,0.0,False,True,False,False,2
+Do-Nothing,scenario-000838,-76.07075098953875,TOTAL_BLACKOUT,7,1,0.0,0.0,False,True,False,False,1
+Do-Nothing,scenario-000842,-59.5615489847104,TOTAL_BLACKOUT,3,1,0.0,0.0,False,True,False,False,1
+Do-Nothing,scenario-000867,-77.12919008398467,TOTAL_BLACKOUT,7,1,0.0,0.0,False,True,False,False,1
+Do-Nothing,scenario-000978,-65.71588756424856,TOTAL_BLACKOUT,5,1,0.0,0.0,False,True,False,False,1
+Do-Nothing,scenario-000989,12.0,STABLE,2,1,100.0,0.0,True,False,False,False,1
+Do-Nothing,scenario-001002,-62.71850019551489,TOTAL_BLACKOUT,4,1,0.0,0.0,False,True,False,False,1
+Do-Nothing,scenario-001037,-74.17772524127459,TOTAL_BLACKOUT,7,1,0.0,0.0,False,True,False,False,1
+Do-Nothing,scenario-001046,12.0,STABLE,1,1,100.0,0.0,True,False,False,False,1
+Do-Nothing,scenario-001058,-59.330406669185514,TOTAL_BLACKOUT,3,1,0.0,0.0,False,True,False,False,1
+Do-Nothing,scenario-001114,-75.09344748879842,TOTAL_BLACKOUT,7,1,0.0,0.0,False,True,False,False,1
+Do-Nothing,scenario-001117,12.0,STABLE,2,1,100.0,0.0,True,False,False,False,1
+Do-Nothing,scenario-001123,-89.10258276617834,TOTAL_BLACKOUT,8,1,0.0,0.0,False,True,False,False,1
+Do-Nothing,scenario-001142,-59.968303824189825,TOTAL_BLACKOUT,3,1,0.0,0.0,False,True,False,False,1
+Do-Nothing,scenario-001181,-60.64382901890734,TOTAL_BLACKOUT,4,2,0.0,0.0,False,True,False,False,2
+Do-Nothing,scenario-001214,-31.335576347587086,NON_CONVERGED,2,1,100.0,0.0,False,False,False,True,1
+Do-Nothing,scenario-001232,-56.43631172409835,TOTAL_BLACKOUT,2,1,0.0,0.0,False,True,False,False,1
+Do-Nothing,scenario-001233,-31.114841603800606,NON_CONVERGED,2,1,100.0,0.0,False,False,False,True,1
+Do-Nothing,scenario-001245,-72.09911305439662,TOTAL_BLACKOUT,6,1,0.0,0.0,False,True,False,False,1
+Do-Nothing,scenario-001252,-37.633873614692035,NON_CONVERGED,5,1,100.0,0.0,False,False,False,True,1
+Do-Nothing,scenario-001258,-61.9697969436285,TOTAL_BLACKOUT,4,2,0.0,0.0,False,True,False,False,2
+Do-Nothing,scenario-001275,-61.7036015967931,TOTAL_BLACKOUT,4,2,0.0,0.0,False,True,False,False,2
+Do-Nothing,scenario-001281,12.0,STABLE,1,1,100.0,0.0,True,False,False,False,1
+Do-Nothing,scenario-001296,-61.144354531270174,TOTAL_BLACKOUT,4,2,0.0,0.0,False,True,False,False,2
+Do-Nothing,scenario-001300,-56.64718464425609,TOTAL_BLACKOUT,3,1,0.0,0.0,False,True,False,False,1
+Do-Nothing,scenario-001343,-60.620456908764645,TOTAL_BLACKOUT,4,2,0.0,0.0,False,True,False,False,2
+Do-Nothing,scenario-001349,-61.086832206493305,TOTAL_BLACKOUT,4,2,0.0,0.0,False,True,False,False,2
+Do-Nothing,scenario-001366,-68.73861949484686,TOTAL_BLACKOUT,6,1,0.0,0.0,False,True,False,False,1
+Do-Nothing,scenario-001371,-67.75057617947404,TOTAL_BLACKOUT,5,1,0.0,0.0,False,True,False,False,1
+Do-Nothing,scenario-001383,-31.227661034655956,NON_CONVERGED,3,1,100.0,0.0,False,False,False,True,1
+Do-Nothing,scenario-001393,12.0,STABLE,1,1,100.0,0.0,True,False,False,False,1
+Do-Nothing,scenario-001447,-70.0303186722382,TOTAL_BLACKOUT,5,1,0.0,0.0,False,True,False,False,1
+Do-Nothing,scenario-001484,-66.10623294162443,TOTAL_BLACKOUT,5,1,0.0,0.0,False,True,False,False,1
+Do-Nothing,scenario-001540,-56.20158177381287,TOTAL_BLACKOUT,2,1,0.0,0.0,False,True,False,False,1
+Do-Nothing,scenario-001547,-31.171488052564612,NON_CONVERGED,2,1,100.0,0.0,False,False,False,True,1
+Do-Nothing,scenario-001549,12.0,STABLE,2,1,100.0,0.0,True,False,False,False,1
+Do-Nothing,scenario-001564,-69.34251378427125,TOTAL_BLACKOUT,6,2,0.0,0.0,False,True,False,False,2
+Do-Nothing,scenario-001565,-63.19353538881186,TOTAL_BLACKOUT,4,1,0.0,0.0,False,True,False,False,1
+Do-Nothing,scenario-001569,-59.9107203714509,TOTAL_BLACKOUT,4,1,0.0,0.0,False,True,False,False,1
+Do-Nothing,scenario-001576,12.0,STABLE,2,1,100.0,0.0,True,False,False,False,1
+Do-Nothing,scenario-001578,12.0,STABLE,1,1,100.0,0.0,True,False,False,False,1
+Do-Nothing,scenario-001595,-31.10617872346382,NON_CONVERGED,2,1,100.0,0.0,False,False,False,True,1
+Do-Nothing,scenario-001596,-60.42782684217589,TOTAL_BLACKOUT,4,2,0.0,0.0,False,True,False,False,2
+Do-Nothing,scenario-001602,-169.4757273056331,TOTAL_BLACKOUT,14,1,0.0,0.0,False,True,False,False,1
+Do-Nothing,scenario-001616,-75.30744271117419,TOTAL_BLACKOUT,7,1,0.0,0.0,False,True,False,False,1
+Do-Nothing,scenario-001649,-71.14651160681198,TOTAL_BLACKOUT,6,1,0.0,0.0,False,True,False,False,1
+Do-Nothing,scenario-001656,-60.35885920682374,TOTAL_BLACKOUT,4,2,0.0,0.0,False,True,False,False,2
+Do-Nothing,scenario-001658,-31.237873647340745,NON_CONVERGED,2,1,100.0,0.0,False,False,False,True,1
+Do-Nothing,scenario-001672,-61.9314142943569,TOTAL_BLACKOUT,4,2,0.0,0.0,False,True,False,False,2
+Do-Nothing,scenario-001674,12.0,STABLE,1,1,100.0,0.0,True,False,False,False,1
+Do-Nothing,scenario-001732,-56.3527754704985,TOTAL_BLACKOUT,2,1,0.0,0.0,False,True,False,False,1
+Do-Nothing,scenario-001737,-79.21552425625222,TOTAL_BLACKOUT,7,1,0.0,0.0,False,True,False,False,1
+Do-Nothing,scenario-001756,-56.32055412877843,TOTAL_BLACKOUT,2,1,0.0,0.0,False,True,False,False,1
+Do-Nothing,scenario-001824,-31.114605444059283,NON_CONVERGED,2,1,100.0,0.0,False,False,False,True,1
+Do-Nothing,scenario-001827,-80.47423331475851,TOTAL_BLACKOUT,8,1,0.0,0.0,False,True,False,False,1
+Do-Nothing,scenario-001858,-65.62587662073801,TOTAL_BLACKOUT,5,1,0.0,0.0,False,True,False,False,1
+Do-Nothing,scenario-001863,-60.002113576865185,TOTAL_BLACKOUT,3,1,0.0,0.0,False,True,False,False,1
+Do-Nothing,scenario-001885,-69.37128359035495,TOTAL_BLACKOUT,6,1,0.0,0.0,False,True,False,False,1
+Do-Nothing,scenario-001902,-65.1997411342818,TOTAL_BLACKOUT,6,2,0.0,0.0,False,True,False,False,2
+Do-Nothing,scenario-001911,-68.75952652649897,TOTAL_BLACKOUT,6,2,0.0,0.0,False,True,False,False,2
+Do-Nothing,scenario-001923,-56.193686643162856,TOTAL_BLACKOUT,3,1,0.0,0.0,False,True,False,False,1
+Do-Nothing,scenario-001932,-67.83884580311032,TOTAL_BLACKOUT,6,1,0.0,0.0,False,True,False,False,1
+Do-Nothing,scenario-001950,-62.760480839869885,TOTAL_BLACKOUT,4,1,0.0,0.0,False,True,False,False,1
+Do-Nothing,scenario-001952,-138.1113488889336,TOTAL_BLACKOUT,13,1,0.0,0.0,False,True,False,False,1
+Do-Nothing,scenario-001970,-61.32308923998324,TOTAL_BLACKOUT,4,2,0.0,0.0,False,True,False,False,2
+Do-Nothing,scenario-002035,-74.93876271029309,TOTAL_BLACKOUT,8,1,0.0,0.0,False,True,False,False,1
+Do-Nothing,scenario-002070,-72.04245074083923,TOTAL_BLACKOUT,6,1,0.0,0.0,False,True,False,False,1
+Do-Nothing,scenario-002080,-69.68431962241115,TOTAL_BLACKOUT,6,1,0.0,0.0,False,True,False,False,1
+Do-Nothing,scenario-002085,-60.50801251034243,TOTAL_BLACKOUT,4,2,0.0,0.0,False,True,False,False,2
+Do-Nothing,scenario-002121,-74.85547846363227,TOTAL_BLACKOUT,8,1,0.0,0.0,False,True,False,False,1
+Do-Nothing,scenario-002132,12.0,STABLE,1,1,100.0,0.0,True,False,False,False,1
+Do-Nothing,scenario-002141,-126.63267375875039,TOTAL_BLACKOUT,13,1,0.0,0.0,False,True,False,False,1
+Do-Nothing,scenario-002153,-74.12398833143637,TOTAL_BLACKOUT,8,1,0.0,0.0,False,True,False,False,1
+Do-Nothing,scenario-002156,-31.03533903330385,NON_CONVERGED,3,1,100.0,0.0,False,False,False,True,1
+Do-Nothing,scenario-002163,-95.675847624525,TOTAL_BLACKOUT,9,1,0.0,0.0,False,True,False,False,1
+Do-Nothing,scenario-002169,-56.016472671776874,TOTAL_BLACKOUT,2,1,0.0,0.0,False,True,False,False,1
+Do-Nothing,scenario-002187,-31.205740188794486,NON_CONVERGED,2,1,100.0,0.0,False,False,False,True,1
+Do-Nothing,scenario-002207,12.0,STABLE,1,1,100.0,0.0,True,False,False,False,1
+Do-Nothing,scenario-002213,-37.604268896614926,NON_CONVERGED,4,1,100.0,0.0,False,False,False,True,1
+Do-Nothing,scenario-002215,-62.292226107489874,TOTAL_BLACKOUT,4,2,0.0,0.0,False,True,False,False,2
+Do-Nothing,scenario-002218,12.0,STABLE,1,1,100.0,0.0,True,False,False,False,1
+Do-Nothing,scenario-002229,-81.29678297993291,TOTAL_BLACKOUT,7,1,0.0,0.0,False,True,False,False,1
+Do-Nothing,scenario-002236,-66.61355876781697,TOTAL_BLACKOUT,4,2,0.0,0.0,False,True,False,False,2
+Do-Nothing,scenario-002248,-73.75318199003637,TOTAL_BLACKOUT,6,1,0.0,0.0,False,True,False,False,1
+Do-Nothing,scenario-002250,-31.23528904269693,NON_CONVERGED,2,1,100.0,0.0,False,False,False,True,1
+Do-Nothing,scenario-002255,-62.50480566037177,TOTAL_BLACKOUT,4,2,0.0,0.0,False,True,False,False,2
+Do-Nothing,scenario-002258,-124.28015303171034,TOTAL_BLACKOUT,13,1,0.0,0.0,False,True,False,False,1
+Do-Nothing,scenario-002260,12.0,STABLE,1,1,100.0,0.0,True,False,False,False,1
+Do-Nothing,scenario-002275,-65.53295017177632,TOTAL_BLACKOUT,5,1,0.0,0.0,False,True,False,False,1
+Do-Nothing,scenario-002276,12.0,STABLE,1,1,100.0,0.0,True,False,False,False,1
+Do-Nothing,scenario-002290,-76.02906843144171,TOTAL_BLACKOUT,7,1,0.0,0.0,False,True,False,False,1
+Do-Nothing,scenario-002314,-62.27414038205942,TOTAL_BLACKOUT,4,2,0.0,0.0,False,True,False,False,2
+Do-Nothing,scenario-002318,-82.72429102665265,TOTAL_BLACKOUT,8,1,0.0,0.0,False,True,False,False,1
+Do-Nothing,scenario-002344,-66.3448923590599,TOTAL_BLACKOUT,5,1,0.0,0.0,False,True,False,False,1
+Do-Nothing,scenario-002359,-60.56887695736445,TOTAL_BLACKOUT,4,2,0.0,0.0,False,True,False,False,2
+Do-Nothing,scenario-002377,12.0,STABLE,1,1,100.0,0.0,True,False,False,False,1
+Do-Nothing,scenario-002378,12.0,STABLE,1,1,100.0,0.0,True,False,False,False,1
+Do-Nothing,scenario-002396,-62.617733064301696,TOTAL_BLACKOUT,4,1,0.0,0.0,False,True,False,False,1
+Do-Nothing,scenario-002412,-31.54675481737802,NON_CONVERGED,2,1,100.0,0.0,False,False,False,True,1
+Do-Nothing,scenario-002420,-91.03617961184489,TOTAL_BLACKOUT,8,1,0.0,0.0,False,True,False,False,1
+Do-Nothing,scenario-002421,12.0,STABLE,1,1,100.0,0.0,True,False,False,False,1
+Do-Nothing,scenario-002423,-75.95167183858935,TOTAL_BLACKOUT,7,1,0.0,0.0,False,True,False,False,1
+Do-Nothing,scenario-002449,-62.02550118031251,TOTAL_BLACKOUT,4,2,0.0,0.0,False,True,False,False,2
+Do-Nothing,scenario-002453,-61.22029574526097,TOTAL_BLACKOUT,5,2,0.0,0.0,False,True,False,False,2
+Do-Nothing,scenario-002488,-61.53993522401271,TOTAL_BLACKOUT,4,2,0.0,0.0,False,True,False,False,2
+Do-Nothing,scenario-002489,-56.37999018306503,TOTAL_BLACKOUT,3,1,0.0,0.0,False,True,False,False,1
+Do-Nothing,scenario-002499,-66.20900878569985,TOTAL_BLACKOUT,5,1,0.0,0.0,False,True,False,False,1
+Do-Nothing,scenario-002500,-57.38802157849563,TOTAL_BLACKOUT,3,2,0.0,0.0,False,True,False,False,2
+Do-Nothing,scenario-002528,-62.695086166793324,TOTAL_BLACKOUT,4,1,0.0,0.0,False,True,False,False,1
+Do-Nothing,scenario-002560,-61.17323261789007,TOTAL_BLACKOUT,4,2,0.0,0.0,False,True,False,False,2
+Do-Nothing,scenario-002572,-70.74468986444029,TOTAL_BLACKOUT,6,1,0.0,0.0,False,True,False,False,1
+Do-Nothing,scenario-002588,-68.89552200348203,TOTAL_BLACKOUT,6,1,0.0,0.0,False,True,False,False,1
+Do-Nothing,scenario-002616,12.0,STABLE,2,1,100.0,0.0,True,False,False,False,1
+Do-Nothing,scenario-002617,-31.123651321634306,NON_CONVERGED,2,1,100.0,0.0,False,False,False,True,1
+Do-Nothing,scenario-002623,-69.3544532308398,TOTAL_BLACKOUT,6,1,0.0,0.0,False,True,False,False,1
+Do-Nothing,scenario-002642,-70.29210079988859,TOTAL_BLACKOUT,7,1,0.0,0.0,False,True,False,False,1
+Do-Nothing,scenario-002648,-71.50659105703032,TOTAL_BLACKOUT,6,1,0.0,0.0,False,True,False,False,1
+Do-Nothing,scenario-002671,-127.68876917308152,TOTAL_BLACKOUT,12,1,0.0,0.0,False,True,False,False,1
+Do-Nothing,scenario-002677,-60.86967833525044,TOTAL_BLACKOUT,4,2,0.0,0.0,False,True,False,False,2
+Do-Nothing,scenario-002697,-60.57639864631295,TOTAL_BLACKOUT,4,2,0.0,0.0,False,True,False,False,2
+Do-Nothing,scenario-002706,12.0,STABLE,1,1,100.0,0.0,True,False,False,False,1
+Do-Nothing,scenario-002769,12.0,STABLE,1,1,100.0,0.0,True,False,False,False,1
+Do-Nothing,scenario-002775,-74.78696659049729,TOTAL_BLACKOUT,7,1,0.0,0.0,False,True,False,False,1
+Do-Nothing,scenario-002778,12.0,STABLE,1,1,100.0,0.0,True,False,False,False,1
+Do-Nothing,scenario-002788,-61.93264289374814,TOTAL_BLACKOUT,4,2,0.0,0.0,False,True,False,False,2
+Do-Nothing,scenario-002798,-85.32234697122156,TOTAL_BLACKOUT,7,1,0.0,0.0,False,True,False,False,1
+Do-Nothing,scenario-002800,-146.69352979562234,TOTAL_BLACKOUT,13,1,0.0,0.0,False,True,False,False,1
+Do-Nothing,scenario-002818,12.0,STABLE,1,1,100.0,0.0,True,False,False,False,1
+Do-Nothing,scenario-002827,-65.94280920171606,TOTAL_BLACKOUT,5,1,0.0,0.0,False,True,False,False,1
+Do-Nothing,scenario-002830,-77.65290882934414,TOTAL_BLACKOUT,7,1,0.0,0.0,False,True,False,False,1
+Do-Nothing,scenario-002836,-31.51595034157093,NON_CONVERGED,2,1,100.0,0.0,False,False,False,True,1
+Do-Nothing,scenario-002863,-79.22823395422121,TOTAL_BLACKOUT,8,1,0.0,0.0,False,True,False,False,1
+Do-Nothing,scenario-002868,-61.225541802460604,TOTAL_BLACKOUT,4,2,0.0,0.0,False,True,False,False,2
+Do-Nothing,scenario-002873,-31.41808571090999,NON_CONVERGED,2,1,100.0,0.0,False,False,False,True,1
+Do-Nothing,scenario-002882,12.0,STABLE,1,1,100.0,0.0,True,False,False,False,1
+Do-Nothing,scenario-002903,-70.80032235686737,TOTAL_BLACKOUT,5,1,0.0,0.0,False,True,False,False,1
+Do-Nothing,scenario-002937,-56.108762267285364,TOTAL_BLACKOUT,3,1,0.0,0.0,False,True,False,False,1
+Do-Nothing,scenario-002942,-56.402668380270875,TOTAL_BLACKOUT,3,1,0.0,0.0,False,True,False,False,1
+Do-Nothing,scenario-002966,-65.63825575813146,TOTAL_BLACKOUT,5,1,0.0,0.0,False,True,False,False,1
+Do-Nothing,scenario-003023,-61.17489914661746,TOTAL_BLACKOUT,4,2,0.0,0.0,False,True,False,False,2
+Do-Nothing,scenario-003036,-60.56293517499799,TOTAL_BLACKOUT,4,2,0.0,0.0,False,True,False,False,2
+Do-Nothing,scenario-003044,-70.95933493496956,TOTAL_BLACKOUT,7,1,0.0,0.0,False,True,False,False,1
+Do-Nothing,scenario-003047,-61.08583441367835,TOTAL_BLACKOUT,5,2,0.0,0.0,False,True,False,False,2
+Do-Nothing,scenario-003067,-71.93838167824427,TOTAL_BLACKOUT,6,1,0.0,0.0,False,True,False,False,1
+Do-Nothing,scenario-003085,-105.52504148352983,TOTAL_BLACKOUT,11,1,0.0,0.0,False,True,False,False,1
+Do-Nothing,scenario-003096,12.0,STABLE,1,1,100.0,0.0,True,False,False,False,1
+Do-Nothing,scenario-003112,-31.21657968398295,NON_CONVERGED,3,1,100.0,0.0,False,False,False,True,1
+Do-Nothing,scenario-003124,-60.439150918631135,TOTAL_BLACKOUT,4,2,0.0,0.0,False,True,False,False,2
+Do-Nothing,scenario-003161,12.0,STABLE,2,1,100.0,0.0,True,False,False,False,1
+Do-Nothing,scenario-003166,-67.71847603757713,TOTAL_BLACKOUT,5,1,0.0,0.0,False,True,False,False,1
+Do-Nothing,scenario-003179,-74.52847036983232,TOTAL_BLACKOUT,7,1,0.0,0.0,False,True,False,False,1
+Do-Nothing,scenario-003185,-92.60485552932663,TOTAL_BLACKOUT,10,1,0.0,0.0,False,True,False,False,1
+Do-Nothing,scenario-003186,-56.17333057819059,TOTAL_BLACKOUT,2,1,0.0,0.0,False,True,False,False,1
+Do-Nothing,scenario-003221,-60.65960420200188,TOTAL_BLACKOUT,4,2,0.0,0.0,False,True,False,False,2
+Do-Nothing,scenario-003226,-191.00407930708099,TOTAL_BLACKOUT,15,1,0.0,0.0,False,True,False,False,1
+Do-Nothing,scenario-003238,-120.60339431919272,TOTAL_BLACKOUT,13,1,0.0,0.0,False,True,False,False,1
+Do-Nothing,scenario-003254,-93.23063495228865,TOTAL_BLACKOUT,8,1,0.0,0.0,False,True,False,False,1
+Do-Nothing,scenario-003260,-113.21762814778093,TOTAL_BLACKOUT,12,1,0.0,0.0,False,True,False,False,1
+Do-Nothing,scenario-003281,-61.323246427253,TOTAL_BLACKOUT,4,2,0.0,0.0,False,True,False,False,2
+Do-Nothing,scenario-003326,-31.36783791262282,NON_CONVERGED,2,1,100.0,0.0,False,False,False,True,1
+Do-Nothing,scenario-003334,-60.66759357654921,TOTAL_BLACKOUT,3,1,0.0,0.0,False,True,False,False,1
+Do-Nothing,scenario-003345,-72.04728300550633,TOTAL_BLACKOUT,7,1,0.0,0.0,False,True,False,False,1
+Do-Nothing,scenario-003349,-60.49522228720309,TOTAL_BLACKOUT,4,1,0.0,0.0,False,True,False,False,1
+Do-Nothing,scenario-003354,12.0,STABLE,1,1,100.0,0.0,True,False,False,False,1
+Do-Nothing,scenario-003375,-65.59558160456368,TOTAL_BLACKOUT,6,1,0.0,0.0,False,True,False,False,1
+Do-Nothing,scenario-003384,12.0,STABLE,1,1,100.0,0.0,True,False,False,False,1
+Do-Nothing,scenario-003406,12.0,STABLE,1,1,100.0,0.0,True,False,False,False,1
+Do-Nothing,scenario-003472,12.0,STABLE,1,1,100.0,0.0,True,False,False,False,1
+Do-Nothing,scenario-003494,-127.30089669631543,TOTAL_BLACKOUT,12,1,0.0,0.0,False,True,False,False,1
+Do-Nothing,scenario-003502,12.0,STABLE,1,1,100.0,0.0,True,False,False,False,1
+Do-Nothing,scenario-003527,-31.13593517619779,NON_CONVERGED,2,1,100.0,0.0,False,False,False,True,1
+Do-Nothing,scenario-003576,-31.066507515324513,NON_CONVERGED,2,1,100.0,0.0,False,False,False,True,1
+Do-Nothing,scenario-003584,-60.57686096620676,TOTAL_BLACKOUT,4,2,0.0,0.0,False,True,False,False,2
+Do-Nothing,scenario-003589,-65.77509716591813,TOTAL_BLACKOUT,5,1,0.0,0.0,False,True,False,False,1
+Do-Nothing,scenario-003596,-61.07750578761777,TOTAL_BLACKOUT,4,2,0.0,0.0,False,True,False,False,2
+Do-Nothing,scenario-003687,-81.40996507867288,TOTAL_BLACKOUT,8,1,0.0,0.0,False,True,False,False,1
+Do-Nothing,scenario-003690,12.0,STABLE,1,1,100.0,0.0,True,False,False,False,1
+Do-Nothing,scenario-003751,-31.0300791232698,NON_CONVERGED,2,1,100.0,0.0,False,False,False,True,1
+Do-Nothing,scenario-003775,-74.8754900285141,TOTAL_BLACKOUT,7,1,0.0,0.0,False,True,False,False,1
+Do-Nothing,scenario-003792,-62.00871334008348,TOTAL_BLACKOUT,5,2,0.0,0.0,False,True,False,False,2
+Do-Nothing,scenario-003834,-56.84632068006618,TOTAL_BLACKOUT,2,1,0.0,0.0,False,True,False,False,1
+Do-Nothing,scenario-003863,-31.625093319335374,NON_CONVERGED,2,1,100.0,0.0,False,False,False,True,1
+Do-Nothing,scenario-003884,-31.52624244679005,NON_CONVERGED,2,1,100.0,0.0,False,False,False,True,1
+Do-Nothing,scenario-003900,-65.97614694252431,TOTAL_BLACKOUT,5,1,0.0,0.0,False,True,False,False,1
+Do-Nothing,scenario-003901,-60.472563560853274,TOTAL_BLACKOUT,4,2,0.0,0.0,False,True,False,False,2
+Do-Nothing,scenario-003909,-65.96888694172641,TOTAL_BLACKOUT,5,1,0.0,0.0,False,True,False,False,1
+Do-Nothing,scenario-003910,-66.19445638758268,TOTAL_BLACKOUT,5,1,0.0,0.0,False,True,False,False,1
+Do-Nothing,scenario-003947,-59.64321357148704,TOTAL_BLACKOUT,3,1,0.0,0.0,False,True,False,False,1
+Do-Nothing,scenario-003949,-34.24390548950939,NON_CONVERGED,3,1,100.0,0.0,False,False,False,True,1
+Do-Nothing,scenario-003991,-66.13342147326634,TOTAL_BLACKOUT,5,1,0.0,0.0,False,True,False,False,1
+Do-Nothing,scenario-004014,-62.64813101846812,TOTAL_BLACKOUT,4,2,0.0,0.0,False,True,False,False,2
+Do-Nothing,scenario-004023,-60.98257440164155,TOTAL_BLACKOUT,4,2,0.0,0.0,False,True,False,False,2
+Do-Nothing,scenario-004035,-31.374914646334293,NON_CONVERGED,2,1,100.0,0.0,False,False,False,True,1
+Do-Nothing,scenario-004042,-66.96141723740445,TOTAL_BLACKOUT,4,2,0.0,0.0,False,True,False,False,2
+Do-Nothing,scenario-004045,-56.32669899100229,TOTAL_BLACKOUT,2,1,0.0,0.0,False,True,False,False,1
+Do-Nothing,scenario-004075,-60.97894221818162,TOTAL_BLACKOUT,3,1,0.0,0.0,False,True,False,False,1
+Do-Nothing,scenario-004120,12.0,STABLE,1,1,100.0,0.0,True,False,False,False,1
+Do-Nothing,scenario-004133,-79.94173945023427,TOTAL_BLACKOUT,8,1,0.0,0.0,False,True,False,False,1
+Do-Nothing,scenario-004154,-80.53630256233295,TOTAL_BLACKOUT,8,1,0.0,0.0,False,True,False,False,1
+Do-Nothing,scenario-004155,-71.07417913699193,TOTAL_BLACKOUT,7,1,0.0,0.0,False,True,False,False,1
+Do-Nothing,scenario-004168,-56.138520077279296,TOTAL_BLACKOUT,2,1,0.0,0.0,False,True,False,False,1
+Do-Nothing,scenario-004172,12.0,STABLE,1,1,100.0,0.0,True,False,False,False,1
+Do-Nothing,scenario-004210,-59.60269580941021,TOTAL_BLACKOUT,3,1,0.0,0.0,False,True,False,False,1
+Do-Nothing,scenario-004233,-31.4589500535487,NON_CONVERGED,2,1,100.0,0.0,False,False,False,True,1
+Do-Nothing,scenario-004260,-60.37113459110358,TOTAL_BLACKOUT,4,2,0.0,0.0,False,True,False,False,2
+Do-Nothing,scenario-004297,-56.47578744973949,TOTAL_BLACKOUT,2,1,0.0,0.0,False,True,False,False,1
+Do-Nothing,scenario-004303,-76.30713587095029,TOTAL_BLACKOUT,7,1,0.0,0.0,False,True,False,False,1
+Do-Nothing,scenario-004375,12.0,STABLE,1,1,100.0,0.0,True,False,False,False,1
+Do-Nothing,scenario-004387,-70.73082998394787,TOTAL_BLACKOUT,7,1,0.0,0.0,False,True,False,False,1
+Do-Nothing,scenario-004390,-65.94093837768443,TOTAL_BLACKOUT,5,2,0.0,0.0,False,True,False,False,2
+Do-Nothing,scenario-004410,-60.26850043486303,TOTAL_BLACKOUT,3,1,0.0,0.0,False,True,False,False,1
+Do-Nothing,scenario-004416,-75.72165347894449,TOTAL_BLACKOUT,7,1,0.0,0.0,False,True,False,False,1
+Do-Nothing,scenario-004426,-31.094490447139446,NON_CONVERGED,2,1,100.0,0.0,False,False,False,True,1
+Do-Nothing,scenario-004435,-68.46606432414012,TOTAL_BLACKOUT,5,1,0.0,0.0,False,True,False,False,1
+Do-Nothing,scenario-004445,-60.979546269014755,TOTAL_BLACKOUT,4,2,0.0,0.0,False,True,False,False,2
+Do-Nothing,scenario-004451,-69.70042327571159,TOTAL_BLACKOUT,6,1,0.0,0.0,False,True,False,False,1
+Do-Nothing,scenario-004454,-65.99266960897926,TOTAL_BLACKOUT,5,1,0.0,0.0,False,True,False,False,1
+Do-Nothing,scenario-004459,-109.11006264904607,TOTAL_BLACKOUT,10,1,0.0,0.0,False,True,False,False,1
+Do-Nothing,scenario-004491,-74.23513620509814,TOTAL_BLACKOUT,7,1,0.0,0.0,False,True,False,False,1
+Do-Nothing,scenario-004493,-56.42016056439644,TOTAL_BLACKOUT,2,1,0.0,0.0,False,True,False,False,1
+Do-Nothing,scenario-004538,-61.96287341083377,TOTAL_BLACKOUT,4,2,0.0,0.0,False,True,False,False,2
+Do-Nothing,scenario-004552,-71.95331853230013,TOTAL_BLACKOUT,6,1,0.0,0.0,False,True,False,False,1
+Do-Nothing,scenario-004558,-60.59390436960121,TOTAL_BLACKOUT,3,1,0.0,0.0,False,True,False,False,1
+Do-Nothing,scenario-004584,-77.66381044056843,TOTAL_BLACKOUT,8,1,0.0,0.0,False,True,False,False,1
+Do-Nothing,scenario-004585,-75.08764659342992,TOTAL_BLACKOUT,6,1,0.0,0.0,False,True,False,False,1
+Do-Nothing,scenario-004586,-89.15372611923581,TOTAL_BLACKOUT,9,1,0.0,0.0,False,True,False,False,1
+Do-Nothing,scenario-004595,-68.80671794670945,TOTAL_BLACKOUT,6,2,0.0,0.0,False,True,False,False,2
+Do-Nothing,scenario-004608,-56.230987601802056,TOTAL_BLACKOUT,2,1,0.0,0.0,False,True,False,False,1
+Do-Nothing,scenario-004650,-60.766749834280546,TOTAL_BLACKOUT,4,2,0.0,0.0,False,True,False,False,2
+Do-Nothing,scenario-004667,-72.93127577534179,TOTAL_BLACKOUT,8,1,0.0,0.0,False,True,False,False,1
+Do-Nothing,scenario-004699,12.0,STABLE,1,1,100.0,0.0,True,False,False,False,1
+Do-Nothing,scenario-004719,-79.43169622261746,TOTAL_BLACKOUT,7,1,0.0,0.0,False,True,False,False,1
+Do-Nothing,scenario-004729,-73.41295770004777,TOTAL_BLACKOUT,7,1,0.0,0.0,False,True,False,False,1
+Do-Nothing,scenario-004752,-60.06582767508136,TOTAL_BLACKOUT,4,1,0.0,0.0,False,True,False,False,1
+Do-Nothing,scenario-004755,-67.2372109599855,TOTAL_BLACKOUT,5,1,0.0,0.0,False,True,False,False,1
+Do-Nothing,scenario-004757,-75.99894086503227,TOTAL_BLACKOUT,7,1,0.0,0.0,False,True,False,False,1
+Do-Nothing,scenario-004770,-31.133238998786236,NON_CONVERGED,2,1,100.0,0.0,False,False,False,True,1
+Do-Nothing,scenario-004775,12.0,STABLE,1,1,100.0,0.0,True,False,False,False,1
+Do-Nothing,scenario-004785,-71.21271989292418,TOTAL_BLACKOUT,6,1,0.0,0.0,False,True,False,False,1
+Do-Nothing,scenario-004787,-79.58973428954384,TOTAL_BLACKOUT,8,1,0.0,0.0,False,True,False,False,1
+Do-Nothing,scenario-004853,-31.194398107165124,NON_CONVERGED,2,1,100.0,0.0,False,False,False,True,1
+Do-Nothing,scenario-004862,-59.525915072684825,TOTAL_BLACKOUT,3,1,0.0,0.0,False,True,False,False,1
+Do-Nothing,scenario-004866,-67.71951052181102,TOTAL_BLACKOUT,6,1,0.0,0.0,False,True,False,False,1
+Do-Nothing,scenario-004885,12.0,STABLE,2,1,100.0,0.0,True,False,False,False,1
+Do-Nothing,scenario-004900,-56.709002377927455,TOTAL_BLACKOUT,2,1,0.0,0.0,False,True,False,False,1
+Do-Nothing,scenario-004972,-76.45994714722546,TOTAL_BLACKOUT,7,1,0.0,0.0,False,True,False,False,1
+Do-Nothing,scenario-004979,-72.79733420225072,TOTAL_BLACKOUT,7,1,0.0,0.0,False,True,False,False,1
+Do-Nothing,scenario-004991,-65.45142881815329,TOTAL_BLACKOUT,5,2,0.0,0.0,False,True,False,False,2
+Rule-Controller,scenario-000027,-31.211268889905416,NON_CONVERGED,3,1,98.6855160750039,4.853550661606888,False,False,False,True,1
+Rule-Controller,scenario-000085,-57.65848790622594,TOTAL_BLACKOUT,3,2,0.0,15.515661036411949,False,True,False,False,2
+Rule-Controller,scenario-000093,-73.93732018801825,TOTAL_BLACKOUT,7,1,0.0,5.125400948485642,False,True,False,False,1
+Rule-Controller,scenario-000104,-71.89557614494808,TOTAL_BLACKOUT,7,1,0.0,7.281125355268996,False,True,False,False,1
+Rule-Controller,scenario-000105,-62.75816750002097,TOTAL_BLACKOUT,5,1,0.0,2.9904665605138825,False,True,False,False,1
+Rule-Controller,scenario-000118,-62.56953437185188,TOTAL_BLACKOUT,4,1,0.0,2.821142623879674,False,True,False,False,1
+Rule-Controller,scenario-000145,-31.305134866241318,NON_CONVERGED,2,1,98.62665831593097,4.657176102631814,False,False,False,True,1
+Rule-Controller,scenario-000149,-38.733814089529886,NON_CONVERGED,4,1,98.96168365301742,2.9408583071356045,False,False,False,True,1
+Rule-Controller,scenario-000201,-69.68656197907772,TOTAL_BLACKOUT,5,2,0.0,19.88255887692357,False,True,False,False,2
+Rule-Controller,scenario-000204,-59.4587175167336,TOTAL_BLACKOUT,4,1,0.0,3.7561987132873034,False,True,False,False,1
+Rule-Controller,scenario-000224,11.89722825448726,STABLE,1,1,98.49223584249316,4.23976694654426,True,False,False,False,1
+Rule-Controller,scenario-000227,-86.37439368455682,TOTAL_BLACKOUT,9,1,0.0,2.502931926078378,False,True,False,False,1
+Rule-Controller,scenario-000262,11.74880584260276,STABLE,1,1,94.251595502936,13.154710848670653,True,False,False,False,1
+Rule-Controller,scenario-000270,-66.10618810141837,TOTAL_BLACKOUT,5,1,0.0,3.3289784764313177,False,True,False,False,1
+Rule-Controller,scenario-000287,-79.00492041617028,TOTAL_BLACKOUT,7,1,0.0,4.337775958712007,False,True,False,False,1
+Rule-Controller,scenario-000294,-60.81396129058565,TOTAL_BLACKOUT,4,2,0.0,17.49122379140542,False,True,False,False,2
+Rule-Controller,scenario-000301,11.863295614817108,STABLE,1,1,97.52273185191736,5.157882286317546,True,False,False,False,1
+Rule-Controller,scenario-000316,-79.87145561401908,TOTAL_BLACKOUT,8,1,0.0,3.63634995867986,False,True,False,False,1
+Rule-Controller,scenario-000328,-77.70201740481914,TOTAL_BLACKOUT,7,1,0.0,3.196537545615535,False,True,False,False,1
+Rule-Controller,scenario-000345,-61.39923236193523,TOTAL_BLACKOUT,4,2,0.0,22.435822419585396,False,True,False,False,2
+Rule-Controller,scenario-000374,-190.9985878563507,TOTAL_BLACKOUT,15,1,0.0,3.5076930771223838,False,True,False,False,1
+Rule-Controller,scenario-000375,-57.57448281948582,TOTAL_BLACKOUT,3,2,0.0,19.34855209277899,False,True,False,False,2
+Rule-Controller,scenario-000399,-70.35372953287832,TOTAL_BLACKOUT,6,1,0.0,3.7845989463673773,False,True,False,False,1
+Rule-Controller,scenario-000401,11.863958430311454,STABLE,1,1,97.54166943747012,5.592935947909631,True,False,False,False,1
+Rule-Controller,scenario-000423,11.84651480126923,STABLE,1,1,97.04328003626371,9.655750772430514,True,False,False,False,1
+Rule-Controller,scenario-000432,-84.33436259137653,TOTAL_BLACKOUT,7,1,0.0,4.3512083480801635,False,True,False,False,1
+Rule-Controller,scenario-000437,-61.10678852784521,TOTAL_BLACKOUT,5,2,0.0,23.590248776397814,False,True,False,False,2
+Rule-Controller,scenario-000438,-60.76009099462193,TOTAL_BLACKOUT,5,2,0.0,19.721814794741654,False,True,False,False,2
+Rule-Controller,scenario-000459,-34.63295156172674,NON_CONVERGED,3,1,99.01064488132326,3.649680189365389,False,False,False,True,1
+Rule-Controller,scenario-000482,-74.70564156768299,TOTAL_BLACKOUT,8,1,0.0,4.059790536336737,False,True,False,False,1
+Rule-Controller,scenario-000485,11.737621991248789,STABLE,1,1,93.93205689282254,16.883920602603137,True,False,False,False,1
+Rule-Controller,scenario-000491,-72.93048112288702,TOTAL_BLACKOUT,6,1,0.0,4.87819636694348,False,True,False,False,1
+Rule-Controller,scenario-000503,-74.01301142856946,TOTAL_BLACKOUT,8,1,0.0,4.245418017891432,False,True,False,False,1
+Rule-Controller,scenario-000558,-71.91858830378499,TOTAL_BLACKOUT,6,1,0.0,3.1298565547309694,False,True,False,False,1
+Rule-Controller,scenario-000562,11.861826721716493,STABLE,1,1,97.48076347761409,8.146069547851807,True,False,False,False,1
+Rule-Controller,scenario-000584,-68.29090750685566,TOTAL_BLACKOUT,5,1,0.0,3.4278517430496174,False,True,False,False,1
+Rule-Controller,scenario-000634,-60.92277951639472,TOTAL_BLACKOUT,4,2,0.0,22.362605431336018,False,True,False,False,2
+Rule-Controller,scenario-000642,-67.54504941142785,TOTAL_BLACKOUT,4,2,0.0,25.99842693117725,False,True,False,False,2
+Rule-Controller,scenario-000644,-65.60246134395653,TOTAL_BLACKOUT,6,1,0.0,4.5324666665280375,False,True,False,False,1
+Rule-Controller,scenario-000650,-70.57401246504229,TOTAL_BLACKOUT,6,1,0.0,4.552730752702284,False,True,False,False,1
+Rule-Controller,scenario-000667,-31.186163207479648,NON_CONVERGED,2,1,98.64524351698698,4.962263609227946,False,False,False,True,1
+Rule-Controller,scenario-000669,-31.284338348065518,NON_CONVERGED,2,1,98.60893237025826,5.086911190252796,False,False,False,True,1
+Rule-Controller,scenario-000675,-85.90335079589804,TOTAL_BLACKOUT,9,1,0.0,4.260979092669939,False,True,False,False,1
+Rule-Controller,scenario-000690,-79.62480249633307,TOTAL_BLACKOUT,9,1,0.0,14.959010263713312,False,True,False,False,1
+Rule-Controller,scenario-000700,14.803821999914007,STABLE,1,1,94.39478671832761,12.589069748845779,True,False,False,False,1
+Rule-Controller,scenario-000749,-120.04726039335513,TOTAL_BLACKOUT,12,1,0.0,4.611575846183268,False,True,False,False,1
+Rule-Controller,scenario-000758,-85.21286637379606,TOTAL_BLACKOUT,9,1,0.0,3.7448695005621166,False,True,False,False,1
+Rule-Controller,scenario-000760,-67.32411881228467,TOTAL_BLACKOUT,5,1,0.0,2.6868207220899407,False,True,False,False,1
+Rule-Controller,scenario-000794,-61.09910365328381,TOTAL_BLACKOUT,4,1,0.0,10.033973115600407,False,True,False,False,1
+Rule-Controller,scenario-000801,-74.20640605483847,TOTAL_BLACKOUT,7,1,0.0,4.271536071170262,False,True,False,False,1
+Rule-Controller,scenario-000805,-31.627837487111588,NON_CONVERGED,2,1,98.88832494143496,4.422144367381488,False,False,False,True,1
+Rule-Controller,scenario-000822,-62.653390574598056,TOTAL_BLACKOUT,5,1,0.0,3.539941819399601,False,True,False,False,1
+Rule-Controller,scenario-000830,-60.60573816088637,TOTAL_BLACKOUT,4,2,0.0,18.968469283439134,False,True,False,False,2
+Rule-Controller,scenario-000838,-76.01888263350509,TOTAL_BLACKOUT,7,1,0.0,4.283569433602592,False,True,False,False,1
+Rule-Controller,scenario-000842,-62.18410669157652,TOTAL_BLACKOUT,4,2,0.0,16.922226368449657,False,True,False,False,2
+Rule-Controller,scenario-000867,-77.0182799330814,TOTAL_BLACKOUT,7,1,0.0,4.18546803076034,False,True,False,False,1
+Rule-Controller,scenario-000978,-65.74400980267659,TOTAL_BLACKOUT,5,1,0.0,4.960775302586158,False,True,False,False,1
+Rule-Controller,scenario-000989,11.763183691787072,STABLE,2,1,94.66239119391633,12.383792423375413,True,False,False,False,1
+Rule-Controller,scenario-001002,-62.74220082446956,TOTAL_BLACKOUT,4,1,0.0,4.00952430256137,False,True,False,False,1
+Rule-Controller,scenario-001037,-74.15157274849457,TOTAL_BLACKOUT,7,1,0.0,3.6689372849045743,False,True,False,False,1
+Rule-Controller,scenario-001046,11.898702894234342,STABLE,1,1,98.53436840669545,3.776880203564828,True,False,False,False,1
+Rule-Controller,scenario-001058,-59.36396010012037,TOTAL_BLACKOUT,3,1,0.0,3.573589912597338,False,True,False,False,1
+Rule-Controller,scenario-001114,-75.0004369850062,TOTAL_BLACKOUT,7,1,0.0,3.376671078516322,False,True,False,False,1
+Rule-Controller,scenario-001117,11.762484336771868,STABLE,2,1,94.64240962205336,11.63945204389652,True,False,False,False,1
+Rule-Controller,scenario-001123,-88.82180830295536,TOTAL_BLACKOUT,8,1,0.0,3.7030251090446145,False,True,False,False,1
+Rule-Controller,scenario-001142,-59.998009776344745,TOTAL_BLACKOUT,3,1,0.0,4.158784523727924,False,True,False,False,1
+Rule-Controller,scenario-001181,-60.52825423259003,TOTAL_BLACKOUT,4,2,0.0,22.046458894661342,False,True,False,False,2
+Rule-Controller,scenario-001214,-31.388876104505748,NON_CONVERGED,2,1,98.50013299689424,4.9508802680864425,False,False,False,True,1
+Rule-Controller,scenario-001232,-56.49038574913159,TOTAL_BLACKOUT,2,1,0.0,3.8886324007177526,False,True,False,False,1
+Rule-Controller,scenario-001233,-31.17716813643,NON_CONVERGED,2,1,98.76700843029859,4.445058594465049,False,False,False,True,1
+Rule-Controller,scenario-001245,-72.06322997596313,TOTAL_BLACKOUT,6,1,0.0,4.83422056872558,False,True,False,False,1
+Rule-Controller,scenario-001252,-37.678489539342635,NON_CONVERGED,5,1,98.9751177919585,2.6135722643520003,False,False,False,True,1
+Rule-Controller,scenario-001258,-61.25450408855602,TOTAL_BLACKOUT,4,2,0.0,23.372316415799823,False,True,False,False,2
+Rule-Controller,scenario-001275,-61.61393002498409,TOTAL_BLACKOUT,4,2,0.0,14.701335727431454,False,True,False,False,2
+Rule-Controller,scenario-001281,11.90097627537554,STABLE,1,1,98.59932215358683,3.7903895177934546,True,False,False,False,1
+Rule-Controller,scenario-001296,-60.99487960995813,TOTAL_BLACKOUT,4,2,0.0,21.42333602736853,False,True,False,False,2
+Rule-Controller,scenario-001300,-56.69106859081781,TOTAL_BLACKOUT,3,1,0.0,2.598462612557203,False,True,False,False,1
+Rule-Controller,scenario-001343,-60.512161876267925,TOTAL_BLACKOUT,4,2,0.0,20.324909344248237,False,True,False,False,2
+Rule-Controller,scenario-001349,-61.166123341226125,TOTAL_BLACKOUT,4,2,0.0,13.851091118061927,False,True,False,False,2
+Rule-Controller,scenario-001366,-68.7017835845092,TOTAL_BLACKOUT,6,1,0.0,4.266528219945201,False,True,False,False,1
+Rule-Controller,scenario-001371,-67.74354311501774,TOTAL_BLACKOUT,5,1,0.0,3.708056888760777,False,True,False,False,1
+Rule-Controller,scenario-001383,-31.283284341369622,NON_CONVERGED,3,1,98.9579989288374,3.942229567461597,False,False,False,True,1
+Rule-Controller,scenario-001393,11.861478987129857,STABLE,1,1,97.4708282037102,7.642668863471828,True,False,False,False,1
+Rule-Controller,scenario-001447,-69.97845776693437,TOTAL_BLACKOUT,5,1,0.0,3.880277332433173,False,True,False,False,1
+Rule-Controller,scenario-001484,-66.09373814109392,TOTAL_BLACKOUT,5,1,0.0,4.417370242486176,False,True,False,False,1
+Rule-Controller,scenario-001540,-56.260332555394825,TOTAL_BLACKOUT,2,1,0.0,15.213439977021874,False,True,False,False,1
+Rule-Controller,scenario-001547,-31.22854128338776,NON_CONVERGED,2,1,99.01143439270122,3.4167563206135396,False,False,False,True,1
+Rule-Controller,scenario-001549,11.860984720314498,STABLE,2,1,97.45670629469996,5.970733757611359,True,False,False,False,1
+Rule-Controller,scenario-001564,-68.02802984029907,TOTAL_BLACKOUT,6,2,0.0,20.99297368277174,False,True,False,False,2
+Rule-Controller,scenario-001565,-63.21261095230798,TOTAL_BLACKOUT,4,1,0.0,3.119210230620279,False,True,False,False,1
+Rule-Controller,scenario-001569,-59.647585379392915,TOTAL_BLACKOUT,4,1,0.0,13.588818041323963,False,True,False,False,1
+Rule-Controller,scenario-001576,11.852784104138557,STABLE,2,1,97.22240297538737,6.764556501755872,True,False,False,False,1
+Rule-Controller,scenario-001578,11.756457521435884,STABLE,1,1,94.47021489816814,14.590078567086865,True,False,False,False,1
+Rule-Controller,scenario-001595,-31.169304182310626,NON_CONVERGED,2,1,98.58961213712672,5.224164176266333,False,False,False,True,1
+Rule-Controller,scenario-001596,-57.65985476938499,TOTAL_BLACKOUT,3,2,0.0,14.766832845033248,False,True,False,False,2
+Rule-Controller,scenario-001602,-168.08587969654235,TOTAL_BLACKOUT,14,1,0.0,4.676386005944,False,True,False,False,1
+Rule-Controller,scenario-001616,-75.26610996533641,TOTAL_BLACKOUT,7,1,0.0,4.160036203172609,False,True,False,False,1
+Rule-Controller,scenario-001649,-71.13342043539329,TOTAL_BLACKOUT,6,1,0.0,4.8910503958311695,False,True,False,False,1
+Rule-Controller,scenario-001656,14.912931206619206,STABLE,1,1,98.67283681267921,3.5059412960498277,True,False,False,False,1
+Rule-Controller,scenario-001658,-31.293889080727432,NON_CONVERGED,2,1,98.79627888360221,4.455877091213569,False,False,False,True,1
+Rule-Controller,scenario-001672,-61.82822576617603,TOTAL_BLACKOUT,4,2,0.0,14.093527509028942,False,True,False,False,2
+Rule-Controller,scenario-001674,11.761967895767878,STABLE,1,1,94.62765416479651,12.78769980365427,True,False,False,False,1
+Rule-Controller,scenario-001732,-56.408592421732656,TOTAL_BLACKOUT,2,1,0.0,2.81781397720048,False,True,False,False,1
+Rule-Controller,scenario-001737,-79.072800653199,TOTAL_BLACKOUT,7,1,0.0,4.742515436790211,False,True,False,False,1
+Rule-Controller,scenario-001756,-56.318037414906,TOTAL_BLACKOUT,2,1,0.0,16.813021359026877,False,True,False,False,1
+Rule-Controller,scenario-001824,-31.17625175856561,NON_CONVERGED,2,1,98.98558080956872,3.0696192778954936,False,False,False,True,1
+Rule-Controller,scenario-001827,-80.41315211107063,TOTAL_BLACKOUT,8,1,0.0,2.736068202312878,False,True,False,False,1
+Rule-Controller,scenario-001858,-65.65561467588255,TOTAL_BLACKOUT,5,1,0.0,4.380621985530927,False,True,False,False,1
+Rule-Controller,scenario-001863,-59.68484928289007,TOTAL_BLACKOUT,3,1,0.0,15.591065864903983,False,True,False,False,1
+Rule-Controller,scenario-001885,-69.39693606752635,TOTAL_BLACKOUT,6,1,0.0,4.073903294771971,False,True,False,False,1
+Rule-Controller,scenario-001902,-65.98454348406277,TOTAL_BLACKOUT,6,2,0.0,21.194453267398202,False,True,False,False,2
+Rule-Controller,scenario-001911,-67.95655791319123,TOTAL_BLACKOUT,6,2,0.0,16.734640826859128,False,True,False,False,2
+Rule-Controller,scenario-001923,-56.256993009866534,TOTAL_BLACKOUT,3,1,0.0,3.7347025305472883,False,True,False,False,1
+Rule-Controller,scenario-001932,-67.83795566701305,TOTAL_BLACKOUT,6,1,0.0,3.0317813382314647,False,True,False,False,1
+Rule-Controller,scenario-001950,-62.78115374638257,TOTAL_BLACKOUT,4,1,0.0,4.218667307864866,False,True,False,False,1
+Rule-Controller,scenario-001952,-137.08489617595848,TOTAL_BLACKOUT,13,1,0.0,4.40829277719246,False,True,False,False,1
+Rule-Controller,scenario-001970,-61.11418061106595,TOTAL_BLACKOUT,4,2,0.0,19.65049813551228,False,True,False,False,2
+Rule-Controller,scenario-002035,-74.87731514994057,TOTAL_BLACKOUT,8,1,0.0,4.342466049947427,False,True,False,False,1
+Rule-Controller,scenario-002070,-72.0120780164311,TOTAL_BLACKOUT,6,1,0.0,4.93275468502229,False,True,False,False,1
+Rule-Controller,scenario-002080,-69.67516486845285,TOTAL_BLACKOUT,6,1,0.0,3.055013419745988,False,True,False,False,1
+Rule-Controller,scenario-002085,-57.64021359422792,TOTAL_BLACKOUT,3,2,0.0,15.436320008631556,False,True,False,False,2
+Rule-Controller,scenario-002121,-74.81647752531467,TOTAL_BLACKOUT,8,1,0.0,3.088518877619507,False,True,False,False,1
+Rule-Controller,scenario-002132,11.89921153042093,STABLE,1,1,98.54890086916942,3.6594604132580346,True,False,False,False,1
+Rule-Controller,scenario-002141,-126.08682925401222,TOTAL_BLACKOUT,13,1,0.0,3.338806404218446,False,True,False,False,1
+Rule-Controller,scenario-002153,-74.13184204153268,TOTAL_BLACKOUT,8,1,0.0,2.606042127075096,False,True,False,False,1
+Rule-Controller,scenario-002156,-31.13454070208801,NON_CONVERGED,3,1,96.89754579479775,10.86355138959375,False,False,False,True,1
+Rule-Controller,scenario-002163,-95.29864993099338,TOTAL_BLACKOUT,9,1,0.0,4.712677276340342,False,True,False,False,1
+Rule-Controller,scenario-002169,14.792671536198693,STABLE,1,1,94.56360550414134,10.922236144142117,True,False,False,False,1
+Rule-Controller,scenario-002187,-60.845408115009384,TOTAL_BLACKOUT,4,2,0.0,21.58554757489345,False,True,False,False,2
+Rule-Controller,scenario-002207,11.906497014158154,STABLE,1,1,98.75705754737581,3.1768427556286096,True,False,False,False,1
+Rule-Controller,scenario-002213,-37.64823951800202,NON_CONVERGED,4,1,98.86919985464449,3.097942262678696,False,False,False,True,1
+Rule-Controller,scenario-002215,-61.99022692143814,TOTAL_BLACKOUT,4,2,0.0,19.37847034294552,False,True,False,False,2
+Rule-Controller,scenario-002218,11.899832148273696,STABLE,1,1,98.56663280781987,3.269243228569181,True,False,False,False,1
+Rule-Controller,scenario-002229,-81.2229710515098,TOTAL_BLACKOUT,7,1,0.0,3.3686687526660037,False,True,False,False,1
+Rule-Controller,scenario-002236,-66.96871123928278,TOTAL_BLACKOUT,4,2,0.0,16.297637470055083,False,True,False,False,2
+Rule-Controller,scenario-002248,-73.69122213341132,TOTAL_BLACKOUT,6,1,0.0,3.381291693705517,False,True,False,False,1
+Rule-Controller,scenario-002250,-31.291822508014075,NON_CONVERGED,2,1,98.7416636191114,4.575616698251501,False,False,False,True,1
+Rule-Controller,scenario-002255,-62.21666589243406,TOTAL_BLACKOUT,4,2,0.0,18.541559953270255,False,True,False,False,2
+Rule-Controller,scenario-002258,-123.63144249634075,TOTAL_BLACKOUT,13,1,0.0,3.8168396880234137,False,True,False,False,1
+Rule-Controller,scenario-002260,11.781354640073,STABLE,1,1,95.18156114494283,9.637730596278258,True,False,False,False,1
+Rule-Controller,scenario-002275,-65.56407432737029,TOTAL_BLACKOUT,5,1,0.0,3.5974433492991413,False,True,False,False,1
+Rule-Controller,scenario-002276,11.749812961877145,STABLE,1,1,94.280370339347,12.615799492675443,True,False,False,False,1
+Rule-Controller,scenario-002290,-76.00525316810064,TOTAL_BLACKOUT,7,1,0.0,2.5770684733062943,False,True,False,False,1
+Rule-Controller,scenario-002314,-61.954658608504076,TOTAL_BLACKOUT,4,2,0.0,19.311169630893204,False,True,False,False,2
+Rule-Controller,scenario-002318,-82.5436615422777,TOTAL_BLACKOUT,8,1,0.0,3.977163137372983,False,True,False,False,1
+Rule-Controller,scenario-002344,-66.35632553133709,TOTAL_BLACKOUT,5,1,0.0,5.313402303370978,False,True,False,False,1
+Rule-Controller,scenario-002359,-60.64692662127609,TOTAL_BLACKOUT,4,2,0.0,18.364178187331277,False,True,False,False,2
+Rule-Controller,scenario-002377,11.900331715346585,STABLE,1,1,98.58090615275957,4.041717595294666,True,False,False,False,1
+Rule-Controller,scenario-002378,11.836546166081266,STABLE,1,1,96.75846188803615,10.561281556392121,True,False,False,False,1
+Rule-Controller,scenario-002396,-62.64541723689723,TOTAL_BLACKOUT,4,1,0.0,4.712709437779311,False,True,False,False,1
+Rule-Controller,scenario-002412,-31.588407075756166,NON_CONVERGED,2,1,98.89871862249706,4.137890272419287,False,False,False,True,1
+Rule-Controller,scenario-002420,-90.68286795758499,TOTAL_BLACKOUT,8,1,0.0,4.232771506852223,False,True,False,False,1
+Rule-Controller,scenario-002421,11.900012166868054,STABLE,1,1,98.57177619623012,3.5969311905021226,True,False,False,False,1
+Rule-Controller,scenario-002423,-75.86375317710358,TOTAL_BLACKOUT,7,1,0.0,4.336046743226408,False,True,False,False,1
+Rule-Controller,scenario-002449,-61.76188970489867,TOTAL_BLACKOUT,4,2,0.0,20.157699570743954,False,True,False,False,2
+Rule-Controller,scenario-002453,-61.13464117318168,TOTAL_BLACKOUT,5,2,0.0,16.47675791437178,False,True,False,False,2
+Rule-Controller,scenario-002488,-61.31604300046689,TOTAL_BLACKOUT,4,2,0.0,20.23020590119246,False,True,False,False,2
+Rule-Controller,scenario-002489,-56.436789006578074,TOTAL_BLACKOUT,3,1,0.0,3.849365838976858,False,True,False,False,1
+Rule-Controller,scenario-002499,-66.20300893356094,TOTAL_BLACKOUT,5,1,0.0,5.241493988904006,False,True,False,False,1
+Rule-Controller,scenario-002500,14.913260606161039,STABLE,1,1,98.80761234315133,3.6643666526892105,True,False,False,False,1
+Rule-Controller,scenario-002528,-62.71772601175664,TOTAL_BLACKOUT,4,1,0.0,5.171474481594047,False,True,False,False,1
+Rule-Controller,scenario-002560,-60.82724671012337,TOTAL_BLACKOUT,4,2,0.0,22.0292110150477,False,True,False,False,2
+Rule-Controller,scenario-002572,-70.69245177284799,TOTAL_BLACKOUT,6,1,0.0,3.0990999430191692,False,True,False,False,1
+Rule-Controller,scenario-002588,-64.02568815628099,TOTAL_BLACKOUT,5,1,0.0,16.14072107745824,False,True,False,False,1
+Rule-Controller,scenario-002616,11.865995392620018,STABLE,2,1,97.59986836057195,4.999197565876815,True,False,False,False,1
+Rule-Controller,scenario-002617,-31.187393774468102,NON_CONVERGED,2,1,98.51103368818936,5.576316112583924,False,False,False,True,1
+Rule-Controller,scenario-002623,-69.38374403052714,TOTAL_BLACKOUT,6,1,0.0,3.3076756698916148,False,True,False,False,1
+Rule-Controller,scenario-002642,-70.27143492895986,TOTAL_BLACKOUT,7,1,0.0,3.474856381081403,False,True,False,False,1
+Rule-Controller,scenario-002648,-71.45353770906299,TOTAL_BLACKOUT,6,1,0.0,3.1518627760024245,False,True,False,False,1
+Rule-Controller,scenario-002671,-126.79416817301461,TOTAL_BLACKOUT,12,1,0.0,4.724658398146716,False,True,False,False,1
+Rule-Controller,scenario-002677,-61.16385275621517,TOTAL_BLACKOUT,4,2,0.0,20.076479110119415,False,True,False,False,2
+Rule-Controller,scenario-002697,-60.68011223078022,TOTAL_BLACKOUT,4,2,0.0,12.994042198905895,False,True,False,False,2
+Rule-Controller,scenario-002706,11.908898656587148,STABLE,1,1,98.82567590248996,2.672099031685547,True,False,False,False,1
+Rule-Controller,scenario-002769,11.907670516713232,STABLE,1,1,98.79058619180665,3.0550059795565794,True,False,False,False,1
+Rule-Controller,scenario-002775,-74.7870969424498,TOTAL_BLACKOUT,7,1,0.0,2.8704027466454636,False,True,False,False,1
+Rule-Controller,scenario-002778,11.760009399756637,STABLE,1,1,94.5716971359039,11.255422532385932,True,False,False,False,1
+Rule-Controller,scenario-002788,-61.66719559428817,TOTAL_BLACKOUT,4,2,0.0,18.8275764141477,False,True,False,False,2
+Rule-Controller,scenario-002798,-85.12901877133254,TOTAL_BLACKOUT,7,1,0.0,3.5528533372598052,False,True,False,False,1
+Rule-Controller,scenario-002800,-145.54887650652063,TOTAL_BLACKOUT,13,1,0.0,3.3914664062150037,False,True,False,False,1
+Rule-Controller,scenario-002818,11.908265969709152,STABLE,1,1,98.80759913454719,2.370410580411965,True,False,False,False,1
+Rule-Controller,scenario-002827,-62.96097421545056,TOTAL_BLACKOUT,4,1,0.0,3.2216963403420267,False,True,False,False,1
+Rule-Controller,scenario-002830,-77.54693101184691,TOTAL_BLACKOUT,7,1,0.0,3.4995230951548506,False,True,False,False,1
+Rule-Controller,scenario-002836,-31.56060367924003,NON_CONVERGED,2,1,98.47164502753208,5.399055865607005,False,False,False,True,1
+Rule-Controller,scenario-002863,-79.17268610038685,TOTAL_BLACKOUT,8,1,0.0,4.052670607735372,False,True,False,False,1
+Rule-Controller,scenario-002868,-61.249626512226975,TOTAL_BLACKOUT,4,2,0.0,15.957179086282135,False,True,False,False,2
+Rule-Controller,scenario-002873,-31.464702238685774,NON_CONVERGED,2,1,98.83239159196158,4.343847399359587,False,False,False,True,1
+Rule-Controller,scenario-002882,11.859336242298827,STABLE,1,1,97.40960692282366,6.767365162515419,True,False,False,False,1
+Rule-Controller,scenario-002903,-70.71259645088085,TOTAL_BLACKOUT,5,1,0.0,3.0525447388306537,False,True,False,False,1
+Rule-Controller,scenario-002937,-56.198735783005354,TOTAL_BLACKOUT,3,1,0.0,12.52139093678357,False,True,False,False,1
+Rule-Controller,scenario-002942,-56.458767164501126,TOTAL_BLACKOUT,3,1,0.0,4.1210263051621,False,True,False,False,1
+Rule-Controller,scenario-002966,-65.6717550144931,TOTAL_BLACKOUT,5,1,0.0,4.2941729653313025,False,True,False,False,1
+Rule-Controller,scenario-003023,-60.80836395084853,TOTAL_BLACKOUT,4,2,0.0,20.522525756454804,False,True,False,False,2
+Rule-Controller,scenario-003036,-57.54595558389588,TOTAL_BLACKOUT,3,2,0.0,21.59345404053538,False,True,False,False,2
+Rule-Controller,scenario-003044,-70.94571520119699,TOTAL_BLACKOUT,7,1,0.0,4.061729835948382,False,True,False,False,1
+Rule-Controller,scenario-003047,-61.11576045560826,TOTAL_BLACKOUT,5,2,0.0,19.010512549427897,False,True,False,False,2
+Rule-Controller,scenario-003067,-71.87755845182258,TOTAL_BLACKOUT,6,1,0.0,2.8837359815363866,False,True,False,False,1
+Rule-Controller,scenario-003085,-105.11658386403495,TOTAL_BLACKOUT,11,1,0.0,3.5652478774594054,False,True,False,False,1
+Rule-Controller,scenario-003096,11.910512530487733,STABLE,1,1,98.87178658536381,2.910195960673258,True,False,False,False,1
+Rule-Controller,scenario-003112,-31.273404781052747,NON_CONVERGED,3,1,98.79453199078647,4.504211162689692,False,False,False,True,1
+Rule-Controller,scenario-003124,-57.65020155294251,TOTAL_BLACKOUT,3,2,0.0,16.97091474632969,False,True,False,False,2
+Rule-Controller,scenario-003161,11.768785431957197,STABLE,2,1,94.82244091306275,11.34480026535455,True,False,False,False,1
+Rule-Controller,scenario-003166,-67.6992222532068,TOTAL_BLACKOUT,5,1,0.0,3.4846102420886216,False,True,False,False,1
+Rule-Controller,scenario-003179,-74.5039769134454,TOTAL_BLACKOUT,7,1,0.0,2.982912989341222,False,True,False,False,1
+Rule-Controller,scenario-003185,-92.3263402965818,TOTAL_BLACKOUT,10,1,0.0,5.344021232194607,False,True,False,False,1
+Rule-Controller,scenario-003186,-56.252348977498485,TOTAL_BLACKOUT,2,1,0.0,11.774090771267813,False,True,False,False,1
+Rule-Controller,scenario-003221,-60.9171848594229,TOTAL_BLACKOUT,4,2,0.0,20.95230954044504,False,True,False,False,2
+Rule-Controller,scenario-003226,-189.54925831421676,TOTAL_BLACKOUT,15,1,0.0,3.136619631467055,False,True,False,False,1
+Rule-Controller,scenario-003238,-119.9923142404579,TOTAL_BLACKOUT,13,1,0.0,3.4363414646985246,False,True,False,False,1
+Rule-Controller,scenario-003254,-92.80676806126257,TOTAL_BLACKOUT,8,1,0.0,4.052859475799559,False,True,False,False,1
+Rule-Controller,scenario-003260,-112.65320675638227,TOTAL_BLACKOUT,12,1,0.0,3.2924547482648694,False,True,False,False,1
+Rule-Controller,scenario-003281,-61.2662441252107,TOTAL_BLACKOUT,4,2,0.0,18.239249145472208,False,True,False,False,2
+Rule-Controller,scenario-003326,-31.417782874261427,NON_CONVERGED,2,1,98.6307331457332,5.314946633880669,False,False,False,True,1
+Rule-Controller,scenario-003334,-60.28180536627975,TOTAL_BLACKOUT,3,1,0.0,11.158811570931858,False,True,False,False,1
+Rule-Controller,scenario-003345,-71.98261745794188,TOTAL_BLACKOUT,7,1,0.0,4.8395912573995,False,True,False,False,1
+Rule-Controller,scenario-003349,-60.10395291845863,TOTAL_BLACKOUT,4,1,0.0,13.76680743440151,False,True,False,False,1
+Rule-Controller,scenario-003354,11.856073123789354,STABLE,1,1,97.31637496541012,5.278705521106695,True,False,False,False,1
+Rule-Controller,scenario-003375,-65.63151871165806,TOTAL_BLACKOUT,6,1,0.0,2.993869093041812,False,True,False,False,1
+Rule-Controller,scenario-003384,11.909566870520068,STABLE,1,1,98.84476772914483,3.672855861946265,True,False,False,False,1
+Rule-Controller,scenario-003406,11.758177755386399,STABLE,1,1,94.51936443961141,13.149065831208954,True,False,False,False,1
+Rule-Controller,scenario-003472,11.777212359803258,STABLE,1,1,95.06321028009309,12.495380919388673,True,False,False,False,1
+Rule-Controller,scenario-003494,-126.65297030239677,TOTAL_BLACKOUT,12,1,0.0,3.1351148473885813,False,True,False,False,1
+Rule-Controller,scenario-003502,11.898368881229889,STABLE,1,1,98.52482517799682,3.4061409266543676,True,False,False,False,1
+Rule-Controller,scenario-003527,-31.19850930036485,NON_CONVERGED,2,1,98.8827096082671,3.852483533480528,False,False,False,True,1
+Rule-Controller,scenario-003576,-31.130607698662192,NON_CONVERGED,2,1,98.73705515749927,4.4620984730267,False,False,False,True,1
+Rule-Controller,scenario-003584,-60.616709010995685,TOTAL_BLACKOUT,4,2,0.0,18.937584204898844,False,True,False,False,2
+Rule-Controller,scenario-003589,-65.78143119902433,TOTAL_BLACKOUT,5,1,0.0,5.106912585525938,False,True,False,False,1
+Rule-Controller,scenario-003596,-61.05218251123976,TOTAL_BLACKOUT,4,2,0.0,19.97700220177166,False,True,False,False,2
+Rule-Controller,scenario-003687,-81.26926752234526,TOTAL_BLACKOUT,8,1,0.0,3.705432382687694,False,True,False,False,1
+Rule-Controller,scenario-003690,11.757383032198558,STABLE,1,1,94.49665806281592,11.504774289665296,True,False,False,False,1
+Rule-Controller,scenario-003751,-31.125184383486236,NON_CONVERGED,2,1,97.1199962179438,10.11742804442171,False,False,False,True,1
+Rule-Controller,scenario-003775,-74.80964774084724,TOTAL_BLACKOUT,7,1,0.0,3.4906101884701437,False,True,False,False,1
+Rule-Controller,scenario-003792,-61.84056016517499,TOTAL_BLACKOUT,5,2,0.0,16.618589583244294,False,True,False,False,2
+Rule-Controller,scenario-003834,-56.87879846808874,TOTAL_BLACKOUT,2,1,0.0,4.1026067746889545,False,True,False,False,1
+Rule-Controller,scenario-003863,-31.660636319783592,NON_CONVERGED,2,1,98.56910662128627,5.2910054774498505,False,False,False,True,1
+Rule-Controller,scenario-003884,-31.569740014384582,NON_CONVERGED,2,1,99.03769018299963,3.434580455311633,False,False,False,True,1
+Rule-Controller,scenario-003900,-65.99404736084108,TOTAL_BLACKOUT,5,1,0.0,4.0097603623771425,False,True,False,False,1
+Rule-Controller,scenario-003901,-57.604618736280315,TOTAL_BLACKOUT,3,2,0.0,17.990700205521335,False,True,False,False,2
+Rule-Controller,scenario-003909,-65.98365778044833,TOTAL_BLACKOUT,5,1,0.0,3.5247661070536194,False,True,False,False,1
+Rule-Controller,scenario-003910,-66.18367731497035,TOTAL_BLACKOUT,5,1,0.0,3.340825646127926,False,True,False,False,1
+Rule-Controller,scenario-003947,-59.44393179457446,TOTAL_BLACKOUT,3,1,0.0,15.135938847104445,False,True,False,False,1
+Rule-Controller,scenario-003949,-61.33661259162205,TOTAL_BLACKOUT,4,2,0.0,19.208811527853577,False,True,False,False,2
+Rule-Controller,scenario-003991,-66.13336493500631,TOTAL_BLACKOUT,5,1,0.0,3.5117863653505537,False,True,False,False,1
+Rule-Controller,scenario-004014,-61.90940644011749,TOTAL_BLACKOUT,4,2,0.0,22.156776676483183,False,True,False,False,2
+Rule-Controller,scenario-004023,-60.718356041210654,TOTAL_BLACKOUT,4,2,0.0,22.18755312645564,False,True,False,False,2
+Rule-Controller,scenario-004035,-31.422620560800386,NON_CONVERGED,2,1,98.85793334075545,4.106532484867463,False,False,False,True,1
+Rule-Controller,scenario-004042,-67.36335614703246,TOTAL_BLACKOUT,4,2,0.0,27.856131929826166,False,True,False,False,2
+Rule-Controller,scenario-004045,-56.3818559531769,TOTAL_BLACKOUT,2,1,0.0,2.4867167288272167,False,True,False,False,1
+Rule-Controller,scenario-004075,-60.29399109298697,TOTAL_BLACKOUT,3,1,0.0,17.206975614533594,False,True,False,False,1
+Rule-Controller,scenario-004120,11.753812434051646,STABLE,1,1,94.39464097290417,13.784303958757908,True,False,False,False,1
+Rule-Controller,scenario-004133,-79.85645402886185,TOTAL_BLACKOUT,8,1,0.0,4.609843420326366,False,True,False,False,1
+Rule-Controller,scenario-004154,-80.43207818392769,TOTAL_BLACKOUT,8,1,0.0,4.269578894275146,False,True,False,False,1
+Rule-Controller,scenario-004155,-71.02379793452062,TOTAL_BLACKOUT,7,1,0.0,3.895103057527387,False,True,False,False,1
+Rule-Controller,scenario-004168,-56.21347589229926,TOTAL_BLACKOUT,2,1,0.0,13.432341146464509,False,True,False,False,1
+Rule-Controller,scenario-004172,11.785757235777494,STABLE,1,1,95.3073495936427,10.822994592781283,True,False,False,False,1
+Rule-Controller,scenario-004210,-59.47935159500791,TOTAL_BLACKOUT,3,1,0.0,10.300494468398188,False,True,False,False,1
+Rule-Controller,scenario-004233,-31.503675903364243,NON_CONVERGED,2,1,98.58575779538941,4.926379499709532,False,False,False,True,1
+Rule-Controller,scenario-004260,-57.69304568172322,TOTAL_BLACKOUT,3,2,0.0,13.53504323034413,False,True,False,False,2
+Rule-Controller,scenario-004297,-56.527708832034584,TOTAL_BLACKOUT,2,1,0.0,4.895360721575121,False,True,False,False,1
+Rule-Controller,scenario-004303,-76.21745772967178,TOTAL_BLACKOUT,7,1,0.0,2.9092928623591985,False,True,False,False,1
+Rule-Controller,scenario-004375,11.774957199081504,STABLE,1,1,94.99877711661439,10.96768249080938,True,False,False,False,1
+Rule-Controller,scenario-004387,-70.72067496658772,TOTAL_BLACKOUT,7,1,0.0,3.0417120863079865,False,True,False,False,1
+Rule-Controller,scenario-004390,-62.19068841053522,TOTAL_BLACKOUT,4,2,0.0,21.40334895188679,False,True,False,False,2
+Rule-Controller,scenario-004410,-59.68833093818412,TOTAL_BLACKOUT,3,1,0.0,16.165094843583038,False,True,False,False,1
+Rule-Controller,scenario-004416,-75.64166308178055,TOTAL_BLACKOUT,7,1,0.0,5.415064979987187,False,True,False,False,1
+Rule-Controller,scenario-004426,-31.15734615850942,NON_CONVERGED,2,1,98.74682989037615,4.394573579843121,False,False,False,True,1
+Rule-Controller,scenario-004435,-68.43433942914209,TOTAL_BLACKOUT,5,1,0.0,3.2231488473940844,False,True,False,False,1
+Rule-Controller,scenario-004445,-61.048475509464794,TOTAL_BLACKOUT,4,2,0.0,16.02943375153857,False,True,False,False,2
+Rule-Controller,scenario-004451,-69.70082785950626,TOTAL_BLACKOUT,6,1,0.0,3.6564491988698555,False,True,False,False,1
+Rule-Controller,scenario-004454,-66.00043428779679,TOTAL_BLACKOUT,5,1,0.0,3.976808437647419,False,True,False,False,1
+Rule-Controller,scenario-004459,-108.76738665328382,TOTAL_BLACKOUT,10,1,0.0,2.372904029028562,False,True,False,False,1
+Rule-Controller,scenario-004491,-74.19834339425005,TOTAL_BLACKOUT,7,1,0.0,3.8865759989705193,False,True,False,False,1
+Rule-Controller,scenario-004493,-56.4690805774512,TOTAL_BLACKOUT,2,1,0.0,3.026220976119861,False,True,False,False,1
+Rule-Controller,scenario-004538,-61.854409875014824,TOTAL_BLACKOUT,4,2,0.0,16.94671898228727,False,True,False,False,2
+Rule-Controller,scenario-004552,-71.88974905734437,TOTAL_BLACKOUT,6,1,0.0,4.277525531491898,False,True,False,False,1
+Rule-Controller,scenario-004558,-60.147837608009915,TOTAL_BLACKOUT,3,1,0.0,14.138657386412577,False,True,False,False,1
+Rule-Controller,scenario-004584,-77.53956119403456,TOTAL_BLACKOUT,8,1,0.0,4.835375857270198,False,True,False,False,1
+Rule-Controller,scenario-004585,-74.94535898877236,TOTAL_BLACKOUT,6,1,0.0,3.4771271110989774,False,True,False,False,1
+Rule-Controller,scenario-004586,-88.96846265240565,TOTAL_BLACKOUT,9,1,0.0,3.570160283549868,False,True,False,False,1
+Rule-Controller,scenario-004595,-68.08488597626302,TOTAL_BLACKOUT,6,2,0.0,15.339473160524339,False,True,False,False,2
+Rule-Controller,scenario-004608,-56.27057401779925,TOTAL_BLACKOUT,2,1,0.0,17.577180306117306,False,True,False,False,1
+Rule-Controller,scenario-004650,-60.786031445102374,TOTAL_BLACKOUT,4,2,0.0,20.208804044509368,False,True,False,False,2
+Rule-Controller,scenario-004667,-72.9468555324018,TOTAL_BLACKOUT,8,1,0.0,5.790529224762197,False,True,False,False,1
+Rule-Controller,scenario-004699,11.894271950781956,STABLE,1,1,98.40777002234162,4.118698028435997,True,False,False,False,1
+Rule-Controller,scenario-004719,-79.28659312509316,TOTAL_BLACKOUT,7,1,0.0,4.618819598842701,False,True,False,False,1
+Rule-Controller,scenario-004729,-73.4324654852654,TOTAL_BLACKOUT,7,1,0.0,2.8086139905397127,False,True,False,False,1
+Rule-Controller,scenario-004752,-59.75647980067877,TOTAL_BLACKOUT,4,1,0.0,14.086036202591362,False,True,False,False,1
+Rule-Controller,scenario-004755,-67.23280926965323,TOTAL_BLACKOUT,5,1,0.0,5.204947568449971,False,True,False,False,1
+Rule-Controller,scenario-004757,-75.92553982055948,TOTAL_BLACKOUT,7,1,0.0,4.33209427597409,False,True,False,False,1
+Rule-Controller,scenario-004770,-31.19348161385354,NON_CONVERGED,2,1,98.75756282125599,4.452163227812713,False,False,False,True,1
+Rule-Controller,scenario-004775,11.905815779476562,STABLE,1,1,98.73759369933033,3.736680384975451,True,False,False,False,1
+Rule-Controller,scenario-004785,-71.18433933253795,TOTAL_BLACKOUT,6,1,0.0,2.930819376820844,False,True,False,False,1
+Rule-Controller,scenario-004787,-79.48989520615983,TOTAL_BLACKOUT,8,1,0.0,3.9627364541007184,False,True,False,False,1
+Rule-Controller,scenario-004853,-60.81702237416548,TOTAL_BLACKOUT,4,2,0.0,21.624741313566723,False,True,False,False,2
+Rule-Controller,scenario-004862,-59.30777038333642,TOTAL_BLACKOUT,3,1,0.0,15.459631064881261,False,True,False,False,1
+Rule-Controller,scenario-004866,-67.70577665236297,TOTAL_BLACKOUT,6,1,0.0,3.327994503036862,False,True,False,False,1
+Rule-Controller,scenario-004885,11.779959722159413,STABLE,2,1,95.1417063474118,13.51688445455413,True,False,False,False,1
+Rule-Controller,scenario-004900,-56.750235247769496,TOTAL_BLACKOUT,2,1,0.0,4.723480295596096,False,True,False,False,1
+Rule-Controller,scenario-004972,-76.41174898027536,TOTAL_BLACKOUT,7,1,0.0,3.13347398893669,False,True,False,False,1
+Rule-Controller,scenario-004979,-72.81651219359708,TOTAL_BLACKOUT,7,1,0.0,3.8093246332751587,False,True,False,False,1
+Rule-Controller,scenario-004991,-61.525519371301804,TOTAL_BLACKOUT,4,2,0.0,24.700783417159492,False,True,False,False,2
+PPO (No GCN),scenario-000027,-31.228781416890243,NON_CONVERGED,3,1,100.0,0.0,False,False,False,True,1
+PPO (No GCN),scenario-000085,14.802337246001443,STABLE,1,1,95.00000000000001,12.340980622011088,True,False,False,False,1
+PPO (No GCN),scenario-000093,-69.97845184417865,TOTAL_BLACKOUT,6,1,0.0,19.562839389914,False,True,False,False,1
+PPO (No GCN),scenario-000104,-71.61260086487357,TOTAL_BLACKOUT,7,1,0.0,0.0,False,True,False,False,1
+PPO (No GCN),scenario-000105,-59.58953265070554,TOTAL_BLACKOUT,4,1,0.0,14.041095693750105,False,True,False,False,1
+PPO (No GCN),scenario-000118,-63.054528418480075,TOTAL_BLACKOUT,4,2,0.0,12.074211671602647,False,True,False,False,2
+PPO (No GCN),scenario-000145,-62.58557822265055,TOTAL_BLACKOUT,4,2,0.0,16.955635136746416,False,True,False,False,2
+PPO (No GCN),scenario-000149,-38.188081305774574,NON_CONVERGED,4,1,94.17865245133315,16.487998428389897,False,False,False,True,1
+PPO (No GCN),scenario-000201,-34.23580712085069,NON_CONVERGED,3,1,95.0,15.986933606051966,False,False,False,True,1
+PPO (No GCN),scenario-000204,-59.388895512788395,TOTAL_BLACKOUT,4,1,0.0,13.166963495030721,False,True,False,False,1
+PPO (No GCN),scenario-000224,11.775,STABLE,1,1,95.00000000000001,14.059781582667766,True,False,False,False,1
+PPO (No GCN),scenario-000227,-86.5527476621651,TOTAL_BLACKOUT,9,1,0.0,0.0,False,True,False,False,1
+PPO (No GCN),scenario-000262,11.775,STABLE,1,1,95.0,11.44205392591062,True,False,False,False,1
+PPO (No GCN),scenario-000270,-65.77018727208194,TOTAL_BLACKOUT,5,1,0.0,16.227348099863345,False,True,False,False,1
+PPO (No GCN),scenario-000287,-79.19252742926561,TOTAL_BLACKOUT,7,1,0.0,0.0,False,True,False,False,1
+PPO (No GCN),scenario-000294,-61.66238866669806,TOTAL_BLACKOUT,4,2,0.0,12.788393462891747,False,True,False,False,2
+PPO (No GCN),scenario-000301,11.775,STABLE,1,1,95.0,10.410423858050347,True,False,False,False,1
+PPO (No GCN),scenario-000316,-82.01888721898652,TOTAL_BLACKOUT,9,1,0.0,0.0,False,True,False,False,1
+PPO (No GCN),scenario-000328,-76.65376187207632,TOTAL_BLACKOUT,7,1,0.0,0.0,False,True,False,False,1
+PPO (No GCN),scenario-000345,-62.63390845382937,TOTAL_BLACKOUT,4,2,0.0,15.8341713905094,False,True,False,False,2
+PPO (No GCN),scenario-000374,-192.57896244972108,TOTAL_BLACKOUT,15,1,0.0,0.0,False,True,False,False,1
+PPO (No GCN),scenario-000375,14.817545748841976,STABLE,1,1,95.0,15.533283495328584,True,False,False,False,1
+PPO (No GCN),scenario-000399,-69.56095556743051,TOTAL_BLACKOUT,6,1,0.0,17.639283028501982,False,True,False,False,1
+PPO (No GCN),scenario-000401,11.775,STABLE,1,1,95.00000000000001,11.375475766273416,True,False,False,False,1
+PPO (No GCN),scenario-000423,11.775,STABLE,1,1,95.0,16.328483743568533,True,False,False,False,1
+PPO (No GCN),scenario-000432,-84.53426716691581,TOTAL_BLACKOUT,7,1,0.0,0.0,False,True,False,False,1
+PPO (No GCN),scenario-000437,-62.07692798088948,TOTAL_BLACKOUT,5,2,0.0,14.911432043600794,False,True,False,False,2
+PPO (No GCN),scenario-000438,-61.67998906440912,TOTAL_BLACKOUT,5,2,0.0,15.18087076628516,False,True,False,False,2
+PPO (No GCN),scenario-000459,-31.681203128206768,NON_CONVERGED,2,1,100.0,0.0,False,False,False,True,1
+PPO (No GCN),scenario-000482,-73.57473301406753,TOTAL_BLACKOUT,8,1,0.0,15.002239603858797,False,True,False,False,1
+PPO (No GCN),scenario-000485,11.775,STABLE,1,1,95.0,13.912391978949223,True,False,False,False,1
+PPO (No GCN),scenario-000491,-73.17898481471434,TOTAL_BLACKOUT,6,1,0.0,0.0,False,True,False,False,1
+PPO (No GCN),scenario-000503,-73.1475714225497,TOTAL_BLACKOUT,8,1,0.0,16.383420610187823,False,True,False,False,1
+PPO (No GCN),scenario-000558,-71.18607124303045,TOTAL_BLACKOUT,6,1,0.0,0.0,False,True,False,False,1
+PPO (No GCN),scenario-000562,11.774999999999999,STABLE,1,1,94.99999999999997,16.167734699512962,True,False,False,False,1
+PPO (No GCN),scenario-000584,-67.57050167447862,TOTAL_BLACKOUT,5,1,0.0,0.0,False,True,False,False,1
+PPO (No GCN),scenario-000634,-62.58128809994238,TOTAL_BLACKOUT,4,2,0.0,16.646043320008637,False,True,False,False,2
+PPO (No GCN),scenario-000642,-70.42562894666209,TOTAL_BLACKOUT,5,2,0.0,0.0,False,True,False,False,2
+PPO (No GCN),scenario-000644,-70.892504834107,TOTAL_BLACKOUT,6,2,0.0,19.036619436628428,False,True,False,False,2
+PPO (No GCN),scenario-000650,-69.69825547883934,TOTAL_BLACKOUT,6,1,0.0,20.58198761103033,False,True,False,False,1
+PPO (No GCN),scenario-000667,-31.231815992706224,NON_CONVERGED,2,1,94.99999999999999,18.314227211490287,False,False,False,True,1
+PPO (No GCN),scenario-000669,-31.314137338886056,NON_CONVERGED,2,1,95.0,18.284197983951422,False,False,False,True,1
+PPO (No GCN),scenario-000675,-86.10204770648167,TOTAL_BLACKOUT,9,1,0.0,0.0,False,True,False,False,1
+PPO (No GCN),scenario-000690,-84.02266018241298,TOTAL_BLACKOUT,9,1,0.0,0.0,False,True,False,False,1
+PPO (No GCN),scenario-000700,14.82500446477254,STABLE,1,1,95.0,11.22978655425017,True,False,False,False,1
+PPO (No GCN),scenario-000749,-120.77562302253952,TOTAL_BLACKOUT,12,1,0.0,0.0,False,True,False,False,1
+PPO (No GCN),scenario-000758,-85.42334718495454,TOTAL_BLACKOUT,9,1,0.0,0.0,False,True,False,False,1
+PPO (No GCN),scenario-000760,-66.77083271757996,TOTAL_BLACKOUT,5,1,0.0,0.0,False,True,False,False,1
+PPO (No GCN),scenario-000794,-60.93136229958414,TOTAL_BLACKOUT,4,1,0.0,0.0,False,True,False,False,1
+PPO (No GCN),scenario-000801,-73.1287167602554,TOTAL_BLACKOUT,7,1,0.0,19.3333224840146,False,True,False,False,1
+PPO (No GCN),scenario-000805,-31.673326774627615,NON_CONVERGED,2,1,100.0,0.0,False,False,False,True,1
+PPO (No GCN),scenario-000822,-59.51474519168722,TOTAL_BLACKOUT,4,1,0.0,11.923726979819996,False,True,False,False,1
+PPO (No GCN),scenario-000830,-61.512211151718574,TOTAL_BLACKOUT,4,2,0.0,13.801020576747522,False,True,False,False,2
+PPO (No GCN),scenario-000838,-74.5681547764475,TOTAL_BLACKOUT,7,1,0.0,22.56999969919161,False,True,False,False,1
+PPO (No GCN),scenario-000842,-63.288267189494405,TOTAL_BLACKOUT,4,2,0.0,13.367000009854191,False,True,False,False,2
+PPO (No GCN),scenario-000867,-76.03678025763085,TOTAL_BLACKOUT,7,1,0.0,0.0,False,True,False,False,1
+PPO (No GCN),scenario-000978,-65.81276353157905,TOTAL_BLACKOUT,5,1,0.0,0.0,False,True,False,False,1
+PPO (No GCN),scenario-000989,11.775,STABLE,2,1,94.99999999999999,11.600505838176723,True,False,False,False,1
+PPO (No GCN),scenario-001002,-62.54667612351116,TOTAL_BLACKOUT,4,1,0.0,16.503041959899793,False,True,False,False,1
+PPO (No GCN),scenario-001037,-73.15473158957278,TOTAL_BLACKOUT,7,1,0.0,17.050205598606883,False,True,False,False,1
+PPO (No GCN),scenario-001046,11.775,STABLE,1,1,94.99999999999999,12.884821195240395,True,False,False,False,1
+PPO (No GCN),scenario-001058,-62.93555405786103,TOTAL_BLACKOUT,4,2,0.0,12.462726351799121,False,True,False,False,2
+PPO (No GCN),scenario-001114,-74.10899383207371,TOTAL_BLACKOUT,7,1,0.0,0.0,False,True,False,False,1
+PPO (No GCN),scenario-001117,11.775,STABLE,2,1,95.0,10.862581144508384,True,False,False,False,1
+PPO (No GCN),scenario-001123,-86.84095593230869,TOTAL_BLACKOUT,8,1,0.0,0.0,False,True,False,False,1
+PPO (No GCN),scenario-001142,-56.863170282548296,TOTAL_BLACKOUT,2,1,0.0,17.379758395076948,False,True,False,False,1
+PPO (No GCN),scenario-001181,-61.5877551942342,TOTAL_BLACKOUT,4,2,0.0,16.18659356934664,False,True,False,False,2
+PPO (No GCN),scenario-001214,-31.399961097813133,NON_CONVERGED,2,1,95.00000000000001,16.504397582701248,False,False,False,True,1
+PPO (No GCN),scenario-001232,-56.48514759590273,TOTAL_BLACKOUT,2,1,0.0,18.619609828496046,False,True,False,False,1
+PPO (No GCN),scenario-001233,-31.188004676520514,NON_CONVERGED,2,1,100.0,0.0,False,False,False,True,1
+PPO (No GCN),scenario-001245,-72.14911305439662,TOTAL_BLACKOUT,6,1,0.0,0.0,False,True,False,False,1
+PPO (No GCN),scenario-001252,-37.4932769927304,NON_CONVERGED,5,1,95.00000000000001,12.750598282637844,False,False,False,True,1
+PPO (No GCN),scenario-001258,-62.72376602763168,TOTAL_BLACKOUT,4,2,0.0,16.738130567437228,False,True,False,False,2
+PPO (No GCN),scenario-001275,-62.6207621551949,TOTAL_BLACKOUT,4,2,0.0,11.744285277975491,False,True,False,False,2
+PPO (No GCN),scenario-001281,11.775,STABLE,1,1,95.00000000000003,13.530554250928343,True,False,False,False,1
+PPO (No GCN),scenario-001296,-62.06914468657935,TOTAL_BLACKOUT,4,2,0.0,14.64574954130013,False,True,False,False,2
+PPO (No GCN),scenario-001300,-56.64607199793924,TOTAL_BLACKOUT,3,1,0.0,13.337635461805071,False,True,False,False,1
+PPO (No GCN),scenario-001343,14.824327338732793,STABLE,1,1,95.0,15.993454161533784,True,False,False,False,1
+PPO (No GCN),scenario-001349,-62.038833388078594,TOTAL_BLACKOUT,4,2,0.0,10.822433290600564,False,True,False,False,2
+PPO (No GCN),scenario-001366,-68.13676916172918,TOTAL_BLACKOUT,6,1,0.0,0.0,False,True,False,False,1
+PPO (No GCN),scenario-001371,-66.91784867015336,TOTAL_BLACKOUT,5,1,0.0,20.269867235041144,False,True,False,False,1
+PPO (No GCN),scenario-001383,-31.303792700296047,NON_CONVERGED,3,1,100.0,0.0,False,False,False,True,1
+PPO (No GCN),scenario-001393,11.775,STABLE,1,1,95.0,15.109034654512937,True,False,False,False,1
+PPO (No GCN),scenario-001447,-69.58898386992067,TOTAL_BLACKOUT,5,1,0.0,0.0,False,True,False,False,1
+PPO (No GCN),scenario-001484,-65.77903225613665,TOTAL_BLACKOUT,5,1,0.0,13.864967518795874,False,True,False,False,1
+PPO (No GCN),scenario-001540,-56.294634487322575,TOTAL_BLACKOUT,2,1,0.0,0.0,False,True,False,False,1
+PPO (No GCN),scenario-001547,-32.06889063916602,NON_CONVERGED,2,2,0.0,17.281383731069347,False,False,False,True,2
+PPO (No GCN),scenario-001549,11.775,STABLE,2,1,95.0,11.73819159220338,True,False,False,False,1
+PPO (No GCN),scenario-001564,-63.416411561687475,TOTAL_BLACKOUT,4,2,0.0,15.175582731009484,False,True,False,False,2
+PPO (No GCN),scenario-001565,-62.749649512037564,TOTAL_BLACKOUT,4,1,0.0,20.131883371578443,False,True,False,False,1
+PPO (No GCN),scenario-001569,-60.081478063389795,TOTAL_BLACKOUT,4,1,0.0,0.0,False,True,False,False,1
+PPO (No GCN),scenario-001576,11.775,STABLE,2,1,95.0,12.176994074040127,True,False,False,False,1
+PPO (No GCN),scenario-001578,11.775,STABLE,1,1,95.00000000000001,13.192265430218615,True,False,False,False,1
+PPO (No GCN),scenario-001595,-31.213305023793154,NON_CONVERGED,2,1,94.99999999999999,18.520310312453866,False,False,False,True,1
+PPO (No GCN),scenario-001596,-61.43765667306966,TOTAL_BLACKOUT,4,2,0.0,10.578614803697887,False,True,False,False,2
+PPO (No GCN),scenario-001602,-169.52572730563307,TOTAL_BLACKOUT,14,1,0.0,0.0,False,True,False,False,1
+PPO (No GCN),scenario-001616,-73.98321821836274,TOTAL_BLACKOUT,7,1,0.0,21.25740245695669,False,True,False,False,1
+PPO (No GCN),scenario-001649,-71.27060611485437,TOTAL_BLACKOUT,6,1,0.0,0.0,False,True,False,False,1
+PPO (No GCN),scenario-001656,14.784381918175432,STABLE,1,1,94.99999999999997,13.208403192404214,True,False,False,False,1
+PPO (No GCN),scenario-001658,-31.314943062792636,NON_CONVERGED,2,1,100.0,0.0,False,False,False,True,1
+PPO (No GCN),scenario-001672,-62.84479114964609,TOTAL_BLACKOUT,4,2,0.0,10.647969617630972,False,True,False,False,2
+PPO (No GCN),scenario-001674,11.775,STABLE,1,1,95.0,11.901411595526866,True,False,False,False,1
+PPO (No GCN),scenario-001732,-56.41610118945787,TOTAL_BLACKOUT,2,1,0.0,12.103966303021394,False,True,False,False,1
+PPO (No GCN),scenario-001737,-78.3995598021346,TOTAL_BLACKOUT,7,1,0.0,0.0,False,True,False,False,1
+PPO (No GCN),scenario-001756,-59.42764798386253,TOTAL_BLACKOUT,3,1,0.0,0.0,False,True,False,False,1
+PPO (No GCN),scenario-001824,-31.224283396912462,NON_CONVERGED,2,1,94.99999999999999,15.12993497584764,False,False,False,True,1
+PPO (No GCN),scenario-001827,-79.43566157227632,TOTAL_BLACKOUT,8,1,0.0,0.0,False,True,False,False,1
+PPO (No GCN),scenario-001858,-65.39650041066852,TOTAL_BLACKOUT,5,1,0.0,15.877947247669617,False,True,False,False,1
+PPO (No GCN),scenario-001863,-60.169901605474976,TOTAL_BLACKOUT,3,1,0.0,0.0,False,True,False,False,1
+PPO (No GCN),scenario-001885,-69.4739061209009,TOTAL_BLACKOUT,6,1,0.0,0.0,False,True,False,False,1
+PPO (No GCN),scenario-001902,-65.36885283628153,TOTAL_BLACKOUT,6,2,0.0,0.0,False,True,False,False,2
+PPO (No GCN),scenario-001911,-63.04957636708386,TOTAL_BLACKOUT,4,2,0.0,12.086975398354744,False,True,False,False,2
+PPO (No GCN),scenario-001923,-56.28424308526201,TOTAL_BLACKOUT,3,1,0.0,14.82873262930479,False,True,False,False,1
+PPO (No GCN),scenario-001932,-67.11292756969249,TOTAL_BLACKOUT,6,1,0.0,15.999093108212469,False,True,False,False,1
+PPO (No GCN),scenario-001950,-59.635088783659654,TOTAL_BLACKOUT,3,1,0.0,16.815362369779393,False,True,False,False,1
+PPO (No GCN),scenario-001952,-138.1613488889336,TOTAL_BLACKOUT,13,1,0.0,0.0,False,True,False,False,1
+PPO (No GCN),scenario-001970,-62.21074403998819,TOTAL_BLACKOUT,4,2,0.0,15.929985483832048,False,True,False,False,2
+PPO (No GCN),scenario-002035,-73.75985205499578,TOTAL_BLACKOUT,8,1,0.0,16.602415663988623,False,True,False,False,1
+PPO (No GCN),scenario-002070,-72.1778946400753,TOTAL_BLACKOUT,6,1,0.0,0.0,False,True,False,False,1
+PPO (No GCN),scenario-002080,-69.19260327013478,TOTAL_BLACKOUT,6,1,0.0,11.596083074919454,False,True,False,False,1
+PPO (No GCN),scenario-002085,-58.37068170832706,TOTAL_BLACKOUT,3,2,0.0,22.91099185100434,False,True,False,False,2
+PPO (No GCN),scenario-002121,-73.88005465677968,TOTAL_BLACKOUT,8,1,0.0,0.0,False,True,False,False,1
+PPO (No GCN),scenario-002132,11.775,STABLE,1,1,95.0,12.609270915776204,True,False,False,False,1
+PPO (No GCN),scenario-002141,-126.68267375875038,TOTAL_BLACKOUT,13,1,0.0,0.0,False,True,False,False,1
+PPO (No GCN),scenario-002153,-73.26418877956972,TOTAL_BLACKOUT,8,1,0.0,12.265722039666624,False,True,False,False,1
+PPO (No GCN),scenario-002156,-31.108374427383637,NON_CONVERGED,3,1,100.0,0.0,False,False,False,True,1
+PPO (No GCN),scenario-002163,-93.93315697068381,TOTAL_BLACKOUT,9,1,0.0,0.0,False,True,False,False,1
+PPO (No GCN),scenario-002169,14.807945343553747,STABLE,1,1,95.00000000000001,10.04547789206841,True,False,False,False,1
+PPO (No GCN),scenario-002187,-62.38866605226935,TOTAL_BLACKOUT,4,2,0.0,16.389745483342132,False,True,False,False,2
+PPO (No GCN),scenario-002207,11.775,STABLE,1,1,94.99999999999999,12.779524703341757,True,False,False,False,1
+PPO (No GCN),scenario-002213,-63.43707388160189,TOTAL_BLACKOUT,4,2,0.0,13.698009658925015,False,True,False,False,2
+PPO (No GCN),scenario-002215,-63.143124642550994,TOTAL_BLACKOUT,4,2,0.0,14.387191245772778,False,True,False,False,2
+PPO (No GCN),scenario-002218,11.775,STABLE,1,1,94.99999999999999,11.40406745181844,True,False,False,False,1
+PPO (No GCN),scenario-002229,-81.34678297993293,TOTAL_BLACKOUT,7,1,0.0,0.0,False,True,False,False,1
+PPO (No GCN),scenario-002236,-67.10117360466892,TOTAL_BLACKOUT,4,2,0.0,24.946940121034203,False,True,False,False,2
+PPO (No GCN),scenario-002248,-72.97574287232568,TOTAL_BLACKOUT,6,1,0.0,0.0,False,True,False,False,1
+PPO (No GCN),scenario-002250,-31.312667612969957,NON_CONVERGED,2,1,100.0,0.0,False,False,False,True,1
+PPO (No GCN),scenario-002255,-63.35582405090669,TOTAL_BLACKOUT,4,2,0.0,13.576606937273091,False,True,False,False,2
+PPO (No GCN),scenario-002258,-124.33015303171035,TOTAL_BLACKOUT,13,1,0.0,0.0,False,True,False,False,1
+PPO (No GCN),scenario-002260,11.775,STABLE,1,1,95.0,10.000885023333872,True,False,False,False,1
+PPO (No GCN),scenario-002275,-62.33306984099007,TOTAL_BLACKOUT,4,1,0.0,13.202745910635024,False,True,False,False,1
+PPO (No GCN),scenario-002276,11.775,STABLE,1,1,95.00000000000001,11.028510796304863,True,False,False,False,1
+PPO (No GCN),scenario-002290,-74.85961733663798,TOTAL_BLACKOUT,7,1,0.0,10.463515115250631,False,True,False,False,1
+PPO (No GCN),scenario-002314,-63.140629973229835,TOTAL_BLACKOUT,4,2,0.0,13.660687373869298,False,True,False,False,2
+PPO (No GCN),scenario-002318,-82.77429102665265,TOTAL_BLACKOUT,8,1,0.0,0.0,False,True,False,False,1
+PPO (No GCN),scenario-002344,-66.44979614699459,TOTAL_BLACKOUT,5,1,0.0,0.0,False,True,False,False,1
+PPO (No GCN),scenario-002359,-61.542279451748584,TOTAL_BLACKOUT,4,2,0.0,14.08629481996066,False,True,False,False,2
+PPO (No GCN),scenario-002377,11.775,STABLE,1,1,95.0,14.240487347451474,True,False,False,False,1
+PPO (No GCN),scenario-002378,11.774999999999999,STABLE,1,1,94.99999999999997,16.290540465053667,True,False,False,False,1
+PPO (No GCN),scenario-002396,-62.463267026074284,TOTAL_BLACKOUT,4,1,0.0,16.830506506413396,False,True,False,False,1
+PPO (No GCN),scenario-002412,-31.634602024047787,NON_CONVERGED,2,1,100.0,0.0,False,False,False,True,1
+PPO (No GCN),scenario-002420,-89.13635021480962,TOTAL_BLACKOUT,8,1,0.0,0.0,False,True,False,False,1
+PPO (No GCN),scenario-002421,11.775,STABLE,1,1,95.0,12.592323349491252,True,False,False,False,1
+PPO (No GCN),scenario-002423,-75.01246441412927,TOTAL_BLACKOUT,7,1,0.0,0.0,False,True,False,False,1
+PPO (No GCN),scenario-002449,-62.89570275698028,TOTAL_BLACKOUT,4,2,0.0,14.53650748864535,False,True,False,False,2
+PPO (No GCN),scenario-002453,-62.193468860597555,TOTAL_BLACKOUT,5,2,0.0,12.955944552450271,False,True,False,False,2
+PPO (No GCN),scenario-002488,-62.43515836506593,TOTAL_BLACKOUT,4,2,0.0,14.710872242371806,False,True,False,False,2
+PPO (No GCN),scenario-002489,-56.42970526708858,TOTAL_BLACKOUT,3,1,0.0,16.645985587331452,False,True,False,False,1
+PPO (No GCN),scenario-002499,-65.7682235259226,TOTAL_BLACKOUT,5,1,0.0,17.414982302691634,False,True,False,False,1
+PPO (No GCN),scenario-002500,14.77999417415074,STABLE,1,1,94.99999999999997,15.365668336309666,True,False,False,False,1
+PPO (No GCN),scenario-002528,-62.793023637170634,TOTAL_BLACKOUT,4,1,0.0,0.0,False,True,False,False,1
+PPO (No GCN),scenario-002560,-62.05888350432457,TOTAL_BLACKOUT,4,2,0.0,16.243282016935588,False,True,False,False,2
+PPO (No GCN),scenario-002572,-66.9198274957566,TOTAL_BLACKOUT,5,1,0.0,0.0,False,True,False,False,1
+PPO (No GCN),scenario-002588,-69.46431536954978,TOTAL_BLACKOUT,6,1,0.0,0.0,False,True,False,False,1
+PPO (No GCN),scenario-002616,11.775,STABLE,2,1,95.0,10.414423700251907,True,False,False,False,1
+PPO (No GCN),scenario-002617,-31.220424017451045,NON_CONVERGED,2,1,94.99999999999997,18.72546097367019,False,False,False,True,1
+PPO (No GCN),scenario-002623,-68.8717298558937,TOTAL_BLACKOUT,6,1,0.0,15.846897953474738,False,True,False,False,1
+PPO (No GCN),scenario-002642,-69.43185923307847,TOTAL_BLACKOUT,7,1,0.0,16.160509893361912,False,True,False,False,1
+PPO (No GCN),scenario-002648,-70.67884013736432,TOTAL_BLACKOUT,6,1,0.0,0.0,False,True,False,False,1
+PPO (No GCN),scenario-002671,-127.03436919092123,TOTAL_BLACKOUT,13,1,0.0,0.0,False,True,False,False,1
+PPO (No GCN),scenario-002677,-61.54781688091108,TOTAL_BLACKOUT,4,2,0.0,25.136907164958757,False,True,False,False,2
+PPO (No GCN),scenario-002697,-61.35522399450698,TOTAL_BLACKOUT,4,2,0.0,20.39821396298164,False,True,False,False,2
+PPO (No GCN),scenario-002706,11.775,STABLE,1,1,94.99999999999999,11.37717874201555,True,False,False,False,1
+PPO (No GCN),scenario-002769,11.775,STABLE,1,1,95.0,12.630110384303437,True,False,False,False,1
+PPO (No GCN),scenario-002775,-73.8210108871204,TOTAL_BLACKOUT,7,1,0.0,12.461637378151634,False,True,False,False,1
+PPO (No GCN),scenario-002778,11.775,STABLE,1,1,95.0,10.36734944068026,True,False,False,False,1
+PPO (No GCN),scenario-002788,-62.812131928579426,TOTAL_BLACKOUT,4,2,0.0,14.416779339310548,False,True,False,False,2
+PPO (No GCN),scenario-002798,-85.37234697122156,TOTAL_BLACKOUT,7,1,0.0,0.0,False,True,False,False,1
+PPO (No GCN),scenario-002800,-146.74352979562215,TOTAL_BLACKOUT,13,1,0.0,0.0,False,True,False,False,1
+PPO (No GCN),scenario-002818,11.775,STABLE,1,1,95.0,9.939654729753281,True,False,False,False,1
+PPO (No GCN),scenario-002827,-62.7409790982077,TOTAL_BLACKOUT,4,1,0.0,13.978184306315406,False,True,False,False,1
+PPO (No GCN),scenario-002830,-77.70290882934412,TOTAL_BLACKOUT,7,1,0.0,0.0,False,True,False,False,1
+PPO (No GCN),scenario-002836,-31.55182975147766,NON_CONVERGED,2,1,94.99999999999999,17.66296430759411,False,False,False,True,1
+PPO (No GCN),scenario-002863,-74.63998165061307,TOTAL_BLACKOUT,7,1,0.0,22.118304450114078,False,True,False,False,1
+PPO (No GCN),scenario-002868,-62.162797035426834,TOTAL_BLACKOUT,4,2,0.0,11.951218809737282,False,True,False,False,2
+PPO (No GCN),scenario-002873,-31.468108873631927,NON_CONVERGED,2,1,95.0,18.601473616729574,False,False,False,True,1
+PPO (No GCN),scenario-002882,11.775,STABLE,1,1,95.0,13.062429061716365,True,False,False,False,1
+PPO (No GCN),scenario-002903,-72.6463958369826,TOTAL_BLACKOUT,6,1,0.0,0.0,False,True,False,False,1
+PPO (No GCN),scenario-002937,-56.19976088152503,TOTAL_BLACKOUT,3,1,0.0,11.447339538587357,False,True,False,False,1
+PPO (No GCN),scenario-002942,-56.45971423112095,TOTAL_BLACKOUT,3,1,0.0,14.472851818814787,False,True,False,False,1
+PPO (No GCN),scenario-002966,-65.73399988798806,TOTAL_BLACKOUT,5,1,0.0,0.0,False,True,False,False,1
+PPO (No GCN),scenario-003023,-62.03679710329794,TOTAL_BLACKOUT,4,2,0.0,16.80369281266313,False,True,False,False,2
+PPO (No GCN),scenario-003036,14.797816131399966,STABLE,1,1,95.00000000000001,16.545797066130817,True,False,False,False,1
+PPO (No GCN),scenario-003044,-70.25857912775331,TOTAL_BLACKOUT,7,1,0.0,14.64155161526544,False,True,False,False,1
+PPO (No GCN),scenario-003047,-62.04003038917909,TOTAL_BLACKOUT,5,2,0.0,12.685431133603618,False,True,False,False,2
+PPO (No GCN),scenario-003067,-70.98904112246028,TOTAL_BLACKOUT,6,1,0.0,0.0,False,True,False,False,1
+PPO (No GCN),scenario-003085,-105.57504148352983,TOTAL_BLACKOUT,11,1,0.0,0.0,False,True,False,False,1
+PPO (No GCN),scenario-003096,11.775,STABLE,1,1,95.0,12.89736464271573,True,False,False,False,1
+PPO (No GCN),scenario-003112,-31.292803832343623,NON_CONVERGED,3,1,100.0,0.0,False,False,False,True,1
+PPO (No GCN),scenario-003124,14.84287796350725,STABLE,1,1,95.0,11.868199623344175,True,False,False,False,1
+PPO (No GCN),scenario-003161,11.775,STABLE,2,1,95.0,10.9557419576118,True,False,False,False,1
+PPO (No GCN),scenario-003166,-66.8792815673769,TOTAL_BLACKOUT,5,1,0.0,16.239610640306765,False,True,False,False,1
+PPO (No GCN),scenario-003179,-73.93396660221566,TOTAL_BLACKOUT,7,1,0.0,0.0,False,True,False,False,1
+PPO (No GCN),scenario-003185,-92.65485552932661,TOTAL_BLACKOUT,10,1,0.0,0.0,False,True,False,False,1
+PPO (No GCN),scenario-003186,-56.25470719904855,TOTAL_BLACKOUT,2,1,0.0,11.278215196371866,False,True,False,False,1
+PPO (No GCN),scenario-003221,-61.40879458028145,TOTAL_BLACKOUT,4,2,0.0,24.186228880172898,False,True,False,False,2
+PPO (No GCN),scenario-003226,-191.05407930708097,TOTAL_BLACKOUT,15,1,0.0,0.0,False,True,False,False,1
+PPO (No GCN),scenario-003238,-120.65339431919273,TOTAL_BLACKOUT,13,1,0.0,0.0,False,True,False,False,1
+PPO (No GCN),scenario-003254,-93.28063495228866,TOTAL_BLACKOUT,8,1,0.0,0.0,False,True,False,False,1
+PPO (No GCN),scenario-003260,-113.26762814778095,TOTAL_BLACKOUT,12,1,0.0,0.0,False,True,False,False,1
+PPO (No GCN),scenario-003281,-62.24793088138385,TOTAL_BLACKOUT,4,2,0.0,13.999211988286518,False,True,False,False,2
+PPO (No GCN),scenario-003326,-31.447991403406196,NON_CONVERGED,2,1,100.0,0.0,False,False,False,True,1
+PPO (No GCN),scenario-003334,-60.88402467875995,TOTAL_BLACKOUT,3,1,0.0,0.0,False,True,False,False,1
+PPO (No GCN),scenario-003345,-72.20832645841236,TOTAL_BLACKOUT,7,1,0.0,0.0,False,True,False,False,1
+PPO (No GCN),scenario-003349,-60.68995537225122,TOTAL_BLACKOUT,4,1,0.0,0.0,False,True,False,False,1
+PPO (No GCN),scenario-003354,11.775,STABLE,1,1,94.99999999999999,9.835028092725734,True,False,False,False,1
+PPO (No GCN),scenario-003375,-65.3764041641743,TOTAL_BLACKOUT,6,1,0.0,13.828309015641722,False,True,False,False,1
+PPO (No GCN),scenario-003384,11.775,STABLE,1,1,94.99999999999999,15.896612112590066,True,False,False,False,1
+PPO (No GCN),scenario-003406,11.775,STABLE,1,1,95.0,11.995931572465922,True,False,False,False,1
+PPO (No GCN),scenario-003472,11.775,STABLE,1,1,95.0,12.655370826311257,True,False,False,False,1
+PPO (No GCN),scenario-003494,-127.35089669631539,TOTAL_BLACKOUT,12,1,0.0,0.0,False,True,False,False,1
+PPO (No GCN),scenario-003502,11.775,STABLE,1,1,95.0,11.544872091936355,True,False,False,False,1
+PPO (No GCN),scenario-003527,-31.24325627524255,NON_CONVERGED,2,1,94.99999999999997,17.240296533407992,False,False,False,True,1
+PPO (No GCN),scenario-003576,-31.981657036895406,NON_CONVERGED,2,2,0.0,17.665452689887147,False,False,False,True,2
+PPO (No GCN),scenario-003584,-61.55347854966528,TOTAL_BLACKOUT,4,2,0.0,14.375159856020405,False,True,False,False,2
+PPO (No GCN),scenario-003589,-59.64845489210296,TOTAL_BLACKOUT,3,1,0.0,17.33221664615713,False,True,False,False,1
+PPO (No GCN),scenario-003596,-62.009650224873724,TOTAL_BLACKOUT,4,2,0.0,14.87930700040475,False,True,False,False,2
+PPO (No GCN),scenario-003687,-80.12950446280784,TOTAL_BLACKOUT,8,1,0.0,0.0,False,True,False,False,1
+PPO (No GCN),scenario-003690,11.775,STABLE,1,1,95.0,10.452534497204066,True,False,False,False,1
+PPO (No GCN),scenario-003751,14.8351582465396,STABLE,1,1,94.99999999999999,17.564956177242045,True,False,False,False,1
+PPO (No GCN),scenario-003775,-73.85600643384392,TOTAL_BLACKOUT,7,1,0.0,0.0,False,True,False,False,1
+PPO (No GCN),scenario-003792,-62.89863454888444,TOTAL_BLACKOUT,5,2,0.0,12.873679942061711,False,True,False,False,2
+PPO (No GCN),scenario-003834,-56.79727748271831,TOTAL_BLACKOUT,2,1,0.0,16.70040498710728,False,True,False,False,1
+PPO (No GCN),scenario-003863,-59.71789464013777,TOTAL_BLACKOUT,3,1,0.0,0.0,False,True,False,False,1
+PPO (No GCN),scenario-003884,-31.5590731819652,NON_CONVERGED,2,1,94.99999999999999,17.84550253273728,False,False,False,True,1
+PPO (No GCN),scenario-003900,-66.08248302034701,TOTAL_BLACKOUT,5,1,0.0,0.0,False,True,False,False,1
+PPO (No GCN),scenario-003901,-61.460648329554274,TOTAL_BLACKOUT,4,2,0.0,13.056528348667989,False,True,False,False,2
+PPO (No GCN),scenario-003909,-62.69838132420325,TOTAL_BLACKOUT,4,1,0.0,16.53110051408167,False,True,False,False,1
+PPO (No GCN),scenario-003910,-65.86625130636631,TOTAL_BLACKOUT,5,1,0.0,11.219994385923417,False,True,False,False,1
+PPO (No GCN),scenario-003947,-59.78690504057895,TOTAL_BLACKOUT,3,1,0.0,0.0,False,True,False,False,1
+PPO (No GCN),scenario-003949,-62.47739205474991,TOTAL_BLACKOUT,4,2,0.0,14.912543294535602,False,True,False,False,2
+PPO (No GCN),scenario-003991,-65.82164610705235,TOTAL_BLACKOUT,5,1,0.0,13.078286557626384,False,True,False,False,1
+PPO (No GCN),scenario-004014,-63.389999111548946,TOTAL_BLACKOUT,4,2,0.0,16.50246975970144,False,True,False,False,2
+PPO (No GCN),scenario-004023,-61.89661843892713,TOTAL_BLACKOUT,4,2,0.0,15.975005702773698,False,True,False,False,2
+PPO (No GCN),scenario-004035,-31.459288483844446,NON_CONVERGED,2,1,100.0,0.0,False,False,False,True,1
+PPO (No GCN),scenario-004042,-31.272504608252067,NON_CONVERGED,2,1,94.99999999999997,19.431265261538183,False,False,False,True,1
+PPO (No GCN),scenario-004045,-56.388125549947425,TOTAL_BLACKOUT,2,1,0.0,10.09611563583896,False,True,False,False,1
+PPO (No GCN),scenario-004075,-61.219423880897054,TOTAL_BLACKOUT,3,1,0.0,0.0,False,True,False,False,1
+PPO (No GCN),scenario-004120,11.775,STABLE,1,1,95.0,12.295647693685417,True,False,False,False,1
+PPO (No GCN),scenario-004133,-79.99173945023426,TOTAL_BLACKOUT,8,1,0.0,0.0,False,True,False,False,1
+PPO (No GCN),scenario-004154,-80.58630256233295,TOTAL_BLACKOUT,8,1,0.0,0.0,False,True,False,False,1
+PPO (No GCN),scenario-004155,-70.40852806470208,TOTAL_BLACKOUT,7,1,0.0,0.0,False,True,False,False,1
+PPO (No GCN),scenario-004168,-56.227523276015404,TOTAL_BLACKOUT,2,1,0.0,0.0,False,True,False,False,1
+PPO (No GCN),scenario-004172,11.775,STABLE,1,1,95.0,11.53185689916192,True,False,False,False,1
+PPO (No GCN),scenario-004210,-59.50015322599951,TOTAL_BLACKOUT,3,1,0.0,10.561605537744132,False,True,False,False,1
+PPO (No GCN),scenario-004233,-31.50755019693266,NON_CONVERGED,2,1,94.99999999999999,17.417029005529912,False,False,False,True,1
+PPO (No GCN),scenario-004260,14.813054805108992,STABLE,1,1,94.99999999999999,10.650497591385609,True,False,False,False,1
+PPO (No GCN),scenario-004297,-56.513430165430904,TOTAL_BLACKOUT,2,1,0.0,17.11412179473015,False,True,False,False,1
+PPO (No GCN),scenario-004303,-75.31602495772867,TOTAL_BLACKOUT,7,1,0.0,0.0,False,True,False,False,1
+PPO (No GCN),scenario-004375,11.775,STABLE,1,1,95.0,10.965000707371708,True,False,False,False,1
+PPO (No GCN),scenario-004387,-70.05514866641859,TOTAL_BLACKOUT,7,1,0.0,11.264621792352896,False,True,False,False,1
+PPO (No GCN),scenario-004390,-63.67562534486855,TOTAL_BLACKOUT,4,2,0.0,15.957342631355734,False,True,False,False,2
+PPO (No GCN),scenario-004410,-60.591064105206954,TOTAL_BLACKOUT,3,1,0.0,0.0,False,True,False,False,1
+PPO (No GCN),scenario-004416,-74.40884590535059,TOTAL_BLACKOUT,7,1,0.0,19.78459755269702,False,True,False,False,1
+PPO (No GCN),scenario-004426,-32.00668819778834,NON_CONVERGED,2,2,0.0,17.53382699640895,False,False,False,True,2
+PPO (No GCN),scenario-004435,-67.99484881163707,TOTAL_BLACKOUT,5,1,0.0,0.0,False,True,False,False,1
+PPO (No GCN),scenario-004445,-61.94465415796915,TOTAL_BLACKOUT,4,2,0.0,12.102153584511496,False,True,False,False,2
+PPO (No GCN),scenario-004451,-69.02081821341423,TOTAL_BLACKOUT,6,1,0.0,17.95165785477424,False,True,False,False,1
+PPO (No GCN),scenario-004454,-65.69353435417904,TOTAL_BLACKOUT,5,1,0.0,15.427830075886687,False,True,False,False,1
+PPO (No GCN),scenario-004459,-109.1600626490461,TOTAL_BLACKOUT,10,1,0.0,0.0,False,True,False,False,1
+PPO (No GCN),scenario-004491,-73.51473278969209,TOTAL_BLACKOUT,7,1,0.0,0.0,False,True,False,False,1
+PPO (No GCN),scenario-004493,-56.45401974545619,TOTAL_BLACKOUT,2,1,0.0,11.066027919153363,False,True,False,False,1
+PPO (No GCN),scenario-004538,-62.857095120506536,TOTAL_BLACKOUT,4,2,0.0,12.844341719168483,False,True,False,False,2
+PPO (No GCN),scenario-004552,-71.2916902487616,TOTAL_BLACKOUT,6,1,0.0,0.0,False,True,False,False,1
+PPO (No GCN),scenario-004558,-60.80186309426194,TOTAL_BLACKOUT,3,1,0.0,0.0,False,True,False,False,1
+PPO (No GCN),scenario-004584,-76.95146350498024,TOTAL_BLACKOUT,8,1,0.0,0.0,False,True,False,False,1
+PPO (No GCN),scenario-004585,-73.84837613620499,TOTAL_BLACKOUT,6,1,0.0,0.0,False,True,False,False,1
+PPO (No GCN),scenario-004586,-89.20372611923582,TOTAL_BLACKOUT,9,1,0.0,0.0,False,True,False,False,1
+PPO (No GCN),scenario-004595,-63.141656208244356,TOTAL_BLACKOUT,4,2,0.0,10.64643213758606,False,True,False,False,2
+PPO (No GCN),scenario-004608,-56.32610116082243,TOTAL_BLACKOUT,2,1,0.0,0.0,False,True,False,False,1
+PPO (No GCN),scenario-004650,-61.72875233063262,TOTAL_BLACKOUT,4,2,0.0,14.621347134378546,False,True,False,False,2
+PPO (No GCN),scenario-004667,-69.25605514551194,TOTAL_BLACKOUT,7,1,0.0,18.894357169489883,False,True,False,False,1
+PPO (No GCN),scenario-004699,11.775,STABLE,1,1,95.0,12.933740999190313,True,False,False,False,1
+PPO (No GCN),scenario-004719,-79.48169622261746,TOTAL_BLACKOUT,7,1,0.0,0.0,False,True,False,False,1
+PPO (No GCN),scenario-004729,-72.67077151864892,TOTAL_BLACKOUT,7,1,0.0,13.699269619182399,False,True,False,False,1
+PPO (No GCN),scenario-004752,-60.23770900517956,TOTAL_BLACKOUT,4,1,0.0,0.0,False,True,False,False,1
+PPO (No GCN),scenario-004755,-66.64940405310838,TOTAL_BLACKOUT,5,1,0.0,19.561483909958728,False,True,False,False,1
+PPO (No GCN),scenario-004757,-74.61086756428023,TOTAL_BLACKOUT,7,1,0.0,17.820693723287356,False,True,False,False,1
+PPO (No GCN),scenario-004770,-31.227918604716926,NON_CONVERGED,2,1,95.0,17.917055703023223,False,False,False,True,1
+PPO (No GCN),scenario-004775,11.775,STABLE,1,1,95.00000000000003,14.799832601410815,True,False,False,False,1
+PPO (No GCN),scenario-004785,-70.51362719124526,TOTAL_BLACKOUT,6,1,0.0,0.0,False,True,False,False,1
+PPO (No GCN),scenario-004787,-78.82335613167427,TOTAL_BLACKOUT,8,1,0.0,0.0,False,True,False,False,1
+PPO (No GCN),scenario-004853,-62.282812398438445,TOTAL_BLACKOUT,4,2,0.0,16.735910049600168,False,True,False,False,2
+PPO (No GCN),scenario-004862,-59.68065788971232,TOTAL_BLACKOUT,3,1,0.0,0.0,False,True,False,False,1
+PPO (No GCN),scenario-004866,-66.91227421406956,TOTAL_BLACKOUT,6,1,0.0,15.85840198672664,False,True,False,False,1
+PPO (No GCN),scenario-004885,11.775,STABLE,2,1,95.00000000000001,13.911143933583714,True,False,False,False,1
+PPO (No GCN),scenario-004900,-56.70615335648255,TOTAL_BLACKOUT,2,1,0.0,16.473369055429487,False,True,False,False,1
+PPO (No GCN),scenario-004972,-75.35314937272159,TOTAL_BLACKOUT,7,1,0.0,0.0,False,True,False,False,1
+PPO (No GCN),scenario-004979,-69.22664612310366,TOTAL_BLACKOUT,6,1,0.0,13.530532674327956,False,True,False,False,1
+PPO (No GCN),scenario-004991,-63.16258308707858,TOTAL_BLACKOUT,4,2,0.0,16.316831029975184,False,True,False,False,2
+PPO (Predictive GCN),scenario-000027,-31.228781416890243,NON_CONVERGED,3,1,100.0,0.0,False,False,False,True,1
+PPO (Predictive GCN),scenario-000085,14.977337246001444,STABLE,1,1,100.0,0.0,True,False,False,False,1
+PPO (Predictive GCN),scenario-000093,-70.38275463321028,TOTAL_BLACKOUT,6,1,0.0,0.0,False,True,False,False,1
+PPO (Predictive GCN),scenario-000104,-71.61260086487357,TOTAL_BLACKOUT,7,1,0.0,0.0,False,True,False,False,1
+PPO (Predictive GCN),scenario-000105,-62.57202340034938,TOTAL_BLACKOUT,5,1,0.0,0.0,False,True,False,False,1
+PPO (Predictive GCN),scenario-000118,-68.68563963576283,TOTAL_BLACKOUT,6,2,0.0,0.0,False,True,False,False,2
+PPO (Predictive GCN),scenario-000145,-31.3304819280124,NON_CONVERGED,2,1,100.0,0.0,False,False,False,True,1
+PPO (Predictive GCN),scenario-000149,-38.38133943306928,NON_CONVERGED,4,1,95.0,14.161668145175302,False,False,False,True,1
+PPO (Predictive GCN),scenario-000201,-34.23580712085069,NON_CONVERGED,3,1,95.0,15.986933606051966,False,False,False,True,1
+PPO (Predictive GCN),scenario-000204,-59.290882319675774,TOTAL_BLACKOUT,4,1,0.0,0.0,False,True,False,False,1
+PPO (Predictive GCN),scenario-000224,11.95,STABLE,1,1,100.0,0.0,True,False,False,False,1
+PPO (Predictive GCN),scenario-000227,-84.70049029528018,TOTAL_BLACKOUT,9,1,0.0,0.0,False,True,False,False,1
+PPO (Predictive GCN),scenario-000262,11.95,STABLE,1,1,100.0,0.0,True,False,False,False,1
+PPO (Predictive GCN),scenario-000270,-65.77018727208194,TOTAL_BLACKOUT,5,1,0.0,16.227348099863345,False,True,False,False,1
+PPO (Predictive GCN),scenario-000287,-80.97030780810015,TOTAL_BLACKOUT,8,1,0.0,0.0,False,True,False,False,1
+PPO (Predictive GCN),scenario-000294,-60.68227174328708,TOTAL_BLACKOUT,4,2,0.0,0.0,False,True,False,False,2
+PPO (Predictive GCN),scenario-000301,11.775,STABLE,1,1,95.0,10.410423858050347,True,False,False,False,1
+PPO (Predictive GCN),scenario-000316,-82.01888721898652,TOTAL_BLACKOUT,9,1,0.0,0.0,False,True,False,False,1
+PPO (Predictive GCN),scenario-000328,-76.65376187207632,TOTAL_BLACKOUT,7,1,0.0,0.0,False,True,False,False,1
+PPO (Predictive GCN),scenario-000345,-61.76915836248045,TOTAL_BLACKOUT,4,2,0.0,0.0,False,True,False,False,2
+PPO (Predictive GCN),scenario-000374,-192.57896244972108,TOTAL_BLACKOUT,15,1,0.0,0.0,False,True,False,False,1
+PPO (Predictive GCN),scenario-000375,14.992545748841977,STABLE,1,1,100.0,0.0,True,False,False,False,1
+PPO (Predictive GCN),scenario-000399,-69.82459511368326,TOTAL_BLACKOUT,6,1,0.0,0.0,False,True,False,False,1
+PPO (Predictive GCN),scenario-000401,11.95,STABLE,1,1,100.0,0.0,True,False,False,False,1
+PPO (Predictive GCN),scenario-000423,11.775,STABLE,1,1,95.0,16.328483743568533,True,False,False,False,1
+PPO (Predictive GCN),scenario-000432,-84.72339317280839,TOTAL_BLACKOUT,7,1,0.0,0.0,False,True,False,False,1
+PPO (Predictive GCN),scenario-000437,-62.07692798088948,TOTAL_BLACKOUT,5,2,0.0,14.911432043600794,False,True,False,False,2
+PPO (Predictive GCN),scenario-000438,-61.074689431111544,TOTAL_BLACKOUT,5,2,0.0,0.0,False,True,False,False,2
+PPO (Predictive GCN),scenario-000459,-31.681203128206768,NON_CONVERGED,2,1,100.0,0.0,False,False,False,True,1
+PPO (Predictive GCN),scenario-000482,-73.82881268025295,TOTAL_BLACKOUT,8,1,0.0,0.0,False,True,False,False,1
+PPO (Predictive GCN),scenario-000485,11.95,STABLE,1,1,100.0,0.0,True,False,False,False,1
+PPO (Predictive GCN),scenario-000491,-72.41161189220591,TOTAL_BLACKOUT,6,1,0.0,0.0,False,True,False,False,1
+PPO (Predictive GCN),scenario-000503,-73.06082887081516,TOTAL_BLACKOUT,8,1,0.0,0.0,False,True,False,False,1
+PPO (Predictive GCN),scenario-000558,-71.18607124303045,TOTAL_BLACKOUT,6,1,0.0,0.0,False,True,False,False,1
+PPO (Predictive GCN),scenario-000562,11.774999999999999,STABLE,1,1,94.99999999999997,16.167734699512962,True,False,False,False,1
+PPO (Predictive GCN),scenario-000584,-67.57050167447862,TOTAL_BLACKOUT,5,1,0.0,0.0,False,True,False,False,1
+PPO (Predictive GCN),scenario-000634,-31.347503922717657,NON_CONVERGED,2,1,100.0,0.0,False,False,False,True,1
+PPO (Predictive GCN),scenario-000642,-70.42562894666209,TOTAL_BLACKOUT,5,2,0.0,0.0,False,True,False,False,2
+PPO (Predictive GCN),scenario-000644,-65.65225168821681,TOTAL_BLACKOUT,6,1,0.0,0.0,False,True,False,False,1
+PPO (Predictive GCN),scenario-000650,-70.08802662522774,TOTAL_BLACKOUT,6,1,0.0,0.0,False,True,False,False,1
+PPO (Predictive GCN),scenario-000667,-31.196569264318708,NON_CONVERGED,2,1,100.0,0.0,False,False,False,True,1
+PPO (Predictive GCN),scenario-000669,-31.30450899529489,NON_CONVERGED,2,1,100.0,0.0,False,False,False,True,1
+PPO (Predictive GCN),scenario-000675,-84.89841658391653,TOTAL_BLACKOUT,9,1,0.0,0.0,False,True,False,False,1
+PPO (Predictive GCN),scenario-000690,-84.02266018241298,TOTAL_BLACKOUT,9,1,0.0,0.0,False,True,False,False,1
+PPO (Predictive GCN),scenario-000700,15.000004464772541,STABLE,1,1,100.0,0.0,True,False,False,False,1
+PPO (Predictive GCN),scenario-000749,-114.63249698441797,TOTAL_BLACKOUT,11,1,0.0,0.0,False,True,False,False,1
+PPO (Predictive GCN),scenario-000758,-83.98072590838206,TOTAL_BLACKOUT,9,1,0.0,0.0,False,True,False,False,1
+PPO (Predictive GCN),scenario-000760,-66.77083271757996,TOTAL_BLACKOUT,5,1,0.0,0.0,False,True,False,False,1
+PPO (Predictive GCN),scenario-000794,-64.86859081796668,TOTAL_BLACKOUT,5,1,0.0,0.0,False,True,False,False,1
+PPO (Predictive GCN),scenario-000801,-73.58174866269991,TOTAL_BLACKOUT,7,1,0.0,0.0,False,True,False,False,1
+PPO (Predictive GCN),scenario-000805,-31.673326774627615,NON_CONVERGED,2,1,100.0,0.0,False,False,False,True,1
+PPO (Predictive GCN),scenario-000822,-59.39888797430667,TOTAL_BLACKOUT,4,1,0.0,0.0,False,True,False,False,1
+PPO (Predictive GCN),scenario-000830,-60.545924144153524,TOTAL_BLACKOUT,4,2,0.0,0.0,False,True,False,False,2
+PPO (Predictive GCN),scenario-000838,-75.3375248553048,TOTAL_BLACKOUT,7,1,0.0,0.0,False,True,False,False,1
+PPO (Predictive GCN),scenario-000842,-62.359432512780735,TOTAL_BLACKOUT,4,2,0.0,0.0,False,True,False,False,2
+PPO (Predictive GCN),scenario-000867,-76.03678025763085,TOTAL_BLACKOUT,7,1,0.0,0.0,False,True,False,False,1
+PPO (Predictive GCN),scenario-000978,-65.46366854576212,TOTAL_BLACKOUT,5,1,0.0,18.19016246163037,False,True,False,False,1
+PPO (Predictive GCN),scenario-000989,11.95,STABLE,2,1,100.0,0.0,True,False,False,False,1
+PPO (Predictive GCN),scenario-001002,-62.825828043004535,TOTAL_BLACKOUT,4,1,0.0,0.0,False,True,False,False,1
+PPO (Predictive GCN),scenario-001037,-73.51173523542889,TOTAL_BLACKOUT,7,1,0.0,0.0,False,True,False,False,1
+PPO (Predictive GCN),scenario-001046,11.95,STABLE,1,1,100.0,0.0,True,False,False,False,1
+PPO (Predictive GCN),scenario-001058,-59.19420564550005,TOTAL_BLACKOUT,3,1,0.0,0.0,False,True,False,False,1
+PPO (Predictive GCN),scenario-001114,-74.10899383207371,TOTAL_BLACKOUT,7,1,0.0,0.0,False,True,False,False,1
+PPO (Predictive GCN),scenario-001117,11.95,STABLE,2,1,100.0,0.0,True,False,False,False,1
+PPO (Predictive GCN),scenario-001123,-86.84095593230869,TOTAL_BLACKOUT,8,1,0.0,0.0,False,True,False,False,1
+PPO (Predictive GCN),scenario-001142,-56.87647603793757,TOTAL_BLACKOUT,2,1,0.0,15.63192358733681,False,True,False,False,1
+PPO (Predictive GCN),scenario-001181,-60.67101741958515,TOTAL_BLACKOUT,4,2,0.0,0.0,False,True,False,False,2
+PPO (Predictive GCN),scenario-001214,-31.399961097813133,NON_CONVERGED,2,1,95.00000000000001,16.504397582701248,False,False,False,True,1
+PPO (Predictive GCN),scenario-001232,-56.48514759590273,TOTAL_BLACKOUT,2,1,0.0,18.619609828496046,False,True,False,False,1
+PPO (Predictive GCN),scenario-001233,-31.188004676520514,NON_CONVERGED,2,1,100.0,0.0,False,False,False,True,1
+PPO (Predictive GCN),scenario-001245,-72.24166691551346,TOTAL_BLACKOUT,6,1,0.0,0.0,False,True,False,False,1
+PPO (Predictive GCN),scenario-001252,-37.4932769927304,NON_CONVERGED,5,1,95.00000000000001,12.750598282637844,False,False,False,True,1
+PPO (Predictive GCN),scenario-001258,-31.406684600590758,NON_CONVERGED,2,1,100.0,0.0,False,False,False,True,1
+PPO (Predictive GCN),scenario-001275,-61.634920455413614,TOTAL_BLACKOUT,4,2,0.0,0.0,False,True,False,False,2
+PPO (Predictive GCN),scenario-001281,11.95,STABLE,1,1,100.0,0.0,True,False,False,False,1
+PPO (Predictive GCN),scenario-001296,-61.13859694897709,TOTAL_BLACKOUT,4,2,0.0,0.0,False,True,False,False,2
+PPO (Predictive GCN),scenario-001300,-56.64607199793924,TOTAL_BLACKOUT,3,1,0.0,13.337635461805071,False,True,False,False,1
+PPO (Predictive GCN),scenario-001343,-31.147397956157526,NON_CONVERGED,2,2,0.0,0.0,False,False,False,True,2
+PPO (Predictive GCN),scenario-001349,-60.57729616350652,TOTAL_BLACKOUT,4,2,0.0,0.0,False,True,False,False,2
+PPO (Predictive GCN),scenario-001366,-68.13676916172918,TOTAL_BLACKOUT,6,1,0.0,0.0,False,True,False,False,1
+PPO (Predictive GCN),scenario-001371,-67.32102200000075,TOTAL_BLACKOUT,5,1,0.0,0.0,False,True,False,False,1
+PPO (Predictive GCN),scenario-001383,-31.303792700296047,NON_CONVERGED,3,1,100.0,0.0,False,False,False,True,1
+PPO (Predictive GCN),scenario-001393,11.775,STABLE,1,1,95.0,15.109034654512937,True,False,False,False,1
+PPO (Predictive GCN),scenario-001447,-69.39396050243968,TOTAL_BLACKOUT,5,1,0.0,0.0,False,True,False,False,1
+PPO (Predictive GCN),scenario-001484,-65.88878979564926,TOTAL_BLACKOUT,5,1,0.0,0.0,False,True,False,False,1
+PPO (Predictive GCN),scenario-001540,-56.12845322100463,TOTAL_BLACKOUT,2,1,0.0,0.0,False,True,False,False,1
+PPO (Predictive GCN),scenario-001547,-31.248410891599622,NON_CONVERGED,2,1,100.0,0.0,False,False,False,True,1
+PPO (Predictive GCN),scenario-001549,11.775,STABLE,2,1,95.0,11.73819159220338,True,False,False,False,1
+PPO (Predictive GCN),scenario-001564,-69.2956357522116,TOTAL_BLACKOUT,6,2,0.0,0.0,False,True,False,False,2
+PPO (Predictive GCN),scenario-001565,-62.94279661110099,TOTAL_BLACKOUT,4,1,0.0,15.977119166917518,False,True,False,False,1
+PPO (Predictive GCN),scenario-001569,-60.081478063389795,TOTAL_BLACKOUT,4,1,0.0,0.0,False,True,False,False,1
+PPO (Predictive GCN),scenario-001576,11.95,STABLE,2,1,100.0,0.0,True,False,False,False,1
+PPO (Predictive GCN),scenario-001578,11.95,STABLE,1,1,100.0,0.0,True,False,False,False,1
+PPO (Predictive GCN),scenario-001595,-31.179348490674162,NON_CONVERGED,2,1,100.0,0.0,False,False,False,True,1
+PPO (Predictive GCN),scenario-001596,15.021191220204638,STABLE,1,1,100.0,0.0,True,False,False,False,1
+PPO (Predictive GCN),scenario-001602,-170.58559913840713,TOTAL_BLACKOUT,14,1,0.0,0.0,False,True,False,False,1
+PPO (Predictive GCN),scenario-001616,-74.63602324362085,TOTAL_BLACKOUT,7,1,0.0,0.0,False,True,False,False,1
+PPO (Predictive GCN),scenario-001649,-71.27060611485437,TOTAL_BLACKOUT,6,1,0.0,0.0,False,True,False,False,1
+PPO (Predictive GCN),scenario-001656,14.959381918175433,STABLE,1,1,100.0,0.0,True,False,False,False,1
+PPO (Predictive GCN),scenario-001658,-31.314943062792636,NON_CONVERGED,2,1,100.0,0.0,False,False,False,True,1
+PPO (Predictive GCN),scenario-001672,-61.82798455374249,TOTAL_BLACKOUT,4,2,0.0,0.0,False,True,False,False,2
+PPO (Predictive GCN),scenario-001674,11.95,STABLE,1,1,100.0,0.0,True,False,False,False,1
+PPO (Predictive GCN),scenario-001732,-56.41610118945787,TOTAL_BLACKOUT,2,1,0.0,12.103966303021394,False,True,False,False,1
+PPO (Predictive GCN),scenario-001737,-78.3995598021346,TOTAL_BLACKOUT,7,1,0.0,0.0,False,True,False,False,1
+PPO (Predictive GCN),scenario-001756,-59.42764798386253,TOTAL_BLACKOUT,3,1,0.0,0.0,False,True,False,False,1
+PPO (Predictive GCN),scenario-001824,-31.224283396912462,NON_CONVERGED,2,1,94.99999999999999,15.12993497584764,False,False,False,True,1
+PPO (Predictive GCN),scenario-001827,-79.43566157227632,TOTAL_BLACKOUT,8,1,0.0,0.0,False,True,False,False,1
+PPO (Predictive GCN),scenario-001858,-65.39650041066852,TOTAL_BLACKOUT,5,1,0.0,15.877947247669617,False,True,False,False,1
+PPO (Predictive GCN),scenario-001863,-60.169901605474976,TOTAL_BLACKOUT,3,1,0.0,0.0,False,True,False,False,1
+PPO (Predictive GCN),scenario-001885,-69.4739061209009,TOTAL_BLACKOUT,6,1,0.0,0.0,False,True,False,False,1
+PPO (Predictive GCN),scenario-001902,-65.17174579559892,TOTAL_BLACKOUT,6,2,0.0,34.70839959171653,False,True,False,False,2
+PPO (Predictive GCN),scenario-001911,-68.67430800096596,TOTAL_BLACKOUT,6,2,0.0,0.0,False,True,False,False,2
+PPO (Predictive GCN),scenario-001923,-56.28424308526201,TOTAL_BLACKOUT,3,1,0.0,14.82873262930479,False,True,False,False,1
+PPO (Predictive GCN),scenario-001932,-67.28672368428947,TOTAL_BLACKOUT,6,1,0.0,0.0,False,True,False,False,1
+PPO (Predictive GCN),scenario-001950,-62.868463543286566,TOTAL_BLACKOUT,4,1,0.0,0.0,False,True,False,False,1
+PPO (Predictive GCN),scenario-001952,-133.80301270673127,TOTAL_BLACKOUT,13,1,0.0,0.0,False,True,False,False,1
+PPO (Predictive GCN),scenario-001970,-31.284604745911857,NON_CONVERGED,2,1,100.0,0.0,False,False,False,True,1
+PPO (Predictive GCN),scenario-002035,-74.15271598091319,TOTAL_BLACKOUT,8,1,0.0,0.0,False,True,False,False,1
+PPO (Predictive GCN),scenario-002070,-72.1778946400753,TOTAL_BLACKOUT,6,1,0.0,0.0,False,True,False,False,1
+PPO (Predictive GCN),scenario-002080,-69.19260327013478,TOTAL_BLACKOUT,6,1,0.0,11.596083074919454,False,True,False,False,1
+PPO (Predictive GCN),scenario-002085,-57.22674166521233,TOTAL_BLACKOUT,3,2,0.0,0.0,False,True,False,False,2
+PPO (Predictive GCN),scenario-002121,-73.88005465677968,TOTAL_BLACKOUT,8,1,0.0,0.0,False,True,False,False,1
+PPO (Predictive GCN),scenario-002132,11.95,STABLE,1,1,100.0,0.0,True,False,False,False,1
+PPO (Predictive GCN),scenario-002141,-127.31606576738419,TOTAL_BLACKOUT,13,1,0.0,0.0,False,True,False,False,1
+PPO (Predictive GCN),scenario-002153,-72.88704006056275,TOTAL_BLACKOUT,8,1,0.0,0.0,False,True,False,False,1
+PPO (Predictive GCN),scenario-002156,-31.108374427383637,NON_CONVERGED,3,1,100.0,0.0,False,False,False,True,1
+PPO (Predictive GCN),scenario-002163,-93.93315697068381,TOTAL_BLACKOUT,9,1,0.0,0.0,False,True,False,False,1
+PPO (Predictive GCN),scenario-002169,14.982945343553746,STABLE,1,1,100.0,0.0,True,False,False,False,1
+PPO (Predictive GCN),scenario-002187,-31.28476199597939,NON_CONVERGED,2,1,100.0,0.0,False,False,False,True,1
+PPO (Predictive GCN),scenario-002207,11.95,STABLE,1,1,100.0,0.0,True,False,False,False,1
+PPO (Predictive GCN),scenario-002213,-63.43707388160189,TOTAL_BLACKOUT,4,2,0.0,13.698009658925015,False,True,False,False,2
+PPO (Predictive GCN),scenario-002215,-62.240333661342014,TOTAL_BLACKOUT,4,2,0.0,0.0,False,True,False,False,2
+PPO (Predictive GCN),scenario-002218,11.95,STABLE,1,1,100.0,0.0,True,False,False,False,1
+PPO (Predictive GCN),scenario-002229,-81.5066066267025,TOTAL_BLACKOUT,7,1,0.0,0.0,False,True,False,False,1
+PPO (Predictive GCN),scenario-002236,-66.29771279933061,TOTAL_BLACKOUT,4,2,0.0,0.0,False,True,False,False,2
+PPO (Predictive GCN),scenario-002248,-72.97574287232568,TOTAL_BLACKOUT,6,1,0.0,0.0,False,True,False,False,1
+PPO (Predictive GCN),scenario-002250,-31.312667612969957,NON_CONVERGED,2,1,100.0,0.0,False,False,False,True,1
+PPO (Predictive GCN),scenario-002255,-62.43574487008151,TOTAL_BLACKOUT,4,2,0.0,0.0,False,True,False,False,2
+PPO (Predictive GCN),scenario-002258,-124.9806869304154,TOTAL_BLACKOUT,13,1,0.0,0.0,False,True,False,False,1
+PPO (Predictive GCN),scenario-002260,11.95,STABLE,1,1,100.0,0.0,True,False,False,False,1
+PPO (Predictive GCN),scenario-002275,-65.39816625762992,TOTAL_BLACKOUT,5,1,0.0,0.0,False,True,False,False,1
+PPO (Predictive GCN),scenario-002276,11.95,STABLE,1,1,100.0,0.0,True,False,False,False,1
+PPO (Predictive GCN),scenario-002290,-74.17936978201382,TOTAL_BLACKOUT,7,1,0.0,0.0,False,True,False,False,1
+PPO (Predictive GCN),scenario-002314,-63.140629973229835,TOTAL_BLACKOUT,4,2,0.0,13.660687373869298,False,True,False,False,2
+PPO (Predictive GCN),scenario-002318,-78.09132109515615,TOTAL_BLACKOUT,7,1,0.0,0.0,False,True,False,False,1
+PPO (Predictive GCN),scenario-002344,-66.44979614699459,TOTAL_BLACKOUT,5,1,0.0,0.0,False,True,False,False,1
+PPO (Predictive GCN),scenario-002359,-61.542279451748584,TOTAL_BLACKOUT,4,2,0.0,14.08629481996066,False,True,False,False,2
+PPO (Predictive GCN),scenario-002377,11.95,STABLE,1,1,100.0,0.0,True,False,False,False,1
+PPO (Predictive GCN),scenario-002378,11.774999999999999,STABLE,1,1,94.99999999999997,16.290540465053667,True,False,False,False,1
+PPO (Predictive GCN),scenario-002396,-62.463267026074284,TOTAL_BLACKOUT,4,1,0.0,16.830506506413396,False,True,False,False,1
+PPO (Predictive GCN),scenario-002412,-31.634602024047787,NON_CONVERGED,2,1,100.0,0.0,False,False,False,True,1
+PPO (Predictive GCN),scenario-002420,-89.13635021480962,TOTAL_BLACKOUT,8,1,0.0,0.0,False,True,False,False,1
+PPO (Predictive GCN),scenario-002421,11.95,STABLE,1,1,100.0,0.0,True,False,False,False,1
+PPO (Predictive GCN),scenario-002423,-75.01246441412927,TOTAL_BLACKOUT,7,1,0.0,0.0,False,True,False,False,1
+PPO (Predictive GCN),scenario-002449,-61.990162776739005,TOTAL_BLACKOUT,4,2,0.0,0.0,False,True,False,False,2
+PPO (Predictive GCN),scenario-002453,-61.20310828240297,TOTAL_BLACKOUT,5,2,0.0,0.0,False,True,False,False,2
+PPO (Predictive GCN),scenario-002488,-62.43515836506593,TOTAL_BLACKOUT,4,2,0.0,14.710872242371806,False,True,False,False,2
+PPO (Predictive GCN),scenario-002489,-56.42970526708858,TOTAL_BLACKOUT,3,1,0.0,16.645985587331452,False,True,False,False,1
+PPO (Predictive GCN),scenario-002499,-66.32684209963523,TOTAL_BLACKOUT,5,1,0.0,0.0,False,True,False,False,1
+PPO (Predictive GCN),scenario-002500,14.77999417415074,STABLE,1,1,94.99999999999997,15.365668336309666,True,False,False,False,1
+PPO (Predictive GCN),scenario-002528,-62.793023637170634,TOTAL_BLACKOUT,4,1,0.0,0.0,False,True,False,False,1
+PPO (Predictive GCN),scenario-002560,-31.23361578395325,NON_CONVERGED,2,1,100.0,0.0,False,False,False,True,1
+PPO (Predictive GCN),scenario-002572,-66.9198274957566,TOTAL_BLACKOUT,5,1,0.0,0.0,False,True,False,False,1
+PPO (Predictive GCN),scenario-002588,-69.46431536954978,TOTAL_BLACKOUT,6,1,0.0,0.0,False,True,False,False,1
+PPO (Predictive GCN),scenario-002616,11.95,STABLE,2,1,100.0,0.0,True,False,False,False,1
+PPO (Predictive GCN),scenario-002617,-31.1966380519949,NON_CONVERGED,2,1,100.0,0.0,False,False,False,True,1
+PPO (Predictive GCN),scenario-002623,-68.8717298558937,TOTAL_BLACKOUT,6,1,0.0,15.846897953474738,False,True,False,False,1
+PPO (Predictive GCN),scenario-002642,-69.64949332454245,TOTAL_BLACKOUT,7,1,0.0,0.0,False,True,False,False,1
+PPO (Predictive GCN),scenario-002648,-70.67884013736432,TOTAL_BLACKOUT,6,1,0.0,0.0,False,True,False,False,1
+PPO (Predictive GCN),scenario-002671,-127.03436919092123,TOTAL_BLACKOUT,13,1,0.0,0.0,False,True,False,False,1
+PPO (Predictive GCN),scenario-002677,-61.54781688091108,TOTAL_BLACKOUT,4,2,0.0,25.136907164958757,False,True,False,False,2
+PPO (Predictive GCN),scenario-002697,-60.18565961061836,TOTAL_BLACKOUT,4,2,0.0,0.0,False,True,False,False,2
+PPO (Predictive GCN),scenario-002706,11.95,STABLE,1,1,100.0,0.0,True,False,False,False,1
+PPO (Predictive GCN),scenario-002769,11.95,STABLE,1,1,100.0,0.0,True,False,False,False,1
+PPO (Predictive GCN),scenario-002775,-73.47738611336024,TOTAL_BLACKOUT,7,1,0.0,0.0,False,True,False,False,1
+PPO (Predictive GCN),scenario-002778,11.95,STABLE,1,1,100.0,0.0,True,False,False,False,1
+PPO (Predictive GCN),scenario-002788,-62.41418116404178,TOTAL_BLACKOUT,4,2,0.0,0.0,False,True,False,False,2
+PPO (Predictive GCN),scenario-002798,-83.36476972028889,TOTAL_BLACKOUT,7,1,0.0,0.0,False,True,False,False,1
+PPO (Predictive GCN),scenario-002800,-139.29260071781215,TOTAL_BLACKOUT,13,1,0.0,0.0,False,True,False,False,1
+PPO (Predictive GCN),scenario-002818,11.95,STABLE,1,1,100.0,0.0,True,False,False,False,1
+PPO (Predictive GCN),scenario-002827,-62.76944065269835,TOTAL_BLACKOUT,4,1,0.0,0.0,False,True,False,False,1
+PPO (Predictive GCN),scenario-002830,-76.41175831655569,TOTAL_BLACKOUT,7,1,0.0,0.0,False,True,False,False,1
+PPO (Predictive GCN),scenario-002836,-31.55182975147766,NON_CONVERGED,2,1,94.99999999999999,17.66296430759411,False,False,False,True,1
+PPO (Predictive GCN),scenario-002863,-79.39629553236381,TOTAL_BLACKOUT,8,1,0.0,0.0,False,True,False,False,1
+PPO (Predictive GCN),scenario-002868,-61.17835502038262,TOTAL_BLACKOUT,4,2,0.0,0.0,False,True,False,False,2
+PPO (Predictive GCN),scenario-002873,-31.502107443229114,NON_CONVERGED,2,1,100.0,0.0,False,False,False,True,1
+PPO (Predictive GCN),scenario-002882,11.775,STABLE,1,1,95.0,13.062429061716365,True,False,False,False,1
+PPO (Predictive GCN),scenario-002903,-72.6463958369826,TOTAL_BLACKOUT,6,1,0.0,0.0,False,True,False,False,1
+PPO (Predictive GCN),scenario-002937,-56.04100382173586,TOTAL_BLACKOUT,3,1,0.0,0.0,False,True,False,False,1
+PPO (Predictive GCN),scenario-002942,-56.346652621128165,TOTAL_BLACKOUT,3,1,0.0,0.0,False,True,False,False,1
+PPO (Predictive GCN),scenario-002966,-65.40586507060273,TOTAL_BLACKOUT,5,1,0.0,17.76490113014803,False,True,False,False,1
+PPO (Predictive GCN),scenario-003023,-31.217436464820523,NON_CONVERGED,2,1,100.0,0.0,False,False,False,True,1
+PPO (Predictive GCN),scenario-003036,-31.083569478886734,NON_CONVERGED,2,1,100.0,0.0,False,False,False,True,1
+PPO (Predictive GCN),scenario-003044,-70.31952201468776,TOTAL_BLACKOUT,7,1,0.0,0.0,False,True,False,False,1
+PPO (Predictive GCN),scenario-003047,-61.07612007482494,TOTAL_BLACKOUT,5,2,0.0,0.0,False,True,False,False,2
+PPO (Predictive GCN),scenario-003067,-70.98904112246028,TOTAL_BLACKOUT,6,1,0.0,0.0,False,True,False,False,1
+PPO (Predictive GCN),scenario-003085,-99.71329214945607,TOTAL_BLACKOUT,10,1,0.0,0.0,False,True,False,False,1
+PPO (Predictive GCN),scenario-003096,11.95,STABLE,1,1,100.0,0.0,True,False,False,False,1
+PPO (Predictive GCN),scenario-003112,-31.292803832343623,NON_CONVERGED,3,1,100.0,0.0,False,False,False,True,1
+PPO (Predictive GCN),scenario-003124,-57.185326941470656,TOTAL_BLACKOUT,3,2,0.0,0.0,False,True,False,False,2
+PPO (Predictive GCN),scenario-003161,11.775,STABLE,2,1,95.0,10.9557419576118,True,False,False,False,1
+PPO (Predictive GCN),scenario-003166,-67.16810546851438,TOTAL_BLACKOUT,5,1,0.0,0.0,False,True,False,False,1
+PPO (Predictive GCN),scenario-003179,-73.73305645232246,TOTAL_BLACKOUT,7,1,0.0,0.0,False,True,False,False,1
+PPO (Predictive GCN),scenario-003185,-91.07615050771703,TOTAL_BLACKOUT,10,1,0.0,0.0,False,True,False,False,1
+PPO (Predictive GCN),scenario-003186,-56.097565385468975,TOTAL_BLACKOUT,2,1,0.0,0.0,False,True,False,False,1
+PPO (Predictive GCN),scenario-003221,-61.40879458028145,TOTAL_BLACKOUT,4,2,0.0,24.186228880172898,False,True,False,False,2
+PPO (Predictive GCN),scenario-003226,-191.05407930708097,TOTAL_BLACKOUT,15,1,0.0,0.0,False,True,False,False,1
+PPO (Predictive GCN),scenario-003238,-115.84415092441472,TOTAL_BLACKOUT,13,1,0.0,0.0,False,True,False,False,1
+PPO (Predictive GCN),scenario-003254,-91.06833177158165,TOTAL_BLACKOUT,8,1,0.0,0.0,False,True,False,False,1
+PPO (Predictive GCN),scenario-003260,-102.88838190717304,TOTAL_BLACKOUT,10,1,0.0,0.0,False,True,False,False,1
+PPO (Predictive GCN),scenario-003281,-61.305911252829404,TOTAL_BLACKOUT,4,2,0.0,0.0,False,True,False,False,2
+PPO (Predictive GCN),scenario-003326,-31.447991403406196,NON_CONVERGED,2,1,100.0,0.0,False,False,False,True,1
+PPO (Predictive GCN),scenario-003334,-60.88402467875995,TOTAL_BLACKOUT,3,1,0.0,0.0,False,True,False,False,1
+PPO (Predictive GCN),scenario-003345,-72.20832645841236,TOTAL_BLACKOUT,7,1,0.0,0.0,False,True,False,False,1
+PPO (Predictive GCN),scenario-003349,-60.68995537225122,TOTAL_BLACKOUT,4,1,0.0,0.0,False,True,False,False,1
+PPO (Predictive GCN),scenario-003354,11.775,STABLE,1,1,94.99999999999999,9.835028092725734,True,False,False,False,1
+PPO (Predictive GCN),scenario-003375,-65.47227001321022,TOTAL_BLACKOUT,6,1,0.0,0.0,False,True,False,False,1
+PPO (Predictive GCN),scenario-003384,11.95,STABLE,1,1,100.0,0.0,True,False,False,False,1
+PPO (Predictive GCN),scenario-003406,11.95,STABLE,1,1,100.0,0.0,True,False,False,False,1
+PPO (Predictive GCN),scenario-003472,11.95,STABLE,1,1,100.0,0.0,True,False,False,False,1
+PPO (Predictive GCN),scenario-003494,-123.08405442993066,TOTAL_BLACKOUT,12,1,0.0,0.0,False,True,False,False,1
+PPO (Predictive GCN),scenario-003502,11.95,STABLE,1,1,100.0,0.0,True,False,False,False,1
+PPO (Predictive GCN),scenario-003527,-31.24325627524255,NON_CONVERGED,2,1,94.99999999999997,17.240296533407992,False,False,False,True,1
+PPO (Predictive GCN),scenario-003576,-31.139039363719817,NON_CONVERGED,2,1,100.0,0.0,False,False,False,True,1
+PPO (Predictive GCN),scenario-003584,-60.59616913779731,TOTAL_BLACKOUT,4,2,0.0,0.0,False,True,False,False,2
+PPO (Predictive GCN),scenario-003589,-65.88747171374817,TOTAL_BLACKOUT,5,1,0.0,0.0,False,True,False,False,1
+PPO (Predictive GCN),scenario-003596,-62.009650224873724,TOTAL_BLACKOUT,4,2,0.0,14.87930700040475,False,True,False,False,2
+PPO (Predictive GCN),scenario-003687,-80.12950446280784,TOTAL_BLACKOUT,8,1,0.0,0.0,False,True,False,False,1
+PPO (Predictive GCN),scenario-003690,11.95,STABLE,1,1,100.0,0.0,True,False,False,False,1
+PPO (Predictive GCN),scenario-003751,14.8351582465396,STABLE,1,1,94.99999999999999,17.564956177242045,True,False,False,False,1
+PPO (Predictive GCN),scenario-003775,-73.85600643384392,TOTAL_BLACKOUT,7,1,0.0,0.0,False,True,False,False,1
+PPO (Predictive GCN),scenario-003792,-61.94912494852392,TOTAL_BLACKOUT,5,2,0.0,0.0,False,True,False,False,2
+PPO (Predictive GCN),scenario-003834,-56.81345614312808,TOTAL_BLACKOUT,2,1,0.0,14.334828026617918,False,True,False,False,1
+PPO (Predictive GCN),scenario-003863,-59.71789464013777,TOTAL_BLACKOUT,3,1,0.0,0.0,False,True,False,False,1
+PPO (Predictive GCN),scenario-003884,-31.61531190881522,NON_CONVERGED,2,1,100.0,0.0,False,False,False,True,1
+PPO (Predictive GCN),scenario-003900,-66.08248302034701,TOTAL_BLACKOUT,5,1,0.0,0.0,False,True,False,False,1
+PPO (Predictive GCN),scenario-003901,-57.20639047209403,TOTAL_BLACKOUT,3,2,0.0,0.0,False,True,False,False,2
+PPO (Predictive GCN),scenario-003909,-62.69838132420325,TOTAL_BLACKOUT,4,1,0.0,16.53110051408167,False,True,False,False,1
+PPO (Predictive GCN),scenario-003910,-65.90701589687802,TOTAL_BLACKOUT,5,1,0.0,0.0,False,True,False,False,1
+PPO (Predictive GCN),scenario-003947,-59.78690504057895,TOTAL_BLACKOUT,3,1,0.0,0.0,False,True,False,False,1
+PPO (Predictive GCN),scenario-003949,-62.47739205474991,TOTAL_BLACKOUT,4,2,0.0,14.912543294535602,False,True,False,False,2
+PPO (Predictive GCN),scenario-003991,-65.90769561904168,TOTAL_BLACKOUT,5,1,0.0,0.0,False,True,False,False,1
+PPO (Predictive GCN),scenario-004014,-62.61866309098011,TOTAL_BLACKOUT,4,2,0.0,0.0,False,True,False,False,2
+PPO (Predictive GCN),scenario-004023,-31.243884811721774,NON_CONVERGED,2,2,0.0,0.0,False,False,False,True,2
+PPO (Predictive GCN),scenario-004035,-31.459288483844446,NON_CONVERGED,2,1,100.0,0.0,False,False,False,True,1
+PPO (Predictive GCN),scenario-004042,-67.12225536981481,TOTAL_BLACKOUT,4,2,0.0,19.431265261538183,False,True,False,False,2
+PPO (Predictive GCN),scenario-004045,-56.22431183423262,TOTAL_BLACKOUT,2,1,0.0,0.0,False,True,False,False,1
+PPO (Predictive GCN),scenario-004075,-61.219423880897054,TOTAL_BLACKOUT,3,1,0.0,0.0,False,True,False,False,1
+PPO (Predictive GCN),scenario-004120,11.95,STABLE,1,1,100.0,0.0,True,False,False,False,1
+PPO (Predictive GCN),scenario-004133,-79.18850776465196,TOTAL_BLACKOUT,8,1,0.0,0.0,False,True,False,False,1
+PPO (Predictive GCN),scenario-004154,-80.7434958050583,TOTAL_BLACKOUT,8,1,0.0,0.0,False,True,False,False,1
+PPO (Predictive GCN),scenario-004155,-70.40852806470208,TOTAL_BLACKOUT,7,1,0.0,0.0,False,True,False,False,1
+PPO (Predictive GCN),scenario-004168,-56.077689588347674,TOTAL_BLACKOUT,2,1,0.0,0.0,False,True,False,False,1
+PPO (Predictive GCN),scenario-004172,11.95,STABLE,1,1,100.0,0.0,True,False,False,False,1
+PPO (Predictive GCN),scenario-004210,-59.35825160933562,TOTAL_BLACKOUT,3,1,0.0,0.0,False,True,False,False,1
+PPO (Predictive GCN),scenario-004233,-31.546085486014512,NON_CONVERGED,2,1,100.0,0.0,False,False,False,True,1
+PPO (Predictive GCN),scenario-004260,14.988054805108991,STABLE,1,1,100.0,0.0,True,False,False,False,1
+PPO (Predictive GCN),scenario-004297,-56.513430165430904,TOTAL_BLACKOUT,2,1,0.0,17.11412179473015,False,True,False,False,1
+PPO (Predictive GCN),scenario-004303,-74.88445244228978,TOTAL_BLACKOUT,7,1,0.0,0.0,False,True,False,False,1
+PPO (Predictive GCN),scenario-004375,11.95,STABLE,1,1,100.0,0.0,True,False,False,False,1
+PPO (Predictive GCN),scenario-004387,-70.42849990182773,TOTAL_BLACKOUT,7,1,0.0,0.0,False,True,False,False,1
+PPO (Predictive GCN),scenario-004390,-59.70209690285752,TOTAL_BLACKOUT,3,1,0.0,0.0,False,True,False,False,1
+PPO (Predictive GCN),scenario-004410,-60.591064105206954,TOTAL_BLACKOUT,3,1,0.0,0.0,False,True,False,False,1
+PPO (Predictive GCN),scenario-004416,-74.99480002030104,TOTAL_BLACKOUT,7,1,0.0,0.0,False,True,False,False,1
+PPO (Predictive GCN),scenario-004426,-31.168054109397854,NON_CONVERGED,2,1,100.0,0.0,False,False,False,True,1
+PPO (Predictive GCN),scenario-004435,-67.80817612654693,TOTAL_BLACKOUT,5,1,0.0,0.0,False,True,False,False,1
+PPO (Predictive GCN),scenario-004445,-60.95578455057532,TOTAL_BLACKOUT,4,2,0.0,0.0,False,True,False,False,2
+PPO (Predictive GCN),scenario-004451,-66.21259212357585,TOTAL_BLACKOUT,5,1,0.0,15.963958715336076,False,True,False,False,1
+PPO (Predictive GCN),scenario-004454,-65.69353435417904,TOTAL_BLACKOUT,5,1,0.0,15.427830075886687,False,True,False,False,1
+PPO (Predictive GCN),scenario-004459,-109.76950305511133,TOTAL_BLACKOUT,10,1,0.0,0.0,False,True,False,False,1
+PPO (Predictive GCN),scenario-004491,-73.51473278969209,TOTAL_BLACKOUT,7,1,0.0,0.0,False,True,False,False,1
+PPO (Predictive GCN),scenario-004493,-56.30864850207537,TOTAL_BLACKOUT,2,1,0.0,0.0,False,True,False,False,1
+PPO (Predictive GCN),scenario-004538,-61.90314851031704,TOTAL_BLACKOUT,4,2,0.0,0.0,False,True,False,False,2
+PPO (Predictive GCN),scenario-004552,-71.2916902487616,TOTAL_BLACKOUT,6,1,0.0,0.0,False,True,False,False,1
+PPO (Predictive GCN),scenario-004558,-60.80186309426194,TOTAL_BLACKOUT,3,1,0.0,0.0,False,True,False,False,1
+PPO (Predictive GCN),scenario-004584,-76.62254283741517,TOTAL_BLACKOUT,8,1,0.0,0.0,False,True,False,False,1
+PPO (Predictive GCN),scenario-004585,-73.84837613620499,TOTAL_BLACKOUT,6,1,0.0,0.0,False,True,False,False,1
+PPO (Predictive GCN),scenario-004586,-87.58086020427422,TOTAL_BLACKOUT,9,1,0.0,0.0,False,True,False,False,1
+PPO (Predictive GCN),scenario-004595,-63.141656208244356,TOTAL_BLACKOUT,4,2,0.0,10.64643213758606,False,True,False,False,2
+PPO (Predictive GCN),scenario-004608,-56.32610116082243,TOTAL_BLACKOUT,2,1,0.0,0.0,False,True,False,False,1
+PPO (Predictive GCN),scenario-004650,-60.781744617795844,TOTAL_BLACKOUT,4,2,0.0,0.0,False,True,False,False,2
+PPO (Predictive GCN),scenario-004667,-73.0321125690977,TOTAL_BLACKOUT,8,1,0.0,0.0,False,True,False,False,1
+PPO (Predictive GCN),scenario-004699,11.95,STABLE,1,1,100.0,0.0,True,False,False,False,1
+PPO (Predictive GCN),scenario-004719,-78.29184982304939,TOTAL_BLACKOUT,7,1,0.0,0.0,False,True,False,False,1
+PPO (Predictive GCN),scenario-004729,-72.43474039017775,TOTAL_BLACKOUT,7,1,0.0,0.0,False,True,False,False,1
+PPO (Predictive GCN),scenario-004752,-60.23770900517956,TOTAL_BLACKOUT,4,1,0.0,0.0,False,True,False,False,1
+PPO (Predictive GCN),scenario-004755,-66.73188257459566,TOTAL_BLACKOUT,5,1,0.0,19.232989996717897,False,True,False,False,1
+PPO (Predictive GCN),scenario-004757,-75.14388304117494,TOTAL_BLACKOUT,7,1,0.0,0.0,False,True,False,False,1
+PPO (Predictive GCN),scenario-004770,-31.227918604716926,NON_CONVERGED,2,1,95.0,17.917055703023223,False,False,False,True,1
+PPO (Predictive GCN),scenario-004775,11.775,STABLE,1,1,95.00000000000003,14.799832601410815,True,False,False,False,1
+PPO (Predictive GCN),scenario-004785,-70.51362719124526,TOTAL_BLACKOUT,6,1,0.0,0.0,False,True,False,False,1
+PPO (Predictive GCN),scenario-004787,-78.82335613167427,TOTAL_BLACKOUT,8,1,0.0,0.0,False,True,False,False,1
+PPO (Predictive GCN),scenario-004853,-31.273485830514332,NON_CONVERGED,2,1,100.0,0.0,False,False,False,True,1
+PPO (Predictive GCN),scenario-004862,-59.68065788971232,TOTAL_BLACKOUT,3,1,0.0,0.0,False,True,False,False,1
+PPO (Predictive GCN),scenario-004866,-67.1431778691762,TOTAL_BLACKOUT,6,1,0.0,0.0,False,True,False,False,1
+PPO (Predictive GCN),scenario-004885,11.775,STABLE,2,1,95.00000000000001,13.911143933583714,True,False,False,False,1
+PPO (Predictive GCN),scenario-004900,-56.70615335648255,TOTAL_BLACKOUT,2,1,0.0,16.473369055429487,False,True,False,False,1
+PPO (Predictive GCN),scenario-004972,-75.35314937272159,TOTAL_BLACKOUT,7,1,0.0,0.0,False,True,False,False,1
+PPO (Predictive GCN),scenario-004979,-69.22664612310366,TOTAL_BLACKOUT,6,1,0.0,13.530532674327956,False,True,False,False,1
+PPO (Predictive GCN),scenario-004991,-31.532718202840343,NON_CONVERGED,2,1,100.0,0.0,False,False,False,True,1

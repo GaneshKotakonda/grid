@@ -1,0 +1,42 @@
+{
+  "phase": "5.5",
+  "total_timesteps": 30000,
+  "eval_scenario_count": 300,
+  "num_workers": 4,
+  "seed": 42,
+  "training_time_seconds": {
+    "ppo_predictive": 2224.607397600019,
+    "ppo_no_gcn": 1327.2383113999967
+  },
+  "reward_config": {
+    "weight_served_load": 2.0,
+    "weight_stability": 10.0,
+    "reward_wave_prevented": 3.0,
+    "reward_overload_reduction": 1.0,
+    "penalty_line_failure": 3.0,
+    "penalty_load_loss": 5.0,
+    "penalty_load_shed": 1.5,
+    "penalty_action": 0.05,
+    "penalty_overload": 0.5,
+    "penalty_non_converged": 30.0,
+    "penalty_total_blackout": 50.0,
+    "penalty_partial_blackout": 10.0
+  },
+  "action_names": [
+    "do_nothing",
+    "gen_0_up_10mw",
+    "gen_0_down_10mw",
+    "gen_1_up_10mw",
+    "gen_1_down_10mw",
+    "gen_2_up_10mw",
+    "gen_2_down_10mw",
+    "gen_3_up_10mw",
+    "gen_3_down_10mw",
+    "shed_bus_2_15pct",
+    "shed_bus_3_15pct",
+    "shed_bus_1_15pct",
+    "shed_bus_8_15pct",
+    "shed_uniform_5pct"
+  ],
+  "observation_dim": 87
+}
