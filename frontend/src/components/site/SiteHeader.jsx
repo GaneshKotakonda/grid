@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { Link, NavLink, useLocation } from 'react-router-dom';
-import { Zap, Moon, Sun, Menu, X, ChevronDown } from 'lucide-react';
+import { Moon, Sun, Menu, X, ChevronDown } from 'lucide-react';
 import { SITE_ROUTES } from '../../routes/siteRoutes';
 import { useTheme } from './theme';
+import GridLogo from '../GridLogo';
 export default function SiteHeader({ isBackendHealthy }) {
   const [menuOpen, setMenuOpen] = useState(false);
   const { theme, toggleTheme } = useTheme();
@@ -15,7 +16,7 @@ export default function SiteHeader({ isBackendHealthy }) {
   const navLink = ({ path, label }) => <NavLink key={path} to={path} end onClick={() => setMenuOpen(false)} className={({ isActive }) => isActive ? 'is-active' : ''}>{label}</NavLink>;
   return <header className="site-header">
     <a className="skip-link" href="#main-content">Skip to content</a>
-    <Link className="site-brand" to="/" aria-label="GridResilience home"><span><Zap size={21} /></span>GridResilience</Link>
+    <Link className="site-brand" to="/" aria-label="GridResilience home"><GridLogo size={35} />GridResilience</Link>
     <nav className="site-nav" aria-label="Main navigation">{SITE_ROUTES.filter((page) => page.group === 'primary').map(navLink)}
       <details className="research-menu" key={pathname}><summary className={['/timeline','/benchmarks'].includes(pathname) ? 'is-active' : ''}>Research <ChevronDown size={13} /></summary><div>{SITE_ROUTES.filter((page) => page.group === 'research').map(navLink)}</div></details>
     </nav>
