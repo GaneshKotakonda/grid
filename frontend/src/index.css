@@ -1345,3 +1345,7 @@ button:disabled { cursor: not-allowed; opacity: .6; }
   .topology-playback__speed { margin-left:0; }
   .topology-playback__status { align-items:flex-start; }
 }
+
+.topology-bus-change { animation: topologyReclosure 1400ms ease-out forwards; }
+.topology-playback__load { color: var(--color-safe); font-weight: 700; }
+@media (prefers-reduced-motion: reduce) { .topology-bus-change { animation: none; } }

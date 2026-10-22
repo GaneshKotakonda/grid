@@ -14,8 +14,8 @@ export default function TopologyGraph({
   const [showLabels, setShowLabels] = useState(true);
   const [showGcnOverlay, setShowGcnOverlay] = useState(true);
   const frames = useMemo(() => buildTopologyPlayback(simResult), [simResult]);
-  const [frameIndex, setFrameIndex] = useState(() => Math.max(frames.length - 1, 0));
-  const [playing, setPlaying] = useState(false);
+  const [frameIndex, setFrameIndex] = useState(0);
+  const [playing, setPlaying] = useState(() => frames.length > 2);
   const [speed, setSpeed] = useState(1);
   const frame = frames[frameIndex];
   const isOutput = !frame || frame.isOutput;
@@ -49,14 +49,17 @@ export default function TopologyGraph({
     );
   }
 
-  const buses = gridData.buses;
+  const busStates = new Map((frame?.gridState?.buses || []).map((bus) => [bus.id, bus]));
+  const buses = gridData.buses.map((bus) => ({ ...bus, ...busStates.get(bus.id) }));
   const lines = gridData.lines;
+  const lineStates = new Map((frame?.gridState?.lines || []).map((line) => [line.id, line]));
   const trafos = gridData.transformers || [];
 
   // Determine line state from simulation result
   const failedLines = frame?.failedLines || [];
   const reconnectedLines = frame?.reconnectedLines || [];
-  const gcnProbs = simResult?.gcn_failure_probabilities || [];
+  const gcnProbs = frame?.gcnProbabilities || [];
+  const hasRisk = gcnProbs.length > 0;
 
   const getLineStatus = (lineId) => {
     const isReconnected = reconnectedLines.includes(lineId);
@@ -70,13 +73,13 @@ export default function TopologyGraph({
     }
 
     const prob = gcnProbs[lineId] !== undefined ? gcnProbs[lineId] : 0.0;
-    if (isOutput && showGcnOverlay && prob >= 0.50) {
+    if (hasRisk && showGcnOverlay && prob >= 0.50) {
       return { color: 'var(--color-danger)', status: 'PREDICTED_FAILURE', class: 'line-danger', width: 4.5, prob };
     }
-    if (isOutput && showGcnOverlay && prob >= 0.20) {
+    if (hasRisk && showGcnOverlay && prob >= 0.20) {
       return { color: 'var(--color-warning)', status: 'HIGH_RISK', class: 'line-warning', width: 3.5, prob };
     }
-    return { color: 'var(--color-safe)', status: isOutput ? 'SAFE' : 'IN_SERVICE', class: 'line-safe', width: 2.5, ...(isOutput ? { prob } : {}) };
+    return { color: 'var(--color-safe)', status: isOutput ? 'SAFE' : 'IN_SERVICE', class: 'line-safe', width: 2.5, ...(hasRisk ? { prob } : {}) };
   };
 
   const busMap = {};
@@ -96,7 +99,7 @@ export default function TopologyGraph({
             <input
               type="checkbox"
               checked={showGcnOverlay}
-              disabled={!isOutput}
+              disabled={!hasRisk}
               onChange={(e) => setShowGcnOverlay(e.target.checked)}
             />
             GCN Overlay
@@ -251,15 +254,23 @@ export default function TopologyGraph({
             const isSelected = selectedElement?.type === 'bus' && selectedElement?.id === b.id;
             const isSlack = b.type === 'slack';
             const isGen = b.type === 'generator';
-            const nodeFill = isSlack ? 'var(--color-info)' : isGen ? 'var(--color-purple)' : 'var(--color-info)';
+            const active = frame?.activeBuses.includes(b.id);
+            const nodeFill = b.supplied === false ? 'var(--text-muted)' : active ? 'var(--color-safe)' : isGen ? 'var(--color-purple)' : 'var(--color-info)';
 
             return (
               <g
                 key={`bus-${b.id}`}
+                role="button"
+                tabIndex="0"
+                aria-label={`${b.name}${b.load_mw != null ? `: ${b.load_mw.toFixed(1)} MW` : ''}`}
+                data-active={active ? 'true' : 'false'}
+                onKeyDown={(event) => { if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); setSelectedElement({ type: 'bus', id: b.id, data: b }); } }}
                 transform={`translate(${b.x}, ${b.y})`}
                 onClick={() => setSelectedElement({ type: 'bus', id: b.id, data: b })}
                 style={{ cursor: 'pointer' }}
               >
+                {active && <circle key={frameIndex} className="topology-bus-change" r="22" fill="none" stroke="var(--color-safe)" strokeWidth="3" />}
+                {busStates.has(b.id) && <text y="39" textAnchor="middle" fill={nodeFill} fontSize="10" fontWeight="700">{b.load_mw.toFixed(1)} MW</text>}
                 {/* Outer halo */}
                 <circle
                   r={isSelected ? 18 : 14}
@@ -324,13 +335,16 @@ export default function TopologyGraph({
                   <div>GCN Failure Prob: <span className="mono" style={{ fontWeight: 700 }}>{(getLineStatus(selectedElement.id).prob * 100).toFixed(1)}%</span></div>
                 )}
                 <div>Thermal Rating: {selectedElement.data.max_i_ka?.toFixed(1)} kA</div>
+                <div>Loading: {lineStates.get(selectedElement.id)?.loading_percent?.toFixed(1) ?? '—'}%</div>
+                <div>Power flow: {lineStates.get(selectedElement.id)?.power_mw?.toFixed(2) ?? '—'} MW</div>
               </div>
             )}
             {selectedElement.type === 'bus' && (
               <div style={{ fontSize: '11px', color: 'var(--text-secondary)', display: 'flex', flexDirection: 'column', gap: '4px' }}>
                 <div>Name: {selectedElement.data.name} ({selectedElement.data.type})</div>
                 <div>Base Voltage: {selectedElement.data.vn_kv} kV</div>
-                <div>Load Active: {selectedElement.data.load_mw} MW</div>
+                <div>Voltage: {busMap[selectedElement.id]?.voltage_pu?.toFixed(3) ?? '—'} pu</div>
+                <div>Load Active: {busMap[selectedElement.id]?.load_mw?.toFixed(1) ?? '—'} MW</div>
                 <div>Generation: {selectedElement.data.gen_mw} MW</div>
               </div>
             )}

@@ -167,6 +167,8 @@ def test_end_to_end_pipeline_execution():
     assert "final_restored_mw" in result
     assert "audit_log" in result
     assert len(result["audit_log"]) >= 3
+    assert all("grid_state" in event for event in result["audit_log"])
+    assert "gcn_probabilities" in result["audit_log"][0]
 
 
 def test_recovery_served_load_invariant(damaged_grid):
@@ -226,3 +228,20 @@ def test_stable_grid_status_preservation(damaged_grid):
     assert summary["is_safe"] is True
     assert summary["final_status"] == "STABLE"
 
+
+
+def test_recovery_frames_capture_each_committed_bus_state(base_ieee14):
+    import json
+    net = base_ieee14
+    target = float(net.load.loc[net.load.bus == 2, "p_mw"].sum())
+    net.load.loc[net.load.bus == 2, "p_mw"] *= 0.5
+    env = GridRecoveryEnv(net, 259.0, {2: target}, [])
+    action = {"action_type": "restore_load", "bus": 2, "label": "restore_load_bus_2"}
+    _, _, first = env.step(action)
+    _, _, second = env.step(action)
+    assert first["committed"] and second["committed"]
+    bus_first = next(b for b in first["grid_state"]["buses"] if b["id"] == 2)
+    bus_second = next(b for b in second["grid_state"]["buses"] if b["id"] == 2)
+    assert bus_first["load_mw"] == pytest.approx(target * 0.75)
+    assert bus_second["load_mw"] == pytest.approx(target * 0.875)
+    json.dumps(env.history, allow_nan=False)

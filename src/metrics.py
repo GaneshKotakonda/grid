@@ -204,3 +204,28 @@ def compare_grid_states(
             outage["overloaded_lines"] if outage_converged else None
         ),
     }
+
+
+def snapshot_grid_state(net: pandapowerNet) -> dict[str, Any]:
+    """Copy solved electrical values for replay; failed solves never expose stale results."""
+    converged = bool(net.get("converged", False))
+
+    def value(table, idx, column):
+        if not converged or idx not in table.index or column not in table:
+            return None
+        number = float(table.at[idx, column])
+        return number if np.isfinite(number) else None
+
+    buses = []
+    for bus in net.bus.index:
+        voltage = value(net.res_bus, bus, "vm_pu")
+        supplied = bool(net.bus.at[bus, "in_service"]) and voltage is not None
+        load_ids = net.load.index[(net.load.bus == bus) & net.load.in_service]
+        load = sum(value(net.res_load, idx, "p_mw") or 0.0 for idx in load_ids)
+        buses.append({"id": int(bus), "voltage_pu": voltage,
+                      "supplied": supplied, "load_mw": load if supplied else 0.0})
+    lines = [{"id": int(idx), "in_service": bool(net.line.at[idx, "in_service"]),
+              "loading_percent": value(net.res_line, idx, "loading_percent"),
+              "power_mw": value(net.res_line, idx, "p_from_mw")}
+             for idx in net.line.index]
+    return {"converged": converged, "buses": buses, "lines": lines}

@@ -12,6 +12,7 @@ export default function TopologyPlaybackControls({ frames, index, playing, speed
         <p>{frame?.detail || 'Run a scenario in Operations to replay its incident trace.'}</p>
         {frame && <span className="mono">Step {index} / {last}</span>}
       </div>
+      {frame?.servedLoadMw != null && <p className="topology-playback__load mono">{frame.servedLoadMw.toFixed(2)} MW served</p>}
       <div className="topology-playback__buttons">
         <button className="site-button site-button--primary" disabled={!frame} onClick={onPlay}>
           {playing ? <Pause size={16} /> : <Play size={16} />}{playing ? 'Pause' : 'Play'}
@@ -27,7 +28,7 @@ export default function TopologyPlaybackControls({ frames, index, playing, speed
         </label>
       </div>
       <input type="range" aria-label="Playback step" min="0" max={Math.max(last, 0)} value={frame ? index : 0} disabled={!frame} onChange={(event) => onSeek(Number(event.target.value))} />
-      {frame && <small>Recorded event sequence · GCN overlay available on the simulation output.</small>}
+      {frame && <small>Recorded event sequence · Bus loads update each step. GCN overlay uses the latest recorded forecast.</small>}
     </section>
   );
 }

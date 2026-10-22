@@ -17,6 +17,7 @@ from stable_baselines3 import PPO
 from src.cascade import find_overloaded_lines, _load_outcome, _load_based_status
 from src.gnn_training import load_checkpoint, load_dataset
 from src.grid_loader import load_ieee14
+from src.metrics import snapshot_grid_state
 from src.recovery import GridRecoveryEnv, GreedyRecoveryController, RecoveryConfig, check_recovery_safety
 from src.rl_controllers import PPOController
 from src.rl_env import GridMitigationEnv, RewardConfig, load_gcn_predictor, fast_power_flow, _clone_ieee14, ACTION_NAMES
@@ -74,6 +75,9 @@ class EndToEndPipeline:
 
         audit_log.append({
             "stage": "1_CONTINGENCY",
+            "grid_state": snapshot_grid_state(env.net),
+            "served_load_mw": float(env.last_metrics.get("total_load_mw") or 0.0),
+            "gcn_probabilities": env.last_gcn_probs.tolist(),
             "initial_outages": list(env.initial_outages),
             "initial_load_mw": initial_load_mw,
             "overloaded_lines_post_contingency": list(reset_info.get("overloaded_lines", [])),
@@ -99,6 +103,9 @@ class EndToEndPipeline:
 
             audit_log.append({
                 "stage": f"2_MITIGATION_STEP_{step_idx}",
+                "grid_state": snapshot_grid_state(env.net),
+                "served_load_mw": float(step_info.get("load_served_percent", 0.0)) / 100 * initial_load_mw,
+                "gcn_probabilities": env.last_gcn_probs.tolist(),
                 "action": action_name,
                 "reward": round(reward, 3),
                 "failed_lines_count": step_info.get("failed_lines_count"),
@@ -123,6 +130,7 @@ class EndToEndPipeline:
 
         audit_log.append({
             "stage": "3_CASCADE_RESULT",
+            "grid_state": snapshot_grid_state(env.net),
             "tripped_lines": tripped_lines,
             "tripped_lines_count": len(tripped_lines),
             "served_load_mw": round(post_cascade_served_mw, 2),
@@ -148,6 +156,7 @@ class EndToEndPipeline:
                     "stage": f"4_RECOVERY_STEP_{step_record['step']}",
                     "action": step_record["action"],
                     "committed": step_record["committed"],
+                    "grid_state": step_record["grid_state"],
                     "served_load_mw": round(step_record["served_load_mw"], 2),
                     "reason": step_record["reason"],
                 })

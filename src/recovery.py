@@ -19,7 +19,7 @@ from pandapower.auxiliary import pandapowerNet
 from pandapower.powerflow import LoadflowNotConverged
 
 from src.cascade import find_overloaded_lines, _load_outcome, _load_based_status
-from src.metrics import extract_grid_metrics, failed_grid_metrics
+from src.metrics import extract_grid_metrics, failed_grid_metrics, snapshot_grid_state
 from src.rl_env import fast_power_flow, _clone_ieee14
 
 
@@ -239,6 +239,7 @@ class GridRecoveryEnv:
                 "served_load_mw": safety.served_load_mw,
                 "done": True,
             }
+            info["grid_state"] = snapshot_grid_state(self.net)
             self.history.append(info)
             return True, safety, info
 
@@ -256,6 +257,7 @@ class GridRecoveryEnv:
                 "served_load_mw": current_safety.served_load_mw,
                 "done": self.step_count >= self.config.max_recovery_steps,
             }
+            info["grid_state"] = snapshot_grid_state(self.net)
             self.history.append(info)
             return info["done"], current_safety, info
 
@@ -271,6 +273,7 @@ class GridRecoveryEnv:
                 "served_load_mw": current_safety.served_load_mw,
                 "done": self.step_count >= self.config.max_recovery_steps,
             }
+            info["grid_state"] = snapshot_grid_state(self.net)
             self.history.append(info)
             return info["done"], current_safety, info
 
@@ -301,6 +304,7 @@ class GridRecoveryEnv:
             "reconnected_lines_count": len(self.reconnected_lines),
             "done": done,
         }
+        info["grid_state"] = snapshot_grid_state(self.net)
         self.history.append(info)
         return done, safety, info
 
