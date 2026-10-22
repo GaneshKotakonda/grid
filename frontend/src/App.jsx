@@ -10,6 +10,9 @@ import RecoveryPage from './pages/RecoveryPage';
 import TimelinePage from './pages/TimelinePage';
 import BenchmarksPage from './pages/BenchmarksPage';
 
+// Leave unset for the local Vite proxy or the unified FastAPI server.
+const API_BASE_URL = (import.meta.env.VITE_API_BASE_URL || '').replace(/\/+$/, '');
+
 export default function App() {
   const [isBackendHealthy, setIsBackendHealthy] = useState(false);
   const [gridData, setGridData] = useState(null);
@@ -31,7 +34,7 @@ export default function App() {
   useEffect(() => {
     async function init() {
       try {
-        const healthRes = await fetch('/health');
+        const healthRes = await fetch(`${API_BASE_URL}/health`);
         if (healthRes.ok) {
           setIsBackendHealthy(true);
         }
@@ -40,7 +43,7 @@ export default function App() {
       }
 
       try {
-        const gridRes = await fetch('/grid');
+        const gridRes = await fetch(`${API_BASE_URL}/grid`);
         if (gridRes.ok) {
           const gData = await gridRes.json();
           setGridData(gData);
@@ -50,7 +53,7 @@ export default function App() {
       }
 
       try {
-        const benchRes = await fetch('/benchmarks');
+        const benchRes = await fetch(`${API_BASE_URL}/benchmarks`);
         if (benchRes.ok) {
           const bData = await benchRes.json();
           setBenchmarkData(bData);
@@ -76,7 +79,7 @@ export default function App() {
     setSimStage('Executing incident pipeline...');
 
     try {
-      const res = await fetch('/simulate', {
+      const res = await fetch(`${API_BASE_URL}/simulate`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({

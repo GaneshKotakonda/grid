@@ -1,4 +1,8 @@
 {
+  "framework": "vite",
+  "buildCommand": "npm run build",
+  "installCommand": "npm ci",
+  "outputDirectory": "dist",
   "headers": [{ "source": "/benchmarks", "headers": [{ "key": "Vary", "value": "Accept" }] }],
   "rewrites": [
     { "source": "/operations", "destination": "/index.html" },

@@ -90,6 +90,8 @@ Open **[http://localhost:8000](http://localhost:8000)** in your browser.
 
 ## Website Pages
 
+For separate frontend and API hosting, see [Vercel and Render deployment](docs/DEPLOYMENT.md).
+
 The homepage introduces the research platform. Each operational feature has its own focused page:
 
 | Page | URL |

@@ -1,0 +1,10 @@
+# Runtime dependencies for the native Render API service.
+# Install CPU-only torch from its official index before installing this file.
+pandapower>=3.5,<4
+pandas>=2.3,<3
+numpy>=1.26,<2.5
+torch>=2.2,<3
+gymnasium>=1.4,<2
+stable-baselines3>=2.9,<3
+fastapi>=0.141,<1
+uvicorn>=0.53,<1
