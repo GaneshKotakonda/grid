@@ -73,14 +73,9 @@ export default function App() {
   // Run simulation handler
   const handleRunSimulation = async () => {
     setIsLoading(true);
-    setSimStage('Triggering Outage...');
+    setSimStage('Executing incident pipeline...');
 
     try {
-      setTimeout(() => setSimStage('GCN Downstream Risk Prediction...'), 250);
-      setTimeout(() => setSimStage('PPO Preventive Mitigation...'), 600);
-      setTimeout(() => setSimStage('Cascade Power Flow Propagation...'), 1000);
-      setTimeout(() => setSimStage('Safety-Constrained Grid Recovery...'), 1400);
-
       const res = await fetch('/simulate', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },

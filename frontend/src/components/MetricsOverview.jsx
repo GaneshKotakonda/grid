@@ -19,7 +19,9 @@ export default function MetricsOverview({ simResult }) {
     ? Number(simResult.load_served_before_mitigation).toFixed(1)
     : null;
   const status = simResult?.final_system_status || 'READY';
-  const loadShedMw = simResult?.audit_log?.reduce((acc, curr) => curr.load_shed_mw || acc, 0.0) || 0.0;
+  const loadShedMw = simResult?.total_load_shed_mw
+    ?? simResult?.audit_log?.reduce((acc, curr) => curr.load_shed_mw ?? acc, 0.0)
+    ?? 0.0;
   const loadRestoredMw = simResult?.customer_load_restored_mw || 0.0;
 
   const statusMeta = {

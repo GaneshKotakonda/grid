@@ -11,6 +11,7 @@ function setup(path = '/') {
   const result = {
     final_system_status: 'STABLE', final_load_served: 120, final_load_served_percent: 90,
     load_served_before_mitigation: 140, failed_lines: [1], audit_log: [],
+    total_load_shed_mw: 12.5,
     initial_grid_state: { gcn_risk_mean: 0.12, initial_outages: [1] },
     line_predictions: Array.from({ length: 15 }, (_, i) => ({ line_index: i, from_bus: 0, to_bus: 1, probability: i / 100 })),
   };
@@ -33,11 +34,14 @@ test('navigation retains inputs and simulation data without refetching the contr
   fireEvent.click(screen.getByRole('button', { name: 'Run GridResilience' }));
   await waitFor(() => expect(fetchMock.mock.calls.some(([url]) => url === '/simulate')).toBe(true));
   await screen.findByText('STABLE GRID');
+  expect(screen.getByText('12.5')).toBeTruthy();
   const request = fetchMock.mock.calls.find(([url]) => url === '/simulate')[1];
   expect(JSON.parse(request.body)).toEqual({ initial_outage: 1, load_scale: 1.1, capacity_scale: 0.02, seed: 7 });
   fireEvent.click(screen.getAllByRole('link', { name: 'Prediction' })[0]);
   expect(screen.getByText('Line 14')).toBeTruthy();
   expect(document.querySelectorAll('.forecast-row')).toHaveLength(15);
+  fireEvent.click(screen.getAllByRole('link', { name: 'Mitigation' })[0]);
+  expect(screen.getByText('12.50 MW')).toBeTruthy();
   fireEvent.click(screen.getAllByRole('link', { name: 'Operations' })[0]);
   expect(screen.getByLabelText('Seed').value).toBe('7');
   expect(screen.getByText('STABLE GRID')).toBeTruthy();

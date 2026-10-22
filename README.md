@@ -46,7 +46,7 @@ Evaluated across identical held-out test scenarios against Do-Nothing and Rule-B
 
 ### Prerequisites
 - Python 3.11+
-- Node.js 18+ and npm
+- Node.js 22.12+ and npm (Vite also supports Node.js 20.19+)
 
 ### 1. Python Environment
 Install core dependencies:
@@ -58,7 +58,7 @@ pip install -r requirements.txt
 From the repository root:
 ```bash
 cd frontend
-npm install
+npm ci
 npm run build
 cd ..
 ```
@@ -70,14 +70,14 @@ cd ..
 ### Option A: Unified Production Mode (FastAPI + Embedded Dashboard)
 Serves the built React dashboard and REST API simultaneously on port 8000:
 ```bash
-py -3.11 -m uvicorn src.api:app --host 127.0.0.1 --port 8000
+python3 -m uvicorn src.api:app --host 127.0.0.1 --port 8000
 ```
 Open **[http://localhost:8000](http://localhost:8000)** in your browser.
 
 ### Option B: Live Development Mode (Hot Reloading)
 - **Terminal 1 (Backend)**:
   ```bash
-  py -3.11 -m uvicorn src.api:app --reload --port 8000
+  python3 -m uvicorn src.api:app --reload --port 8000
   ```
 - **Terminal 2 (Frontend)**:
   ```bash
@@ -133,7 +133,7 @@ npm run build
 
 Run the full automated test suite (97 tests covering all 7 phases):
 ```bash
-py -3.11 -m pytest
+python3 -m pytest
 ```
 
 ---

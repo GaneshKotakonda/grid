@@ -42,7 +42,7 @@ export default function MitigationPanel({ mitigationActions, auditLog, totalLoad
                   <strong className="mono">{step.action}</strong>
                 </div>
                 <div className="action-row__meta">
-                  {step.load_shed_mw > 0 && <StatusBadge tone="warning">−{step.load_shed_mw.toFixed(1)} MW</StatusBadge>}
+                  {step.load_shed_mw > 0 && <StatusBadge tone="warning">Shed total {step.load_shed_mw.toFixed(1)} MW</StatusBadge>}
                   <StatusBadge tone="safe">Reward {step.reward}</StatusBadge>
                 </div>
               </div>

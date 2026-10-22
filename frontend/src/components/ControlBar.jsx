@@ -93,6 +93,8 @@ export default function ControlBar({
           <span>Seed</span>
           <input
             type="number"
+            min="0"
+            step="1"
             value={seed}
             onChange={(e) => setSeed(Number(e.target.value))}
             disabled={isLoading}

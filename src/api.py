@@ -89,7 +89,7 @@ class SimulationRequest(BaseModel):
     initial_outage: int = Field(default=1, ge=0, le=14, description="Initiating transmission line outage (0 to 14)")
     load_scale: float = Field(default=1.10, ge=0.5, le=2.5, description="System active load scaling factor")
     capacity_scale: float = Field(default=0.02, ge=0.005, le=0.05, description="Transmission line capacity scaling factor")
-    seed: int = Field(default=42, description="Random seed for reproducibility")
+    seed: int = Field(default=42, ge=0, description="Non-negative random seed for reproducibility")
 
 
 @app.get("/health")
@@ -220,6 +220,7 @@ def run_simulation(req: SimulationRequest) -> dict[str, Any]:
         "gcn_failure_probabilities": result.get("gcn_probabilities", []),
         "line_predictions": result.get("line_predictions", []),
         "mitigation_actions": result.get("mitigation_actions", []),
+        "total_load_shed_mw": result.get("total_load_shed_mw", 0.0),
         "failed_lines": result.get("failed_lines", []),
         "cascade_history": [e for e in result.get("audit_log", []) if "MITIGATION_STEP" in e.get("stage", "") or "CONTINGENCY" in e.get("stage", "") or "CASCADE" in e.get("stage", "")],
         "load_served_before_mitigation": result["initial_load_mw"],

@@ -10,6 +10,8 @@ Validates:
 
 from __future__ import annotations
 
+from types import SimpleNamespace
+
 import pytest
 from fastapi.testclient import TestClient
 
@@ -112,6 +114,26 @@ def test_results_not_found(client):
     response = client.get("/results/nonexistent_run_99999")
     assert response.status_code == 404
     assert "not found" in response.json()["detail"].lower()
+
+
+@pytest.mark.parametrize("seed", [-1, -42])
+def test_simulation_rejects_invalid_seed(client, seed):
+    response = client.post("/simulate", json={"seed": seed})
+    assert response.status_code == 422
+
+
+def test_simulation_preserves_load_shedding_total(client, monkeypatch):
+    result = {
+        "initial_load_mw": 100.0, "initial_outages": [1],
+        "post_cascade_served_mw": 87.5, "post_cascade_status": "STABLE",
+        "total_load_shed_mw": 12.5,
+    }
+    monkeypatch.setattr("src.api.get_pipeline", lambda: SimpleNamespace(
+        run_incident=lambda **kwargs: result,
+    ))
+    response = client.post("/simulate", json={})
+    assert response.status_code == 200
+    assert response.json()["total_load_shed_mw"] == 12.5
 
 
 def test_benchmarks_endpoint(client):
