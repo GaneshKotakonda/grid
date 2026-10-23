@@ -1,25 +1,29 @@
 import React from 'react';
-import { Award, BarChart3, ShieldCheck, TrendingDown, TrendingUp } from 'lucide-react';
+import { BarChart3, ShieldCheck } from 'lucide-react';
 import PanelHeader from './ui/PanelHeader';
 import StatusBadge from './ui/StatusBadge';
 
-function ResearchFinding({ label, value, detail, tone, icon: Icon, loading }) {
+// Reproduce the user-supplied Experimental Results slide. The evaluation CSVs
+// and API keep their original results; this section presents the slide figures.
+const PRESENTATION_COMPARISONS = [
+  { label: 'Load served (%)', predictive: 40.65, noGcn: 32.48, unit: '%', scale: 100 },
+  { label: 'Blackout rate (%)', predictive: 49.3, noGcn: 62.88, unit: '%', scale: 100 },
+  { label: 'Load shed (MW)', predictive: 2.91, noGcn: 9.54, unit: ' MW', scale: 10 },
+];
+
+function ResearchFinding({ label, value, detail, isComparison = false }) {
   return (
-    <article className={`research-finding research-finding--${tone}`}>
-      <div><Icon size={15} /><span>{label}</span></div>
-      <strong className="mono">{loading ? '—' : value}</strong>
-      <p>{loading ? 'Loading validated benchmark evidence…' : detail}</p>
+    <article className="research-finding">
+      <strong className="mono">{value}</strong>
+      <h3>{label}</h3>
+      <p className={isComparison ? 'safe-text' : ''}>{detail}</p>
     </article>
   );
 }
 
 export default function ComparisonPanel({ benchmarkData }) {
-  const rlData = benchmarkData?.phase_5_5_mitigation || [];
   const recData = benchmarkData?.phase_6_recovery || [];
-  const findings = benchmarkData?.key_findings;
   const loading = !benchmarkData;
-  const predictive = rlData.find((row) => row.controller?.includes('Predictive GCN'));
-  const noGcn = rlData.find((row) => row.controller?.includes('No GCN'));
   const noRecovery = recData.find((row) => row.method === 'No Recovery');
   const greedyRecovery = recData.find((row) => row.method === 'Greedy Recovery');
   const hasRecoveryEvidence = Boolean(noRecovery && greedyRecovery);
@@ -28,76 +32,80 @@ export default function ComparisonPanel({ benchmarkData }) {
     <div className="card benchmark-panel">
       <PanelHeader
         icon={BarChart3}
-        title="Empirical Benchmark Evidence"
-        subtitle="300 held-out scenarios · Phase 5.5 statistical evaluation from saved experimental artifacts."
-        badge={<StatusBadge tone="purple"><Award size={11} /> Phase 5.5 Validated</StatusBadge>}
+        title="Experimental Results"
+        subtitle="Figures from the project presentation · 300 held-out scenarios."
+        badge={<StatusBadge tone="purple">Presentation results</StatusBadge>}
+        as="h2"
       />
 
       <div className="research-findings">
         <ResearchFinding
+          label="GCN micro-F1"
+          value="99.65%"
+          detail="Synthetic test data only"
+        />
+        <ResearchFinding
           label="Load served"
-          value={`+${findings?.load_served_gain_pp} pp`}
-          detail={predictive && noGcn ? `${predictive.average_load_served_percent}% vs ${noGcn.average_load_served_percent}% with no-GCN PPO.` : ''}
-          tone="safe"
-          icon={TrendingUp}
-          loading={loading}
+          value="40.65%"
+          detail="vs 32.48% without GCN"
+          isComparison
         />
         <ResearchFinding
-          label="Customer load shed"
-          value={`${findings?.load_shedding_reduction_percent}% less`}
-          detail={predictive && noGcn ? `${predictive.average_load_shed_mw} MW vs ${noGcn.average_load_shed_mw} MW with no-GCN PPO.` : ''}
-          tone="info"
-          icon={TrendingDown}
-          loading={loading}
+          label="Load shed"
+          value="2.91 MW"
+          detail="vs 9.54 MW without GCN"
+          isComparison
         />
         <ResearchFinding
-          label="Total blackout rate"
-          value={`−${findings?.blackout_rate_reduction_pp} pp`}
-          detail={predictive && noGcn ? `${predictive.total_blackout_rate}% vs ${noGcn.total_blackout_rate}% with no-GCN PPO.` : ''}
-          tone="purple"
-          icon={TrendingDown}
-          loading={loading}
+          label="Blackout rate"
+          value="49.3%"
+          detail="vs 62.88% without GCN"
+          isComparison
         />
       </div>
 
-      <div className="benchmark-table-wrap">
-        <table className="benchmark-table">
-          <thead>
-            <tr>
-              <th>Controller</th>
-              <th>Samples</th>
-              <th>Avg Load Served</th>
-              <th>Avg Load Shed</th>
-              <th>Stable Rate</th>
-              <th>Total Blackout Rate</th>
-              <th>Cascade Reduction vs Base</th>
-            </tr>
-          </thead>
-          <tbody>
-            {rlData.map((row) => {
-              const isBest = row.controller?.includes('Predictive GCN');
-              return (
-                <tr className={isBest ? 'is-best' : ''} key={row.controller}>
-                  <td>
-                    <span>{row.controller}</span>
-                    {isBest && <StatusBadge tone="safe">Best</StatusBadge>}
-                  </td>
-                  <td>{row.sample_count}</td>
-                  <td>{row.average_load_served_percent}%</td>
-                  <td>{row.average_load_shed_mw} MW</td>
-                  <td>{row.stable_rate}%</td>
-                  <td>{row.total_blackout_rate}%</td>
-                  <td>+{row.cascade_reduction_percent}%</td>
-                </tr>
-              );
-            })}
-            {loading && (
-              <tr className="is-loading">
-                <td colSpan="7">Loading saved benchmark results…</td>
-              </tr>
-            )}
-          </tbody>
-        </table>
+      <div className="research-comparison">
+        <section className="result-comparison" aria-labelledby="ppo-comparison-heading">
+          <div className="result-comparison__heading">
+            <h3 id="ppo-comparison-heading">PPO + GCN vs PPO without GCN</h3>
+            <div className="comparison-legend">
+              <span><i className="comparison-swatch--predictive" />PPO + GCN</span>
+              <span><i className="comparison-swatch--baseline" />PPO without GCN</span>
+            </div>
+          </div>
+          <dl className="result-comparison__metrics">
+            {PRESENTATION_COMPARISONS.map((metric) => (
+              <div className="result-comparison__metric" key={metric.label}>
+                <dt>{metric.label}</dt>
+                <dd>
+                  {[
+                    { name: 'PPO + GCN', value: metric.predictive, className: 'predictive' },
+                    { name: 'PPO without GCN', value: metric.noGcn, className: 'baseline' },
+                  ].map((series) => (
+                    <div className={`result-comparison__row result-comparison__row--${series.className}`} key={series.name}>
+                      <span className="sr-only">{series.name}: </span>
+                      <span className="result-comparison__track" aria-hidden="true">
+                        <span style={{ width: `${series.value / metric.scale * 100}%` }} />
+                      </span>
+                      <strong className="mono">{series.value}{metric.unit}</strong>
+                    </div>
+                  ))}
+                </dd>
+              </div>
+            ))}
+          </dl>
+        </section>
+        <aside className="research-interpretation" aria-labelledby="results-meaning-heading">
+          <h3 id="results-meaning-heading">What the results mean</h3>
+          <p>300 held-out scenarios</p>
+          <h4>Statistically significant improvement:</h4>
+          <ul>
+            <li>Load served</li>
+            <li>Load shedding</li>
+            <li>Blackout rate</li>
+          </ul>
+          <p className="research-interpretation__note">Not significant: stable-grid rate or failed-line count.</p>
+        </aside>
       </div>
 
       <section className="recovery-audit" aria-labelledby="recovery-audit-heading">

@@ -6,6 +6,6 @@ export const SITE_ROUTES = [
   { path: '/mitigation', label: 'Mitigation', group: 'primary', phase: 'Phase 5 · PPO control', title: 'Trace every preventive decision.', description: 'Inspect the predictive policy’s action sequence, load shedding, and reward feedback.' },
   { path: '/recovery', label: 'Recovery', group: 'primary', phase: 'Phase 6 · Safety constraints', title: 'Restore service with physics as the guardrail.', description: 'Review committed restoration actions, reclosed lines, and the final served-load state.' },
   { path: '/timeline', label: 'Timeline', group: 'research', phase: 'Incident trace', title: 'Follow the incident from trigger to recovery.', description: 'A complete progression through contingency, forecasting, mitigation, cascade propagation, and restoration.' },
-  { path: '/benchmarks', label: 'Benchmarks', group: 'research', phase: 'Validated research', title: 'Evidence behind the operational decisions.', description: 'Compare saved Phase 5.5 experiments and the Phase 6 recovery invariant audit.' },
+  { path: '/benchmarks', label: 'Benchmarks', group: 'research', phase: 'Research results', title: 'Evidence behind the operational decisions.', description: 'Compare the presentation’s PPO + GCN results and review the Phase 6 recovery invariant audit.' },
 ];
 
