@@ -197,9 +197,59 @@ grid/
 │   ├── test_gnn_training.py
 │   ├── test_rl_env.py
 │   ├── test_recovery.py
+│   ├── test_ui_routes.py
 │   └── test_api.py
 ├── outputs/                    # Validated experimental models & CSV reports
 ├── requirements.txt
 ├── .gitignore
 └── README.md
 ```
+
+---
+
+## Contributors
+
+Special thanks to the contributors who built, tested, and maintained the GridResilience platform:
+
+<div align="center">
+  <table>
+    <tr>
+      <td align="center">
+        <a href="https://github.com/GaneshKotakonda">
+          <img src="https://github.com/GaneshKotakonda.png" width="90px;" alt="Ganesh Kotakonda"/><br />
+          <sub><b>Ganesh Kotakonda</b></sub>
+        </a><br />
+        <sub>Architecture & Core ML</sub>
+      </td>
+      <td align="center">
+        <a href="https://github.com/himeshreddy69">
+          <img src="https://github.com/himeshreddy69.png" width="90px;" alt="Himesh Reddy"/><br />
+          <sub><b>Himesh Reddy</b></sub>
+        </a><br />
+        <sub>Testing & Quality Assurance</sub>
+      </td>
+      <td align="center">
+        <a href="https://github.com/rohithkrishna070">
+          <img src="https://github.com/rohithkrishna070.png" width="90px;" alt="V Rohith Krishna"/><br />
+          <sub><b>V Rohith Krishna</b></sub>
+        </a><br />
+        <sub>Dependencies & Test Suite</sub>
+      </td>
+      <td align="center">
+        <a href="https://github.com/harsha20112986-droid">
+          <img src="https://github.com/harsha20112986-droid.png" width="90px;" alt="Harsha"/><br />
+          <sub><b>Harsha</b></sub>
+        </a><br />
+        <sub>Mitigation & Recovery</sub>
+      </td>
+    </tr>
+  </table>
+</div>
+
+| Contributor | GitHub Profile | Primary Contributions |
+| :--- | :--- | :--- |
+| **Ganesh Kotakonda** | [@GaneshKotakonda](https://github.com/GaneshKotakonda) | System Architecture, AC Power Flow Simulation, GCN Forecasting, PPO RL Mitigation & Full-Stack Platform |
+| **Himesh Reddy** | [@himeshreddy69](https://github.com/himeshreddy69) | **Testing & Quality Assurance**: Comprehensive verification of all 7 pipeline phases, automated test suite (`tests/`), edge case and regression testing |
+| **V Rohith Krishna** | [@rohithkrishna070](https://github.com/rohithkrishna070) | Environment configuration, dependency management & test suite finalization |
+| **Harsha** | [@harsha20112986-droid](https://github.com/harsha20112986-droid) | Safety-constrained grid recovery, predictive mitigation modules & scenario testing |
+
